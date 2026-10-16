@@ -159,7 +159,10 @@ def write_entries(path, title, msgs):
 def read_entries(path):
     entries, cur, lines = {}, None, []
     with open(path, encoding='utf-8') as f:
-        for line in f.read().split('\n'):
+        content = f.read().replace('\r\n', '\n')
+        if content.endswith('\n'):
+            content = content[:-1]  # the file's own final newline is not part of the last message
+        for line in content.split('\n'):
             m = ENTRY_RE.match(line)
             if m:
                 if cur is not None:
@@ -277,13 +280,18 @@ def cmd_import(args):
 
 def cmd_check(args):
     """Every message must survive decode -> encode, and a rebuilt table must read back the same."""
+    import tempfile
     iso = disc(args)
     total = 0
+    tmp = os.path.join(tempfile.mkdtemp(), 'check.txt')
     for name, d, room in room_tables(iso):
         msgs = read_table(d, room.ptr['mesp'], room.cnt['mes'])
         for i, w in enumerate(msgs):
             if encode(decode(w), name) != w:
                 sys.exit('%s ### %d: decode/encode is not lossless' % (name, i))
+        write_entries(tmp, name, msgs)  # an untouched exported file must not count as edited
+        if edited(tmp, msgs) is not None:
+            sys.exit('%s: exported file does not read back unchanged' % name)
         rebuilt = rdx.Room(rebuild_room(d, room, msgs), name)
         if read_table(rebuilt.d, rebuilt.ptr['mesp'], rebuilt.cnt['mes']) != msgs:
             sys.exit('%s: rebuilt table differs' % name)
