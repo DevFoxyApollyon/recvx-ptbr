@@ -23,3 +23,8 @@ __pycache__/
 
 # editor state
 /.claude/
+
+# Game text exported by pc/tools/text.py (derived from your disc: never commit)
+/translation/
+/build-config.log
+/build.log

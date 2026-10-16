@@ -158,6 +158,11 @@ endif()
 if(WIN32)
     target_compile_options(recvx_platform PRIVATE $<$<COMPILE_LANGUAGE:C>:-mno-ms-bitfields>)
 endif()
+if(CMAKE_HOST_WIN32)
+    # Native MSYS2 MINGW32 builds run a 32-bit cc1, which runs out of address space on the
+    # VU interpreter with -O2 -g. Debug info for that one file is not worth it.
+    set_source_files_properties(src/ps2/vu.c TARGET_DIRECTORY recvx_platform PROPERTIES COMPILE_OPTIONS -g0)
+endif()
 
 # ---------------------------------------------------------------- executable
 set(RECVX_LAYOUT_PAD 0 CACHE STRING "test aid: bytes of padding before all code, data and bss (pc/tools/layout_check.sh)")
