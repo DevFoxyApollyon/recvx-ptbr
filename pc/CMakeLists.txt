@@ -191,6 +191,8 @@ add_executable(recvx ${LAYOUT_PAD_SRC} $<TARGET_OBJECTS:recvx_game> $<TARGET_OBJ
                $<$<TARGET_EXISTS:glibc_compat>:$<TARGET_OBJECTS:glibc_compat>>)
 target_link_libraries(recvx PRIVATE imgui SDL3::SDL3 miniupnpc::miniupnpc natpmp monocypher m)
 if(WIN32)
+    enable_language(RC)
+    target_sources(recvx PRIVATE res/recvx.rc)   # PT-BR fork: program icon (pc/tools/make_icon.py)
     target_link_libraries(recvx PRIVATE ws2_32 pthread shell32)   # co-op UDP (src/net); clock_gettime (winpthreads)
     # Same address window as Linux: fixed image base, no ASLR relocation; large-address-aware
     # gives the 32-bit exe 4 GB on 64-bit Windows (Linux already uses addresses above 2 GB). -static: libstdc++,

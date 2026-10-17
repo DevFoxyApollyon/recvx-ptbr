@@ -281,6 +281,10 @@ int main(int argc, char** argv)
     parse_args(argc, argv);   /* command line overrides the saved settings */
     ps2_memory_init();
 
+#ifdef _WIN32
+    SDL_SetHint(SDL_HINT_WINDOWS_INTRESOURCE_ICON, "1");         /* PT-BR fork: the exe's icon (pc/res) */
+    SDL_SetHint(SDL_HINT_WINDOWS_INTRESOURCE_ICON_SMALL, "1");
+#endif
     if (!SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO | SDL_INIT_GAMEPAD))
         host_fatal("SDL_Init: %s", SDL_GetError());
     bind_apply_source();   /* Gamepad only: gamepads also in the background */

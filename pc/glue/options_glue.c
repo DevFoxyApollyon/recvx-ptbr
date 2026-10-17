@@ -12,6 +12,7 @@
 #include "../../decomp/include/ps2/veronica/prog/sdfunc.h"
 #include "../../decomp/include/ps2/veronica/prog/ps2_NaDraw.h"
 #include "../src/host/settings.h"
+#include "../src/gs/texrep.h"
 #include "../src/host/bindings.h"
 #include "../src/host/menu_mouse.h"
 #include <stdio.h>
@@ -71,9 +72,16 @@ static const struct { short u, v, w, dw; } row8[] = {
     { 38, 192, 11, 11 }, { 88, 64, 19, 19 }, { 158, 32, 19, 19 }, { 0, 224, 15, 15 },  /* I (EXIT) N G (CONFIG) S */
 };
 
+/* with the Portuguese captions (pc/tools/options_ptbr.py, mods/textures/pt) the row is one
+   caption of that texture: AJUSTES DO PORT at u 400, v 256 */
+#define CAPTIONS_HASH 0xcb5060d84e96c50bull
+#define ROW8_PT_W 224.0f
+static int row8_pt(void) { return texrep_in_use(CAPTIONS_HASH); }
+
 static float row8_x(void)   /* right-aligned with the values */
 {
     float w = 0;
+    if (row8_pt()) return ROW8_RIGHT - ROW8_PT_W;
     for (int i = 0; i < (int)(sizeof(row8) / sizeof(row8[0])); i++) w += row8[i].dw + 1;
     return ROW8_RIGHT - w;
 }
@@ -85,6 +93,12 @@ void pc_options_row8(int selected)
     unsigned int col = selected ? (((unsigned int)ap->FlushCount2 + 255) << 24) | 0xFFFFFF : 0x7FAFAFAF;
     float x = row8_x();
     QUAD* q = &Qtex[15];
+    if (row8_pt()) {
+        SetQuadPos(x, ROW8_Y, ROW8_PT_W, 32.0f, q);
+        SetQuadUv2(400.0f, 256.0f, ROW8_PT_W, 32.0f, 0, q);
+        AdvEasyDrawTexture(0, col, q, 0.05f, 1);
+        return;
+    }
     for (int i = 0; i < (int)(sizeof(row8) / sizeof(row8[0])); i++) {
         if (row8[i].u >= 0) {
             SetQuadPos(x, ROW8_Y, row8[i].dw, 32.0f, q);
