@@ -258,7 +258,8 @@ def cmd_import(args):
     iso = disc(args)
     os.makedirs(args.mods, exist_ok=True)
     changed = 0
-    for name, d, room in room_tables(iso):
+    rooms = room_tables(iso) if os.path.isdir(os.path.join(args.inp, 'salas')) else ()
+    for name, d, room in rooms:
         msgs = read_table(d, room.ptr['mesp'], room.cnt['mes'])
         new = edited(os.path.join(args.inp, 'salas', name[:-4] + '.txt'), msgs)
         dst = os.path.join(args.mods, name)

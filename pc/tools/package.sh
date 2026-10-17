@@ -44,6 +44,10 @@ while [ $# -gt 0 ]; do
         n=recvx-enhanced-port-$ver-windows-x86; d=$stage/$n; mkdir -p "$d"
         "$ws" -o "$d/recvx.exe" "$b"
         copy_docs "$d" $docs
+        # PT-BR: what the RE Hub runs before the game to build mods/ from the player's disc
+        mkdir -p "$d/tools"
+        for t in ptbr_mods.py text.py rdx.py rooms.txt title_ptbr.py options_ptbr.py; do cp "$root/pc/tools/$t" "$d/tools/"; done
+        cp -r "$root/pc/ptbr" "$d/ptbr"
         (cd "$stage" && rm -f "$out/$n.zip" && zip -qrX "$out/$n.zip" "$n")
         mkdir -p "$stage/$n-debug"; cp "$b" "$stage/$n-debug/recvx.exe"
         (cd "$stage" && rm -f "$out/$n-debug.zip" && zip -qrX "$out/$n-debug.zip" "$n-debug")

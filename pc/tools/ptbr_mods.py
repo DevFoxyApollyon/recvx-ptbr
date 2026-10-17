@@ -9,9 +9,14 @@ textures of your disc (PS2 NTSC-U, SLUS-20184) and writes the results to <mods>:
      at a RECVX_TEX_DUMP folder that already has them.
 
     python pc/tools/ptbr_mods.py --iso disc.iso --mods <game>/mods --exe build-win/pc/recvx.exe
-        [--dump dir] [--esrgan realesrgan-ncnn-vulkan.exe]
+        [--dump dir] [--esrgan realesrgan-ncnn-vulkan.exe] [--check | --if-needed] [--force]
+
+Textures already in <mods>/textures/pt are kept (an upscaled set of your own stays) unless --force.
+<mods>/.ptbr records what the last run used (pc/ptbr, these tools, the disc): --check exits 1 when
+that changed, --if-needed then does nothing when it did not. The RE Hub runs it before the game.
 """
 import argparse
+import hashlib
 import os
 import subprocess
 import sys
@@ -21,8 +26,26 @@ TOOLS = os.path.dirname(os.path.abspath(__file__))
 PTBR = os.path.join(os.path.dirname(TOOLS), "ptbr")
 TITLE = "64cae74c03148763"
 OPTIONS = ["cb5060d84e96c50b", "271a7590c63b69f4", "cee1149cc7bbb07f"]
+SCRIPTS = {"ptbr_mods.py", "text.py", "rdx.py", "rooms.txt", "title_ptbr.py", "options_ptbr.py"}
 # title menu, then OPCOES (fourth row: Down x3 from CARREGAR JOGO); RECVX_KEYS holds a key until "-"
 KEYS = "%d:Down,%d:-,%d:Down,%d:-,%d:Down,%d:-,%d:Return,%d:-"
+
+
+def stamp(iso):
+    """What the mods depend on: the Portuguese files, the tools that apply them, the disc."""
+    h = hashlib.sha1()
+    for d in (PTBR, TOOLS):
+        for root, dirs, files in os.walk(d):
+            dirs[:] = sorted(x for x in dirs if x != "__pycache__")
+            for f in sorted(files):
+                if d == TOOLS and f not in SCRIPTS:
+                    continue
+                h.update(f.encode())
+                with open(os.path.join(root, f), "rb") as fp:
+                    h.update(fp.read().replace(b"\r\n", b"\n"))
+    st = os.stat(iso)
+    h.update(("%s %d" % (os.path.basename(iso), st.st_size)).encode())
+    return h.hexdigest()
 
 
 def py(script, *args):
@@ -59,12 +82,35 @@ def main():
     p.add_argument("--exe", help="recvx.exe, to dump the menu textures")
     p.add_argument("--dump", help="texture dump folder (default: a temporary one)")
     p.add_argument("--esrgan", help="realesrgan-ncnn-vulkan for the OPCOES pictures")
+    p.add_argument("--check", action="store_true", help="exit 1 when the mods are out of date")
+    p.add_argument("--if-needed", action="store_true", help="do nothing when they are up to date")
+    p.add_argument("--force", action="store_true", help="rewrite textures/pt files that exist")
     a = p.parse_args()
     iso, mods = os.path.abspath(a.iso), os.path.abspath(a.mods)
+    mark = os.path.join(mods, ".ptbr")
+    now = stamp(iso)
+    try:
+        with open(mark) as f:
+            current = f.read().strip() == now
+    except OSError:
+        current = False
+    if a.check:
+        sys.exit(0 if current else 1)
+    if a.if_needed and current:
+        return
     os.makedirs(mods, exist_ok=True)
+    build(a, iso, mods)
+    with open(mark, "w") as f:
+        f.write(now + "\n")
+    print("mods em portugues prontos em", mods)
 
+
+def build(a, iso, mods):
     py("text.py", "--iso", iso, "import", "--in", PTBR, "--mods", mods)
 
+    pt = os.path.join(mods, "textures", "pt")
+    if not a.force and have(pt, [TITLE] + OPTIONS):
+        return
     with tempfile.TemporaryDirectory() as tmp:
         dump = os.path.abspath(a.dump) if a.dump else tmp
         if not have(dump, [TITLE] + OPTIONS):
@@ -73,9 +119,10 @@ def main():
                 return
             os.makedirs(dump, exist_ok=True)
             dump_textures(os.path.abspath(a.exe), iso, dump)
-        py("title_ptbr.py", os.path.join(dump, TITLE + ".png"), mods)
-        py("options_ptbr.py", dump, mods, *(["--esrgan", os.path.abspath(a.esrgan)] if a.esrgan else []))
-    print("mods em português prontos em", mods)
+        if a.force or not have(pt, [TITLE]):
+            py("title_ptbr.py", os.path.join(dump, TITLE + ".png"), mods)
+        if a.force or not have(pt, OPTIONS):
+            py("options_ptbr.py", dump, mods, *(["--esrgan", os.path.abspath(a.esrgan)] if a.esrgan else []))
 
 
 if __name__ == "__main__":

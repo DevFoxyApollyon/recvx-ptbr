@@ -75,7 +75,9 @@ class Afs:
 def room_names():
     """RM_SRRC.RDX names in AFS order, from the decomp's file table (ps2_dvd_image.c rdx_files[])."""
     src = os.path.join(REPO, 'decomp/src/ps2/veronica/prog/ps2_dvd_image.c')
-    return re.findall(r'"(RM_\d{4}\.RDX)"', open(src).read())
+    if not os.path.exists(src):   # packaged tools (no decomp): the same list, rooms.txt
+        src = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'rooms.txt')
+    return re.findall(r'"?(RM_\d{4}\.RDX)"?', open(src).read())
 
 # ---------------------------------------------------------------- LZ (expand.c Expand)
 def expand(s):
