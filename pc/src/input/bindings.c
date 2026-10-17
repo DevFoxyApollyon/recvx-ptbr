@@ -57,10 +57,14 @@ const int bind_order[B_COUNT] = {
 
 static const int defaults[2][B_COUNT][BIND_SLOTS] = {
     [BIND_KB] = {
-        [B_SELECT] = { SC(BACKSPACE) }, [B_START] = { SC(RETURN) },
-        [B_UP] = { SC(UP) }, [B_RIGHT] = { SC(RIGHT) }, [B_DOWN] = { SC(DOWN) }, [B_LEFT] = { SC(LEFT) },
-        [B_L2] = { SC(1) }, [B_R2] = { SC(2) }, [B_L1] = { SC(Q) }, [B_R1] = { SC(W) },
-        [B_TRIANGLE] = { SC(S) }, [B_CIRCLE] = { SC(X) }, [B_CROSS] = { SC(Z) }, [B_SQUARE] = { SC(A) },
+        /* PT-BR fork: the fixed cameras use the third-person keys (key type A: Cross = action/fire,
+           Circle = run/cancel, R1 = ready weapon, Start = status, Triangle = map); third person
+           takes these keys over while it is on (bind_held), so the two sets never fight */
+        [B_SELECT] = { SC(BACKSPACE) }, [B_START] = { SC(TAB), SC(RETURN) },
+        [B_UP] = { SC(W), SC(UP) }, [B_RIGHT] = { SC(D), SC(RIGHT) }, [B_DOWN] = { SC(S), SC(DOWN) }, [B_LEFT] = { SC(A), SC(LEFT) },
+        [B_L2] = { SC(1) }, [B_R2] = { SC(2) }, [B_L1] = { SC(Z) }, [B_R1] = { MB(SDL_BUTTON_RIGHT) },
+        [B_TRIANGLE] = { SC(M) }, [B_CIRCLE] = { SC(LSHIFT), SC(Q) }, [B_CROSS] = { SC(E), MB(SDL_BUTTON_LEFT) },
+        [B_SQUARE] = { SC(C) }, [B_RELOAD] = { SC(R) },
         [B_TPS_FWD] = { SC(W) }, [B_TPS_BACK] = { SC(S) }, [B_TPS_LEFT] = { SC(A) }, [B_TPS_RIGHT] = { SC(D) },
         [B_TPS_RUN] = { SC(LSHIFT), SC(RSHIFT) }, [B_TPS_ACTION] = { SC(E) }, [B_TPS_CANCEL] = { SC(Q) },
         [B_TPS_STATUS] = { SC(TAB) }, [B_TPS_MAP] = { SC(M) }, [B_TPS_AIM] = { MB(SDL_BUTTON_RIGHT) },
@@ -71,12 +75,13 @@ static const int defaults[2][B_COUNT][BIND_SLOTS] = {
     },
     [BIND_PAD] = {
         /* L3 is no game action under any key type (R3 is the inventory in A-C): the left stick click trades */
-        [B_SELECT] = { GB(BACK) }, [B_TRADE] = { GB(LEFT_STICK) }, [B_R3] = { GB(RIGHT_STICK) }, [B_START] = { GB(START) },
+        /* PT-BR fork: the fixed cameras use the third-person (modern) layout below: LT ready weapon,
+           RT/A fire and action, B/X cancel and run, Y status, Back map, LB quick knife, RB reload */
+        [B_SELECT] = { 0 }, [B_TRADE] = { GB(LEFT_STICK) }, [B_R3] = { GB(RIGHT_STICK) }, [B_START] = { GB(START), GB(NORTH) },
         [B_UP] = { GB(DPAD_UP) }, [B_RIGHT] = { GB(DPAD_RIGHT) }, [B_DOWN] = { GB(DPAD_DOWN) }, [B_LEFT] = { GB(DPAD_LEFT) },
-        [B_L2] = { GA(LEFT_TRIGGER, 0) },   /* R2 is no game action in any key type: the right trigger is the quick knife */
-        [B_L1] = { GB(LEFT_SHOULDER) }, [B_R1] = { GB(RIGHT_SHOULDER) },
-        [B_TRIANGLE] = { GB(NORTH) }, [B_CIRCLE] = { GB(EAST) }, [B_CROSS] = { GB(SOUTH) }, [B_SQUARE] = { GB(WEST) },
-        [B_QUICKKNIFE] = { GA(RIGHT_TRIGGER, 0) },
+        [B_R1] = { GA(LEFT_TRIGGER, 0) },
+        [B_TRIANGLE] = { GB(BACK) }, [B_CIRCLE] = { GB(EAST), GB(WEST) }, [B_CROSS] = { GB(SOUTH), GA(RIGHT_TRIGGER, 0) },
+        [B_QUICKKNIFE] = { GB(LEFT_SHOULDER) }, [B_RELOAD] = { GB(RIGHT_SHOULDER) },
         /* third person, modern scheme (as the RE remakes, the run button where type A has it; reload on the right
            shoulder as in RE4 and the RE4 remake's type C, the quick turn on the d-pad's back) */
         [B_TPS_AIM] = { GA(LEFT_TRIGGER, 0) }, [B_TPS_FIRE] = { GA(RIGHT_TRIGGER, 0) }, [B_TPS_ACTION] = { GB(SOUTH) },
