@@ -1025,7 +1025,7 @@ static const char* heading(void)
     static char h[64];
     if (lb.step == 1) return "HOW DO YOU WANT TO PLAY?";
     if (lb.step == 3) return lb.role ? "THE HOST'S GAME RULES" : "GAME RULES";
-    snprintf(h, sizeof(h), "%s - %s", lb.role ? "JOIN A GAME" : "HOST A GAME", lb.mode ? "VIA SERVER" : "DIRECT (P2P)");
+    snprintf(h, sizeof(h), "%s - %s", L(lb.role ? "JOIN A GAME" : "HOST A GAME"), L(lb.mode ? "VIA SERVER" : "DIRECT (P2P)"));
     return h;
 }
 
