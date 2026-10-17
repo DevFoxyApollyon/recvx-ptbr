@@ -1,0 +1,173 @@
+# Mensagens do sistema (SYSMES.ALD) em português: só as traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 215
+SEM DADOS
+
+### 447
+Carregar o save de
+RESIDENT EVIL?
+        {espaco}Sim  {espaco}Nao
+
+### 448
+Este Memory Card tem
+um save de RESIDENT EVIL
+
+### 451
+Verificando o memory card (PS2). 
+
+Nao remova o memory card (PS2) nem 
+desligue o aparelho. 
+
+### 452
+Qual entrada do CARTAO DE MEMORIA vai usar? 
+
+### 453
+Nao carregar. 
+
+### 454
+Isto nao e um memory card (PS2). 
+
+### 455
+O memory card (PS2) nao esta inserido. 
+
+### 456
+Este memory card (PS2) nao esta formatado. 
+
+### 457
+Nao ha save de R.E.CODE_VERONICA. 
+
+### 458
+Sem dados. 
+
+### 459
+Carregar estes dados? 
+
+
+### 460
+Carregando do memory card (PS2). 
+
+Nao remova o memory card (PS2) nem 
+desligue o aparelho. 
+
+### 461
+Arquivo corrompido. 
+
+### 462
+Falha ao carregar. 
+
+### 463
+CARTAO 
+
+### 464
+entrada 1 
+
+### 465
+entrada 2 
+
+### 466
+SIM 
+NAO 
+
+### 471
+Verificando o memory card (PS2). 
+
+Nao remova o memory card (PS2) nem 
+desligue o aparelho. 
+
+### 472
+Qual entrada do CARTAO DE MEMORIA vai usar? 
+
+### 473
+Nao salvar. 
+
+### 474
+Isto nao e um memory card (PS2). 
+
+Para salvar, sao necessarios 103KB livres no 
+memory card (PS2). 
+
+### 475
+O memory card (PS2) nao esta inserido. 
+
+Para salvar, sao necessarios 103KB livres no 
+memory card (PS2). 
+
+### 476
+Sem espaco suficiente. 
+
+Para salvar, sao necessarios 103KB livres no 
+memory card (PS2). 
+
+### 477
+Este memory card (PS2) nao tem espaco 
+reservado para salvar este jogo. 
+
+Para salvar, sao necessarios 103KB livres. 
+
+Reservar espaco agora? 
+
+### 478
+Reservando espaco. 
+
+Nao remova o memory card (PS2) nem 
+desligue o aparelho. 
+
+### 479
+Espaco reservado com sucesso. 
+
+### 480
+Falha ao reservar espaco. 
+
+### 481
+Continuar sem salvar? 
+
+### 482
+Nao ha dados salvos. 
+Salvar como novo? 
+
+### 483
+Sobrescrever os dados? 
+
+### 484
+Salvando no memory card (PS2). 
+
+Nao remova o memory card (PS2) nem 
+desligue o aparelho. 
+
+### 485
+Salvo com sucesso. 
+
+### 486
+Falha ao salvar. 
+
+### 487
+Este memory card (PS2) nao esta formatado. 
+
+Deseja formatar? 
+
+### 488
+Formatando. 
+
+Nao remova o memory card (PS2) nem 
+desligue o aparelho. 
+
+### 489
+Formatacao concluida. 
+
+### 490
+Falha ao formatar. 
+
+### 491
+Carregando... 
+
+### 492
+controle analogico (DUALSHOCK{005F}2) desconectado. 
+Conecte o controle analogico (DUALSHOCK{005F}2) 
+na porta de controle 1.
+
+### 493
+Jogo pausado. 
+Aperte START para continuar. 
+

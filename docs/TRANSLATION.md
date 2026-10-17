@@ -8,6 +8,25 @@ acentos viram arquivos na pasta `mods/`, que o port carrega no lugar dos do disc
 > `translation/` e `mods/` e **não devem ir para o Git nem ser distribuídos**. O repositório só
 > guarda as ferramentas.
 
+## Tradução deste fork (pc/ptbr)
+
+As mensagens já traduzidas ficam em `pc/ptbr/sistema.txt`, só em português, no mesmo formato
+abaixo e apenas com as entradas `### N` traduzidas. As outras ficam como no disco. Um comando
+gera tudo do seu disco:
+
+```sh
+python pc/tools/ptbr_mods.py --iso "SLUS-20184.iso" --mods mods --exe build-win/pc/recvx.exe
+```
+
+Ele roda o `text.py import --in pc/ptbr` (gera `SYSMES.ALD`) e depois os scripts das texturas
+(docs/TEXTURES.md). Para as texturas, abre o port uma vez com `RECVX_TEX_DUMP` e passa pelo
+menu título e pelo OPCOES. Com `--dump pasta` ele usa um dump que você já tenha. Sem `--exe` e
+sem `--dump`, só gera o texto.
+
+Para traduzir mais: edite `translation/sistema.txt` (do `export`) e copie as entradas
+traduzidas para `pc/ptbr/sistema.txt`, sem acentos, porque o menu usa a fonte do jogo. Para
+salas e itens, `pc/ptbr/salas/RM_xxxx.txt` e `pc/ptbr/itens.txt` funcionam do mesmo jeito.
+
 ## Passo a passo
 
 ```sh

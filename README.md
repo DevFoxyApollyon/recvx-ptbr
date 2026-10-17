@@ -18,6 +18,17 @@ Todo o credito do port e do decomp e dos autores originais; este repositorio acr
 Nenhum dado do jogo esta incluido: voce precisa da sua propria ISO (PS2, NTSC-U, SLUS-20184).
 Os releases deste repositorio (`v0.5.1-ptbr.N`) sao os que o RE Hub instala.
 
+### Textos e menus do jogo em portugues
+
+O repositorio guarda so o lado em portugues (`pc/ptbr/`). Para gerar a pasta `mods/` a partir do
+seu disco (mensagens do sistema, tela do memory card, menus titulo e OPCOES):
+
+```sh
+python pc/tools/ptbr_mods.py --iso SLUS-20184.iso --mods <pasta do jogo>/mods --exe build-win/pc/recvx.exe
+```
+
+Precisa de Python com Pillow e numpy. Detalhes em docs/TRANSLATION.md.
+
 O README original do projeto segue abaixo.
 
 ---
