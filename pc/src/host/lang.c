@@ -80,11 +80,13 @@ unsigned lang_next_cp(const char** sp)
     return '?';
 }
 
+/* The game-font menus show accented letters as their base letter (OPÇÕES -> OPCOES): the font's
+   accented glyphs are only drawn on some load paths, a plain letter always works. */
 unsigned short lang_glyph(unsigned cp)
 {
     if (cp >= 33 && cp < 127) return (unsigned short)(cp - 32);
     for (int i = 0; i < EXTRA_N; i++)
-        if (extras[i].cp == cp) return extras[i].code;
+        if (extras[i].cp == cp) return (unsigned short)(extras[i].base - 32);
     return 0xFFFF;
 }
 

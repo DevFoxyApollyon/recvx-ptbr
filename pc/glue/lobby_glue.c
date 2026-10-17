@@ -198,18 +198,50 @@ void pc_title_menu_init(void)
     ap->CursorMax[0] = n + 1;
 }
 
+static void font_load(void);
+static int font_ready(void);
+
+/* PT-BR fork: in Portuguese the title rows are written with the game's serif font (the plates are
+   English pictures); the font is loaded here as the lobby does, until it is ready the plates show */
+static const char* title_word(float v)
+{
+    if (v == 64.0f) return "CARREGAR JOGO";
+    if (v == 96.0f) return "NOVO JOGO";
+    if (v == 128.0f) return "OPÇÕES";
+    if (v == 224.0f) return "MODO BATALHA";
+    return NULL;
+}
+static int title_font(int may_load)
+{
+    if (g_lang != LANG_PT) return 0;
+    if (may_load && !(sys->ss_flg & 0x40) && font_state == 0) font_load();
+    return font_ok = font_ready();
+}
+#define TITLE_TEXT_SCALE 1.18f
+
+int pc_title_press_start(float fade)
+{
+    if (!title_font(0)) return 0;   /* the title picture may still be loading: never load here */
+    text_c(320.0f, 304.0f, "PRESSIONE START", TITLE_TEXT_SCALE, ((unsigned int)fade << 24) | 0xFFFFFF);
+    return 1;
+}
+
 /* DisplayGameModePlate with the MULTIPLAYER row (the game's 3 or 4 rows moved up to make room) */
 void pc_title_plates(int cursor, int n, float fade, int flag)
 {
     static const float vdef[2][4] = { { 64.0f, 96.0f, 128.0f, 224.0f }, { 64.0f, 96.0f, 224.0f, 128.0f } };
     ADV_WORK* ap = &AdvWork;
-    int i, extra = ap->ExtraFlag != 0;
+    int i, extra = ap->ExtraFlag != 0, pt = title_font(0);   /* loading the font here evicts the title picture: only when the game has it */
     for (i = 0; i < n; i++) {
         unsigned int alpha = fade, col = 0x7F7F7F;
         float y = title_row_y(i, n);
         if (i == cursor) { alpha += (unsigned int)ap->FlushCount2; col = ap->FontBaseColor; }
         alpha <<= 24;
         if (flag == 0) alpha = 0xFF000000;
+        if (pt) {
+            const char* w = ap->ModeCommandId[i] == TITLE_MP ? "MULTIJOGADOR" : title_word(vdef[extra][i < 4 ? i : 3]);
+            if (w) { text_c(320.0f, y + 1.0f, w, TITLE_TEXT_SCALE, alpha | col); continue; }
+        }
         if (ap->ModeCommandId[i] == TITLE_MP) mp_word(320.0f, y, alpha | col, fade, 1.0f);
         else {
             QUAD q;
@@ -565,7 +597,8 @@ static void font_load(void)
     if (sys->ss_flg & 0x40) return;
     n = GetInsideFileSize(sys->sys_partid, 1);
     if (n <= 0 || n > (int)sizeof(font_file)) { host_log("lobby: font file of %d bytes\n", n); return; }
-    RequestReadInsideFile(sys->sys_partid, 1, font_file);
+    if (GetReadFileStatus() != 0) return;                       /* PT-BR fork: the game is reading: later */
+    if (RequestReadInsideFile(sys->sys_partid, 1, font_file) != 0) return;   /* refused (busy): try again */
     font_state = 1;
 }
 

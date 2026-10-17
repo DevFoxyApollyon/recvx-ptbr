@@ -251,9 +251,9 @@ static void controls_section(void)
         if (ImGui::BeginTabItem(L("Gamepad"))) { if (dev != BIND_PAD) cap_row = -1; dev = BIND_PAD; ImGui::EndTabItem(); }
         ImGui::EndTabBar();
     }
-    if (dev == BIND_PAD) ImGui::TextDisabled("%s; the left stick also moves, as on the DS2. The third-person rows play in third\n"
-                                             "person with Modern gamepad controls, instead of the game rows of the same buttons.", bind_pad_desc());
-    ImGui::TextDisabled("Click a binding, then press the key/button (Esc cancels, Delete clears); right click clears.");
+    if (dev == BIND_PAD) ImGui::TextDisabled(L("%s; the left stick also moves, as on the DS2. The third-person rows play in third\n"
+                                             "person with Modern gamepad controls, instead of the game rows of the same buttons."), bind_pad_desc());
+    ImGui::TextDisabled(L("Click a binding, then press the key/button (Esc cancels, Delete clears); right click clears."));
     if (msg[0]) ImGui::TextColored(ImVec4(1.0f, 0.85f, 0.4f, 1.0f), "%s", msg);
     if (ImGui::BeginTable("##binds", 3, ImGuiTableFlags_RowBg | ImGuiTableFlags_SizingStretchProp)) {
         ImGui::TableSetupColumn("action", ImGuiTableColumnFlags_WidthStretch, 2.2f);
@@ -268,7 +268,7 @@ static void controls_section(void)
                 ImGui::TableNextRow();
                 ImGui::TableSetColumnIndex(0);
                 if (group == BG_GAME) ImGui::SeparatorText(L("Game (as the KEY CONFIG type sets them)"));
-                else ImGui::SeparatorText(group == BG_TPS ? (dev ? "Third person (gamepad, Modern)" : "Third person (keyboard and mouse)") : "Hotkeys");
+                else ImGui::SeparatorText(group == BG_TPS ? (dev ? L("Third person (gamepad, Modern)") : L("Third person (keyboard and mouse)")) : L("Hotkeys"));
                 if (group == BG_GAME) { ImGui::TableSetColumnIndex(1); ImGui::TextDisabled(L("type %c"), 'A' + pc_keytype()); }
             }
             ImGui::TableNextRow();
@@ -276,7 +276,7 @@ static void controls_section(void)
             int conflict = bind_conflict(r, dev);
             if (conflict) ImGui::TextColored(ImVec4(1.0f, 0.4f, 0.4f, 1.0f), "%s", bind_row_label(r, label, sizeof label));
             else ImGui::TextUnformatted(bind_row_label(r, label, sizeof label));
-            if (conflict && ImGui::IsItemHovered()) ImGui::SetTooltip("Also bound to: %s", bind_rows[conflict - 1].name);
+            if (conflict && ImGui::IsItemHovered()) ImGui::SetTooltip(L("Also bound to: %s"), bind_rows[conflict - 1].name);
             for (int k = 0; k < BIND_SLOTS; k++) {
                 ImGui::TableSetColumnIndex(1 + k);
                 char b[96];
@@ -289,7 +289,7 @@ static void controls_section(void)
         ImGui::EndTable();
     }
     if (ImGui::Button(dev ? L("Reset gamepad to defaults") : L("Reset keyboard / mouse to defaults"))) { bind_reset(dev); settings_save_later(); msg[0] = 0; }
-    ImGui::TextDisabled("Also in the game's OPTION menu: ENHANCED SETTINGS -> CONTROLS.");
+    ImGui::TextDisabled(L("Also in the game's OPTION menu: ENHANCED SETTINGS -> CONTROLS."));
 }
 
 static void settings_window(void)
@@ -309,30 +309,30 @@ static void settings_window(void)
         ImGui::TextDisabled(L("Output %d x %d, %.1f fps presented"), ww, wh, ImGui::GetIO().Framerate);
     }
     if (ImGui::CollapsingHeader(L("Gameplay"), ImGuiTreeNodeFlags_DefaultOpen)) changed |= settings_imgui(SP_GAMEPLAY);
-    if (ImGui::CollapsingHeader("Controls")) controls_section();
-    if (ImGui::CollapsingHeader("Third person", ImGuiTreeNodeFlags_DefaultOpen)) {
+    if (ImGui::CollapsingHeader(L("Controls"))) controls_section();
+    if (ImGui::CollapsingHeader(L("Third person"), ImGuiTreeNodeFlags_DefaultOpen)) {
         changed |= settings_imgui(SP_TPS);
         char key[96];
-        SDL_snprintf(key, sizeof key, tps_key_wait ? "Press a key (Esc cancels)" : "Toggle key: %s (change)", SDL_GetScancodeName((SDL_Scancode)g_tps.key));
+        SDL_snprintf(key, sizeof key, tps_key_wait ? L("Press a key (Esc cancels)") : L("Toggle key: %s (change)"), SDL_GetScancodeName((SDL_Scancode)g_tps.key));
         if (ImGui::Button(key)) tps_key_wait = true;
         ImGui::TextDisabled(g_tps.free_cam
-                            ? "W/A/S/D walk toward that screen direction, Shift run, mouse turns the camera; right mouse aim, left fire;\n"
-                              "E action, R reload, Q cancel, Tab status, M map (Controls changes them). F1 frees the mouse."
-                            : "W/S walk, A/D turn, Shift run, mouse look; right mouse aim, left fire;\n"
-                              "E action, R reload, Q cancel, Tab status, M map (Controls changes them). F1 frees the mouse.");
+                            ? L("W/A/S/D walk toward that screen direction, Shift run, mouse turns the camera; right mouse aim, left fire;\n"
+                              "E action, R reload, Q cancel, Tab status, M map (Controls changes them). F1 frees the mouse.")
+                            : L("W/S walk, A/D turn, Shift run, mouse look; right mouse aim, left fire;\n"
+                              "E action, R reload, Q cancel, Tab status, M map (Controls changes them). F1 frees the mouse."));
         if (g_tps.pad_modern)
-            ImGui::TextDisabled("Gamepad: left stick walks (pushed far runs), right stick camera / aim; LT aim, RT fire, A action,\n"
-                                "X run, B cancel, Y inventory, Back map, LB knife, RB reload, d-pad down quick turn, RS camera behind.");
+            ImGui::TextDisabled(L("Gamepad: left stick walks (pushed far runs), right stick camera / aim; LT aim, RT fire, A action,\n"
+                                "X run, B cancel, Y inventory, Back map, LB knife, RB reload, d-pad down quick turn, RS camera behind."));
     }
     if (ImGui::CollapsingHeader(L("Audio"), ImGuiTreeNodeFlags_DefaultOpen)) changed |= settings_imgui(SP_AUDIO);
     for (int p = SP_COOP; p <= SP_EXTRAS; p += SP_EXTRAS - SP_COOP)   /* pages with their own windows (F3, F2): the SET_F1 rows */
         if (settings_imgui_any(p) && ImGui::CollapsingHeader(p == SP_COOP ? L("Co-op") : L("Extras"), ImGuiTreeNodeFlags_DefaultOpen))
             changed |= settings_imgui(p, false);
 
-    if (ImGui::CollapsingHeader("Performance")) {
+    if (ImGui::CollapsingHeader(L("Performance"))) {
         static ProfFrame h[240];
         bool on = prof_enabled != 0;
-        if (ImGui::Checkbox("Measure (small overhead; always on with --profile)", &on)) prof_enabled = on;
+        if (ImGui::Checkbox(L("Measure (small overhead; always on with --profile)"), &on)) prof_enabled = on;
         int n = prof_history(h, 240);
         if (n > 0) {
             float total[240], avg[PROF_COUNT] = { 0 }, avg_total = 0, worst = 0;
@@ -350,7 +350,7 @@ static void settings_window(void)
                 ImGui::SameLine(160);
                 ImGui::ProgressBar(avg_total > 0 ? avg[c] / avg_total : 0, ImVec2(-1, 0), "");
             }
-            ImGui::TextDisabled("'wait' is idle time; run with --profile for a CSV.");
+            ImGui::TextDisabled(L("'wait' is idle time; run with --profile for a CSV."));
         }
     }
     ImGui::End();
@@ -365,22 +365,22 @@ static void cheat_window(void)
     if (!ImGui::Begin(L("Cheats (F2)"), &cheats_visible)) { ImGui::End(); return; }
     ImGui::Text("%s  HP %d   stage %d  room %d  pos %d", c->player ? "Chris" : "Claire", c->hp, c->stg, c->rom, c->pos);
     bool b = c->inf_health;
-    if (ImGui::Checkbox("Infinite health", &b)) c->inf_health = b;
+    if (ImGui::Checkbox(L("Infinite health"), &b)) c->inf_health = b;
     ImGui::SameLine();
-    if (ImGui::Button("Heal now")) __atomic_or_fetch(&c->request, CHEAT_HEAL, __ATOMIC_ACQ_REL);
+    if (ImGui::Button(L("Heal now"))) __atomic_or_fetch(&c->request, CHEAT_HEAL, __ATOMIC_ACQ_REL);
     b = c->inf_ammo;
-    if (ImGui::Checkbox("Infinite ammo", &b)) c->inf_ammo = b;
+    if (ImGui::Checkbox(L("Infinite ammo"), &b)) c->inf_ammo = b;
     {
         static const char* modes[] = { L("Off"), L("Through walls"), "Through walls + fly (R/F, PgUp/PgDn, R2/L2)" };
         int m = c->noclip;
         if (ImGui::Combo(L("Noclip"), &m, modes, IM_ARRAYSIZE(modes))) c->noclip = m;
         if (ImGui::IsItemHovered())
-            ImGui::SetTooltip("Walls, objects and enemies no longer block you; doors and triggers still work.\n"
+            ImGui::SetTooltip(L("Walls, objects and enemies no longer block you; doors and triggers still work.\n"
                               "Fly: R / Page Up / R2 up, F / Page Down / L2 down.\n"
-                              "Turning it off after flying puts you on the floor level below.");
+                              "Turning it off after flying puts you on the floor level below."));
     }
 
-    ImGui::SeparatorText("Give item");
+    ImGui::SeparatorText(L("Give item"));
     char label[48];
     snprintf(label, sizeof label, "%3d  %s", c->give_id, c->give_id > 0 && c->give_id < CHEAT_ITEMS ? c->names[c->give_id] : "-");
     if (ImGui::BeginCombo(L("Item"), label, ImGuiComboFlags_HeightLarge)) {
@@ -391,11 +391,11 @@ static void cheat_window(void)
         }
         ImGui::EndCombo();
     }
-    ImGui::InputInt("Count", &c->give_count);
+    ImGui::InputInt(L("Count"), &c->give_count);
     c->give_count = SDL_clamp(c->give_count, 1, 999);
-    if (ImGui::Button("Add to inventory") && c->give_id) __atomic_or_fetch(&c->request, CHEAT_GIVE, __ATOMIC_ACQ_REL);
+    if (ImGui::Button(L("Add to inventory")) && c->give_id) __atomic_or_fetch(&c->request, CHEAT_GIVE, __ATOMIC_ACQ_REL);
 
-    ImGui::SeparatorText("Inventory");
+    ImGui::SeparatorText(L("Inventory"));
     for (int i = 1; i < 2 + c->slots && i < 12; i++) {
         unsigned id = c->inv[i] >> 16 & 0xFF;
         char nm[16];
@@ -404,26 +404,26 @@ static void cheat_window(void)
         ImGui::Text("%s %-24s %u", (unsigned)i == c->inv[0] ? "equipped" : "        ", id < CHEAT_ITEMS && c->names[id][0] ? c->names[id] : nm, c->inv[i] & 0xFFFF);
     }
 
-    ImGui::SeparatorText("Spawn enemy");
+    ImGui::SeparatorText(L("Spawn enemy"));
     if (c->spawn_idx < 0 || c->spawn_idx >= spawn_count()) c->spawn_idx = 0;
-    if (ImGui::BeginCombo("Enemy", spawn_name(c->spawn_idx), ImGuiComboFlags_HeightLarge)) {
+    if (ImGui::BeginCombo(L("Enemy"), spawn_name(c->spawn_idx), ImGuiComboFlags_HeightLarge)) {
         for (int i = 0; i < spawn_count(); i++)
             if (ImGui::Selectable(spawn_name(i), i == c->spawn_idx)) c->spawn_idx = i;
         ImGui::EndCombo();
     }
-    if (ImGui::Button("Spawn in front of me")) __atomic_or_fetch(&c->request, CHEAT_SPAWN, __ATOMIC_ACQ_REL);
+    if (ImGui::Button(L("Spawn in front of me"))) __atomic_or_fetch(&c->request, CHEAT_SPAWN, __ATOMIC_ACQ_REL);
     if (ImGui::IsItemHovered())
-        ImGui::SetTooltip("Loads the enemy from another room if this one has no such enemy.\n"
+        ImGui::SetTooltip(L("Loads the enemy from another room if this one has no such enemy.\n"
                           "Bosses and scripted enemies may not work outside their room (docs/ENEMIES.md).\n"
-                          "Spawned enemies are gone after leaving the room; their kills are not recorded.");
+                          "Spawned enemies are gone after leaving the room; their kills are not recorded."));
 
-    ImGui::SeparatorText("Teleport");
-    ImGui::TextDisabled("Uses the game's door transition; an invalid room or position may crash.");
+    ImGui::SeparatorText(L("Teleport"));
+    ImGui::TextDisabled(L("Uses the game's door transition; an invalid room or position may crash."));
     ImGui::InputInt(L("Stage"), &c->tp_stg);
     ImGui::InputInt(L("Room"), &c->tp_rom);
-    ImGui::InputInt("Position", &c->tp_pos);
+    ImGui::InputInt(L("Position"), &c->tp_pos);
     c->tp_stg = SDL_clamp(c->tp_stg, 0, 9); c->tp_rom = SDL_clamp(c->tp_rom, 0, 99); c->tp_pos = SDL_clamp(c->tp_pos, 0, 31);   /* the table's ranges */
-    if (ImGui::Button("Current room")) { c->tp_stg = c->stg; c->tp_rom = c->rom; c->tp_pos = c->pos; }
+    if (ImGui::Button(L("Current room"))) { c->tp_stg = c->stg; c->tp_rom = c->rom; c->tp_pos = c->pos; }
     ImGui::SameLine();
     if (ImGui::Button(L("Go"))) __atomic_or_fetch(&c->request, CHEAT_TELEPORT, __ATOMIC_ACQ_REL);
     if (c->result) ImGui::TextDisabled("%s", c->result);
@@ -452,18 +452,18 @@ static void coop_trade(void)
     char b[64];
     ImGui::SeparatorText(L("Trade"));
     if (cs.trade_in) {
-        ImGui::Text("Partner offers: %s", coop_item(cs.trade_in, b, sizeof(b)));
+        ImGui::Text(L("Partner offers: %s"), coop_item(cs.trade_in, b, sizeof(b)));
         ImGui::BeginDisabled(!cs.trade_near);
         if (ImGui::Button(L("Accept"))) __atomic_store_n(&c->trade_req, COOP_TRADE_ACCEPT, __ATOMIC_RELEASE);
         ImGui::EndDisabled();
         ImGui::SameLine();
-        if (ImGui::Button("Decline")) __atomic_store_n(&c->trade_req, COOP_TRADE_DECLINE, __ATOMIC_RELEASE);
+        if (ImGui::Button(L("Decline"))) __atomic_store_n(&c->trade_req, COOP_TRADE_DECLINE, __ATOMIC_RELEASE);
     }
     if (cs.trade_out) {
-        ImGui::Text("You offer: %s (held until the partner answers)", coop_item(cs.trade_out, b, sizeof(b)));
+        ImGui::Text(L("You offer: %s (held until the partner answers)"), coop_item(cs.trade_out, b, sizeof(b)));
         if (ImGui::Button(L("Take back"))) __atomic_store_n(&c->trade_req, COOP_TRADE_CANCEL, __ATOMIC_RELEASE);
     } else if (!cs.trade_near) {
-        ImGui::TextDisabled("Stand next to your partner to offer items.");
+        ImGui::TextDisabled(L("Stand next to your partner to offer items."));
     } else {
         int slots = cs.trade_slots < 8 ? 8 : cs.trade_slots > 10 ? 10 : cs.trade_slots;
         if (c->trade_slot < 2 || c->trade_slot >= 2 + slots || !(cs.trade_inv[c->trade_slot] >> 16)) c->trade_slot = 2;
@@ -478,8 +478,8 @@ static void coop_trade(void)
         }
         int have = cs.trade_inv[c->trade_slot] & 0xFFFF;
         if (c->trade_count < 1 || c->trade_count > have) c->trade_count = have;
-        if (have > 1) ImGui::SliderInt("Count", &c->trade_count, 1, have);
-        if (ImGui::IsItemHovered()) ImGui::SetTooltip("Ammunition and other stackable items can be split; anything else goes whole.");
+        if (have > 1) ImGui::SliderInt(L("Count"), &c->trade_count, 1, have);
+        if (ImGui::IsItemHovered()) ImGui::SetTooltip(L("Ammunition and other stackable items can be split; anything else goes whole."));
         if (ImGui::Button(L("Offer"))) __atomic_store_n(&c->trade_req, COOP_TRADE_OFFER, __ATOMIC_RELEASE);
     }
     if (cs.trade_msg[0]) ImGui::TextDisabled("%s", cs.trade_msg);
@@ -495,64 +495,64 @@ static void coop_window(void)
     static const char* loots[] = { L("Shared loot"), "Individual loot" };
     ImGui::BeginDisabled(!off);
     static const char* conns[] = { L("Automatic"), L("Direct (P2P)"), L("Via server") };
-    if (ImGui::Combo("Connection", &c->conn, conns, IM_ARRAYSIZE(conns))) changed = true;
+    if (ImGui::Combo(L("Connection"), &c->conn, conns, IM_ARRAYSIZE(conns))) changed = true;
     if (ImGui::IsItemHovered())
-        ImGui::SetTooltip("Automatic: with a co-op server set, hosting also opens a room there, and a room code is joined through it:\n"
+        ImGui::SetTooltip(L("Automatic: with a co-op server set, hosting also opens a room there, and a room code is joined through it:\n"
                           "a direct path first (hole punching), the server's relay when that fails. An address (ip:port#CODE) is\n"
                           "always joined directly. Without a server: exactly as Direct.\n"
-                          "Direct (P2P): addresses only, no server contact. Via server: always through the relay.");
+                          "Direct (P2P): addresses only, no server contact. Via server: always through the relay."));
     if (c->conn != COOP_CONN_DIRECT) {   /* first how to connect, then only what it needs (as the lobby) */
         if (ImGui::InputText(L("Co-op server"), c->server, sizeof(c->server))) changed = true;
         if (ImGui::IsItemHovered(ImGuiHoveredFlags_AllowWhenDisabled))
-            ImGui::SetTooltip("The rendezvous/relay server (recvx-server, docs/SERVER.md): host name or IP, port 7141 implied\n"
-                              "(host:port for another). Both players use the same server. Empty: no server.");
+            ImGui::SetTooltip(L("The rendezvous/relay server (recvx-server, docs/SERVER.md): host name or IP, port 7141 implied\n"
+                              "(host:port for another). Both players use the same server. Empty: no server."));
         ImGui::InputText(L("Room password"), c->password, sizeof(c->password), ImGuiInputTextFlags_Password);
         if (ImGui::IsItemHovered(ImGuiHoveredFlags_AllowWhenDisabled))
-            ImGui::SetTooltip("Optional, through the server: the host sets it, the joining player types the same. Not saved.");
+            ImGui::SetTooltip(L("Optional, through the server: the host sets it, the joining player types the same. Not saved."));
     }
     if (ImGui::InputInt(L("Host port"), &c->port)) { c->port = c->port < 1 ? 1 : c->port > 65535 ? 65535 : c->port; changed = true; }
     bool by_code = coop_join_by_code(c);   /* Via server, or Automatic with a server: a room code (as the lobby's CODE row) */
-    if (ImGui::InputText(by_code ? "Room code###join" : "Join address###join", c->join, sizeof(c->join))) changed = true;
+    if (ImGui::InputText(by_code ? L("Room code###join") : L("Join address###join"), c->join, sizeof(c->join))) changed = true;
     if (ImGui::IsItemHovered())
-        ImGui::SetTooltip(c->conn == COOP_CONN_SERVER ? "The room code the host's lobby or F3 shows (XXXX-XXXX; case and dash do not matter),\n"
-                                                        "joined through the co-op server above."
-                          : by_code ? "The room code the host's lobby or F3 shows (XXXX-XXXX), joined through the co-op server above.\n"
-                                      "An address (ip:port#CODE, the host's \"Copy join address\") still joins directly."
-                                    : "The host's address and join code, as its \"Copy join address\" gives them: ip:port#CODE.\n"
-                                      "For a room code (XXXX-XXXX) choose Automatic or Via server and set the co-op server.");
-    if (ImGui::Combo("Loot (host)", &c->loot, loots, IM_ARRAYSIZE(loots))) changed = true;
+        ImGui::SetTooltip(c->conn == COOP_CONN_SERVER ? L("The room code the host's lobby or F3 shows (XXXX-XXXX; case and dash do not matter),\n"
+                                                        "joined through the co-op server above.")
+                          : by_code ? L("The room code the host's lobby or F3 shows (XXXX-XXXX), joined through the co-op server above.\n"
+                                      "An address (ip:port#CODE, the host's \"Copy join address\") still joins directly.")
+                                    : L("The host's address and join code, as its \"Copy join address\" gives them: ip:port#CODE.\n"
+                                      "For a room code (XXXX-XXXX) choose Automatic or Via server and set the co-op server."));
+    if (ImGui::Combo(L("Loot (host)"), &c->loot, loots, IM_ARRAYSIZE(loots))) changed = true;
     if (ImGui::IsItemHovered())
-        ImGui::SetTooltip("Shared: each item lies there once - whoever takes it has it, so you split the supplies.\n"
+        ImGui::SetTooltip(L("Shared: each item lies there once - whoever takes it has it, so you split the supplies.\n"
                           "Individual: each player takes their own copy. Key items, locks and story flags go to both.\n"
-                          "The host's choice applies.");
+                          "The host's choice applies."));
     bool important = c->important != 0;
-    if (ImGui::Checkbox("Shared loot: important items for both (host)", &important)) { c->important = important; changed = true; }
+    if (ImGui::Checkbox(L("Shared loot: important items for both (host)"), &important)) { c->important = important; changed = true; }
     if (ImGui::IsItemHovered())
-        ImGui::SetTooltip("With shared loot: weapons and ink ribbons lie there for each player (taking one leaves the\n"
-                          "partner's where it lies). Off: they are one pickup like ammo and herbs. The host's choice applies.");
+        ImGui::SetTooltip(L("With shared loot: weapons and ink ribbons lie there for each player (taking one leaves the\n"
+                          "partner's where it lies). Off: they are one pickup like ammo and herbs. The host's choice applies."));
     bool upnp = c->upnp != 0;
-    if (ImGui::Checkbox("Open port automatically (UPnP)", &upnp)) { c->upnp = upnp; changed = true; }
+    if (ImGui::Checkbox(L("Open port automatically (UPnP)"), &upnp)) { c->upnp = upnp; changed = true; }
     if (ImGui::IsItemHovered())
-        ImGui::SetTooltip("Host: while you host, ask your router (UPnP, or NAT-PMP) to forward the host port to this PC,\n"
-                          "so a friend can join over the internet. The forwarding is removed when you stop.");
+        ImGui::SetTooltip(L("Host: while you host, ask your router (UPnP, or NAT-PMP) to forward the host port to this PC,\n"
+                          "so a friend can join over the internet. The forwarding is removed when you stop."));
     ImGui::EndDisabled();
     bool remember = c->remember != 0;   /* also during a session */
-    if (ImGui::Checkbox("Remember partner inventories (host)", &remember)) { c->remember = remember; changed = true; }
+    if (ImGui::Checkbox(L("Remember partner inventories (host)"), &remember)) { c->remember = remember; changed = true; }
     if (ImGui::IsItemHovered())
-        ImGui::SetTooltip("Host: keep each partner's items (per player, not per name) when it leaves, saved with your saves.\n"
-                          "It can join again with them (\"Saved with the host\"); after a crash it gets them anyway.");
+        ImGui::SetTooltip(L("Host: keep each partner's items (per player, not per name) when it leaves, saved with your saves.\n"
+                          "It can join again with them (\"Saved with the host\"); after a crash it gets them anyway."));
     {   /* the joining player's inventory (as the lobby's ITEMS row) */
         static const char* fixed[] = { "My current game (in game)", "Saved with the host", "New inventory" };
         char cur[48], lab[48];
         int v = c->items;
         auto label = [&](int i, char* b, size_t n) {
             if (i < 0) snprintf(b, n, "%s%s", fixed[i + 3], i == COOP_ITEMS_HOST && cs.state != COOP_OFF && !cs.host && cs.peer_rec >= 0
-                                                              ? cs.peer_rec == REC_HAVE ? L(" (available)") : cs.peer_rec == REC_OFF ? L(" (host: off)") : " (none)" : "");
+                                                              ? cs.peer_rec == REC_HAVE ? L(" (available)") : cs.peer_rec == REC_OFF ? L(" (host: off)") : L(" (none)") : "");
             else snprintf(b, n, L("Save %02d"), i + 1);
         };
         label(v, cur, sizeof(cur));
         ImGui::BeginDisabled(cs.state != COOP_OFF && cs.host);
-        if (ImGui::BeginCombo("Items when joining", cur)) {
+        if (ImGui::BeginCombo(L("Items when joining"), cur)) {
             for (int i = COOP_ITEMS_CURRENT, slots = lobby_save_slots(); i < slots; i++) {
                 label(i, lab, sizeof(lab));
                 if (ImGui::Selectable(lab, i == v)) { c->items = i; changed = true; }
@@ -561,64 +561,64 @@ static void coop_window(void)
         }
         ImGui::EndDisabled();
         if (ImGui::IsItemHovered(ImGuiHoveredFlags_AllowWhenDisabled))
-            ImGui::SetTooltip("The joining player's inventory: your game in progress, what the host kept for you (none there: a new\n"
+            ImGui::SetTooltip(L("The joining player's inventory: your game in progress, what the host kept for you (none there: a new\n"
                               "inventory), a new inventory, or the items of one of your saves (an empty slot: a new inventory).\n"
-                              "After your game crashed, rejoining brings what the host kept anyway.");
+                              "After your game crashed, rejoining brings what the host kept anyway."));
     }
     bool tfreeze = c->trade_freeze != 0;   /* also during a session */
-    if (ImGui::Checkbox("Freeze enemies while trading (host)", &tfreeze)) { c->trade_freeze = tfreeze; changed = true; }
+    if (ImGui::Checkbox(L("Freeze enemies while trading (host)"), &tfreeze)) { c->trade_freeze = tfreeze; changed = true; }
     if (ImGui::IsItemHovered())
-        ImGui::SetTooltip("While both players are in the trade screen (trade request key, T / left stick click by default)\n"
-                          "the room's enemies stand still. The host's choice applies.");
+        ImGui::SetTooltip(L("While both players are in the trade screen (trade request key, T / left stick click by default)\n"
+                          "the room's enemies stand still. The host's choice applies."));
     bool skipsync = c->skip_sync != 0;   /* also during a session */
-    if (ImGui::Checkbox("Co-op: synchronized cutscene skip (host)", &skipsync)) { c->skip_sync = skipsync; changed = true; }
+    if (ImGui::Checkbox(L("Co-op: synchronized cutscene skip (host)"), &skipsync)) { c->skip_sync = skipsync; changed = true; }
     if (ImGui::IsItemHovered())
-        ImGui::SetTooltip("A cutscene both players watch is skipped once both pressed skip; the partner sees that you want to.\n"
-                          "The host's choice applies.");
+        ImGui::SetTooltip(L("A cutscene both players watch is skipped once both pressed skip; the partner sees that you want to.\n"
+                          "The host's choice applies."));
     bool noribbon = g_config.no_ink_ribbon != 0;   /* the GAMEPLAY setting; in co-op the host's counts */
-    if (ImGui::Checkbox("No ink ribbons needed (host)", &noribbon)) { g_config.no_ink_ribbon = noribbon; changed = true; }
+    if (ImGui::Checkbox(L("No ink ribbons needed (host)"), &noribbon)) { g_config.no_ink_ribbon = noribbon; changed = true; }
     if (ImGui::IsItemHovered())
-        ImGui::SetTooltip("Typewriters save without an ink ribbon and use none up (also F1 Gameplay, in single player).\n"
-                          "The host's choice applies.");
-    if (ImGui::InputText("Your name", c->name, sizeof(c->name), ImGuiInputTextFlags_CallbackCharFilter,
+        ImGui::SetTooltip(L("Typewriters save without an ink ribbon and use none up (also F1 Gameplay, in single player).\n"
+                          "The host's choice applies."));
+    if (ImGui::InputText(L("Your name"), c->name, sizeof(c->name), ImGuiInputTextFlags_CallbackCharFilter,
                          [](ImGuiInputTextCallbackData* d) -> int { return !(d->EventChar >= 32 && d->EventChar < 127 && (isalnum(d->EventChar) || strchr(" -_.!?'()+", d->EventChar))); }))
         changed = true;
-    if (ImGui::IsItemHovered()) ImGui::SetTooltip("What your partner sees above your head and in the lobby.");
+    if (ImGui::IsItemHovered()) ImGui::SetTooltip(L("What your partner sees above your head and in the lobby."));
     bool tagopt = c->nametag != 0;
-    if (ImGui::Checkbox("Show the partner's name above its head", &tagopt)) { c->nametag = tagopt; changed = true; }
-    if (ImGui::IsItemHovered()) ImGui::SetTooltip("In game: the partner's name over its head, or at the screen edge pointing to it\nwhen it is in your room but out of view. Its cutscene/menu label shows either way. (F1 too)");
+    if (ImGui::Checkbox(L("Show the partner's name above its head"), &tagopt)) { c->nametag = tagopt; changed = true; }
+    if (ImGui::IsItemHovered()) ImGui::SetTooltip(L("In game: the partner's name over its head, or at the screen edge pointing to it\nwhen it is in your room but out of view. Its cutscene/menu label shows either way. (F1 too)"));
     bool follow = c->follow != 0;
     ImGui::BeginDisabled(cs.state != COOP_OFF && cs.host);   /* the joining player's choice: the host's own has no effect */
-    if (ImGui::Checkbox("Follow host (joining player)", &follow)) { c->follow = follow; changed = true; }
+    if (ImGui::Checkbox(L("Follow host (joining player)"), &follow)) { c->follow = follow; changed = true; }
     ImGui::EndDisabled();
     if (ImGui::IsItemHovered(ImGuiHoveredFlags_AllowWhenDisabled))
-        ImGui::SetTooltip("The joining player's choice (the host's has no effect). On: you go through every door the host takes.\n"
+        ImGui::SetTooltip(L("The joining player's choice (the host's has no effect). On: you go through every door the host takes.\n"
                           "Off: you stay where you are and may explore other rooms (their enemies run in your game).\n"
                           "Either way you are moved to the host when: you join or rejoin, the host's game (re)starts or continues,\n"
                           "your own game restarts (continue), the story switches the character, or a story cutscene of the host\n"
-                          "(15 s or longer) ends. Short cinemas - levers, shutters, doors, camera pans - move nobody.");
-    if (cs.state == COOP_CONNECTED) ImGui::TextDisabled("Session: %s", loots[cs.loot_now ? 1 : 0]);
+                          "(15 s or longer) ends. Short cinemas - levers, shutters, doors, camera pans - move nobody."));
+    if (cs.state == COOP_CONNECTED) ImGui::TextDisabled(L("Session: %s"), loots[cs.loot_now ? 1 : 0]);
     auto appear = [](void*, int i) -> const char* { return appear_name(appear_at(i)); };
     int pos = appear_pos(c->chr);   /* the list leaves out event doubles (actors.c) */
     if (ImGui::Combo(L("You appear as"), &pos, appear, nullptr, appear_count(), 20)) { c->chr = appear_at(pos); changed = true; }
-    if (ImGui::IsItemHovered()) ImGui::SetTooltip("Your model, also in single player and in cutscenes; in co-op your partner sees it too (takes effect at once;\nyour motions, weapons and voice stay the character's). Humans and humanoid monsters move with your motions;\nother creatures play their own idle animation.");
+    if (ImGui::IsItemHovered()) ImGui::SetTooltip(L("Your model, also in single player and in cutscenes; in co-op your partner sees it too (takes effect at once;\nyour motions, weapons and voice stay the character's). Humans and humanoid monsters move with your motions;\nother creatures play their own idle animation."));
     if (off) {
         /* at the title the window closes, so the pad drives the game's menu again */
         if (ImGui::Button(L("Host"))) { __atomic_store_n(&c->request, COOP_REQ_HOST, __ATOMIC_RELEASE); coop_visible = !cs.at_title; }
         ImGui::SameLine();
-        if (ImGui::Button("Join")) { __atomic_store_n(&c->request, COOP_REQ_JOIN, __ATOMIC_RELEASE); coop_visible = !cs.at_title; }
+        if (ImGui::Button(L("Join"))) { __atomic_store_n(&c->request, COOP_REQ_JOIN, __ATOMIC_RELEASE); coop_visible = !cs.at_title; }
     } else {
-        if (ImGui::Button("Disconnect")) __atomic_store_n(&c->request, COOP_REQ_STOP, __ATOMIC_RELEASE);
+        if (ImGui::Button(L("Disconnect"))) __atomic_store_n(&c->request, COOP_REQ_STOP, __ATOMIC_RELEASE);
         if (cs.host && (cs.state == COOP_CONNECTED || cs.state == COOP_LOST)) {
             ImGui::SameLine();
             if (ImGui::Button(L("Remove stuck player"))) __atomic_store_n(&c->request, COOP_REQ_KICK, __ATOMIC_RELEASE);
             if (ImGui::IsItemHovered())
-                ImGui::SetTooltip("Ends the session with your partner (its game crashed or hangs) and frees its place, also on the\n"
-                                  "co-op server: the same join address or room code works again at once.");
+                ImGui::SetTooltip(L("Ends the session with your partner (its game crashed or hangs) and frees its place, also on the\n"
+                                  "co-op server: the same join address or room code works again at once."));
         }
     }
-    ImGui::TextWrapped("%s", cs.status[0] ? cs.status : "not connected");
-    if (cs.state != COOP_OFF && cs.host && cs.code[0]) ImGui::Text("Join code: %.4s-%.4s", cs.code, cs.code + 4);
+    ImGui::TextWrapped("%s", cs.status[0] ? cs.status : L("not connected"));
+    if (cs.state != COOP_OFF && cs.host && cs.code[0]) ImGui::Text(L("Join code: %.4s-%.4s"), cs.code, cs.code + 4);
     if (cs.state != COOP_OFF && cs.host && cs.room[0]) {
         char room[16];
         snprintf(room, sizeof(room), "%.4s-%.4s", cs.room, cs.room + 4);
@@ -631,21 +631,21 @@ static void coop_window(void)
     portmap_status(&pm);
     if (pm.local_ip[0] || pm.msg[0]) {   /* hosting */
         char addr[80];
-        ImGui::SeparatorText("Internet");
-        ImGui::Text("This PC (LAN): %s", pm.local_ip[0] ? pm.local_ip : "?");
-        ImGui::Text("Public address: %s", pm.public_ip[0] ? pm.public_ip : pm.state == PM_BUSY ? "looking..." : "unknown");
+        ImGui::SeparatorText(L("Internet"));
+        ImGui::Text(L("This PC (LAN): %s"), pm.local_ip[0] ? pm.local_ip : "?");
+        ImGui::Text(L("Public address: %s"), pm.public_ip[0] ? pm.public_ip : pm.state == PM_BUSY ? "looking..." : "unknown");
         if (pm.state == PM_FAILED) ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(1.0f, 0.8f, 0.3f, 1.0f));
         if (pm.msg[0]) ImGui::TextWrapped("%s", pm.msg);
         if (pm.state == PM_FAILED) ImGui::PopStyleColor();
         if (pm.public_ip[0]) snprintf(addr, sizeof(addr), "%s:%d#%s", pm.public_ip, pm.public_port, cs.code);
         else snprintf(addr, sizeof(addr), "%s:%d#%s", pm.local_ip, c->port, cs.code);
-        if (ImGui::Button(pm.public_ip[0] ? "Copy join address" : "Copy LAN address")) SDL_SetClipboardText(addr);
+        if (ImGui::Button(pm.public_ip[0] ? L("Copy join address") : L("Copy LAN address"))) SDL_SetClipboardText(addr);
         ImGui::SameLine();
         ImGui::TextDisabled("%s", addr);
     }
     if (cs.at_title)
-        ImGui::TextDisabled("Host: choose New Game or Load Game in the title menu; the partner joins your game.\n"
-                            "Join: stay at the title; you enter the host's game once it has started.");
+        ImGui::TextDisabled(L("Host: choose New Game or Load Game in the title menu; the partner joins your game.\n"
+                            "Join: stay at the title; you enter the host's game once it has started."));
     ImGui::End();
     if (changed) settings_save_later();
 }
@@ -702,10 +702,10 @@ static const char* lobby_hint(void)
 {
     if (!cs.at_title || coop_visible || cs.lobby) return nullptr;
     switch (cs.state) {
-    case COOP_OFF: return "Online co-op: MULTIPLAYER in the menu, or F3";
-    case COOP_HOSTING: return "Co-op: hosting - choose New Game or Load Game; your partner joins it (F3)";
-    case COOP_CONNECTED: return "Co-op: connected - the host starts or loads a game, the client joins it (F3)";
-    default: return "Co-op: waiting for the host (F3)";
+    case COOP_OFF: return L("Online co-op: MULTIPLAYER in the menu, or F3");
+    case COOP_HOSTING: return L("Co-op: hosting - choose New Game or Load Game; your partner joins it (F3)");
+    case COOP_CONNECTED: return L("Co-op: connected - the host starts or loads a game, the client joins it (F3)");
+    default: return L("Co-op: waiting for the host (F3)");
     }
 }
 
@@ -765,7 +765,7 @@ void overlay_render(void)
         ImGui::SetNextWindowBgAlpha(0.4f);
         ImGui::Begin("##fps", nullptr, ImGuiWindowFlags_NoDecoration | ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoInputs |
                                        ImGuiWindowFlags_NoNav | ImGuiWindowFlags_NoFocusOnAppearing);
-        if (g_config.show_fps && ping) ImGui::Text("%.1f fps   ping %d ms", ImGui::GetIO().Framerate, cs.ping_ms);
+        if (g_config.show_fps && ping) ImGui::Text(L("%.1f fps   ping %d ms"), ImGui::GetIO().Framerate, cs.ping_ms);
         else if (ping) ImGui::Text("ping %d ms", cs.ping_ms);
         else ImGui::Text("%.1f fps", ImGui::GetIO().Framerate);
         ImGui::End();
