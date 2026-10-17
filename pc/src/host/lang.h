@@ -21,6 +21,8 @@ int lang_to_glyphs(const char* utf8, unsigned short* out, int max);
 unsigned lang_next_cp(const char** s);
 /* Glyph code of one code point (0xFFFF when the font has none). */
 unsigned short lang_glyph(unsigned cp);
+/* In place: accented letters to their base letter (subtitles and game-font menus avoid accents). */
+void lang_strip_accents(char* s);
 
 /* Draws the accented letters into the game's message font (SYSEFF.ALD's first texture) while
    it is in memory, before the game uploads it: data is the loaded file, size its length. */

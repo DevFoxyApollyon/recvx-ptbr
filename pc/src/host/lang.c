@@ -90,6 +90,20 @@ unsigned short lang_glyph(unsigned cp)
     return 0xFFFF;
 }
 
+/* "ação" -> "acao": accented letters to their base letter, other non-ASCII to '?' */
+void lang_strip_accents(char* s)
+{
+    const char* r = s;
+    char* w = s;
+    unsigned cp;
+    while ((cp = lang_next_cp(&r)) != 0) {
+        if (cp < 128) { *w++ = (char)cp; continue; }
+        unsigned short g = lang_glyph(cp);
+        *w++ = g != 0xFFFF ? (char)(g + 32) : '?';
+    }
+    *w = 0;
+}
+
 int lang_to_glyphs(const char* s, unsigned short* out, int max)
 {
     int n = 0;

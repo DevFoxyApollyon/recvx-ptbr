@@ -6,6 +6,7 @@
  *       original (the game waits on ADXT_STAT_PLAYEND for voice lines), driven
  *       by the audio mixer when it plays the stream, or by wall-clock time.
  */
+#include "../host/subtitles.h"
 #include "../ps2_platform.h"
 #include "audio.h"
 #include <SDL3/SDL.h>
@@ -255,6 +256,7 @@ void ADXT_Stop(void* h)
     if (!t) return;
     if (t->voice >= 0) { audio_stream_stop(t->voice); t->voice = -1; }
     t->stat = ADXT_STAT_STOP;
+    subtitles_voice_stop(t);   /* PT-BR fork */
 }
 
 void ADXT_Destroy(void* h) { AdxTalk* t = h; if (!t) return; ADXT_Stop(h); t->used = 0; }
@@ -293,6 +295,11 @@ void ADXT_StartAfs(void* h, int ptid, int fid)
     t->stat = ADXT_STAT_PLAYING;
     t->voice = audio_stream_start_adx(mod ? path : g_config.iso_path, mod ? 0 : (uint64_t)lsn * SECTOR, size, t->vol);
     host_log("adxt: start %d/%d (%u Hz, %u ch, %u samples, loop %d) voice %d\n", ptid, fid, t->rate, t->channels, t->total, t->loop, t->voice);
+    if (ptid >= 0 && ptid < MAX_PT && pt[ptid].name[0]) {   /* PT-BR fork: subtitles by voice file (subtitles.c) */
+        char key[64];
+        snprintf(key, sizeof key, "%s/%d", pt[ptid].name, fid);
+        subtitles_voice_start(t, key, t->rate);
+    }
 }
 
 static uint64_t played_samples(AdxTalk* t)
@@ -300,6 +307,14 @@ static uint64_t played_samples(AdxTalk* t)
     uint64_t now = t->paused ? t->pause_ns : SDL_GetTicksNS();
     if (t->voice >= 0) return audio_stream_position(t->voice);
     return (now - t->start_ns - t->paused_total_ns) * t->rate / 1000000000ull;
+}
+
+uint64_t adx_talk_position(const void* h, int* ended)
+{
+    AdxTalk* t = (AdxTalk*)h;
+    if (!t || t->stat < ADXT_STAT_PLAYING) { *ended = 1; return 0; }
+    *ended = t->stat == ADXT_STAT_PLAYEND || (t->voice >= 0 && !t->loop && audio_stream_finished(t->voice));
+    return played_samples(t);
 }
 
 int ADXT_GetStat(void* h)

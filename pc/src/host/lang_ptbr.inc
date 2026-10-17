@@ -288,6 +288,12 @@
 { "Gamepad: left stick walks (pushed far runs), right stick camera / aim; LT aim, RT fire, A action,\nX run, B cancel, Y inventory, Back map, LB knife, RB reload, d-pad down quick turn, RS camera behind.", "Controle: analógico esquerdo anda (até o fim corre), direito câmera / mira; LT mira, RT atira, A ação,\nX corre, B cancela, Y inventário, Back mapa, LB faca, RB recarrega, direcional para baixo giro rápido, RS câmera atrás." },
 
 /* ---- AUDIO */
+{ "Subtitles", "Legendas" },
+{ "SUBTITLES", "LEGENDAS" },
+{ "Subtitles for voiced lines from mods/legendas.txt (docs/SUBTITLES.md). The file is read again when it changes.", "Legendas das falas a partir de mods/legendas.txt (docs/SUBTITLES.md). O arquivo é lido de novo quando muda." },
+{ "Subtitle size", "Tamanho da legenda" },
+{ "Show voice line codes", "Mostrar código das falas" },
+{ "A voiced line without a subtitle shows its code ([VOICE1.AFS/12]) at the bottom: write that code in legendas.txt.", "Uma fala sem legenda mostra o código dela ([VOICE1.AFS/12]) embaixo: escreva esse código no legendas.txt." },
 { "Music and voice", "Música e vozes" },
 { "Sound effects", "Efeitos sonoros" },
 

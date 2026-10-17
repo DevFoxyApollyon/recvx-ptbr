@@ -19,6 +19,7 @@ extern "C" {
 #include "bindings.h"
 #include "settings.h"
 #include "lang.h"
+#include "subtitles.h"
 #include "lobby.h"
 #include <SDL3/SDL.h>
 #include <imgui.h>
@@ -709,6 +710,53 @@ static const char* lobby_hint(void)
     }
 }
 
+/* PT-BR fork: the subtitle of the voiced line playing now (subtitles.c), centred at the bottom */
+static void draw_subtitle(const char* text, bool is_id)
+{
+    ImGuiIO& io = ImGui::GetIO();
+    ImDrawList* dl = ImGui::GetForegroundDrawList();
+    ImFont* font = ImGui::GetFont();
+    float size = io.DisplaySize.y / 1080.0f * 46.0f * (g_sub_size > 0 ? g_sub_size : 100) / 100.0f;
+    float wrap = io.DisplaySize.x * 0.70f, lh = size * 1.18f;
+    const char* lines[16][2];
+    float widths[16];
+    int n = 0;
+    /* break into lines: explicit breaks, then words that fit the width */
+    for (const char* p = text; *p && n < 16;) {
+        const char* start = p, *fit = NULL;
+        for (const char* q = p;; q++) {
+            if (*q == ' ' || *q == '\n' || !*q) {
+                float w = font->CalcTextSizeA(size, FLT_MAX, 0.0f, start, q).x;
+                if (w > wrap && fit) break;
+                fit = q;
+                if (*q != ' ') break;
+            }
+        }
+        lines[n][0] = start;
+        lines[n][1] = fit;
+        widths[n] = font->CalcTextSizeA(size, FLT_MAX, 0.0f, start, fit).x;
+        n++;
+        p = fit;
+        while (*p == ' ' || *p == '\n') p++;
+    }
+    if (!n) return;
+    float maxw = 0;
+    for (int i = 0; i < n; i++) if (widths[i] > maxw) maxw = widths[i];
+    float y0 = io.DisplaySize.y * 0.92f - n * lh, cx = io.DisplaySize.x * 0.5f, pad = size * 0.45f;
+    dl->AddRectFilled(ImVec2(cx - maxw / 2 - pad, y0 - pad * 0.6f), ImVec2(cx + maxw / 2 + pad, y0 + n * lh + pad * 0.4f),
+                      IM_COL32(0, 0, 0, 120), size * 0.3f);
+    ImU32 col = is_id ? IM_COL32(255, 220, 120, 255) : IM_COL32(255, 255, 255, 255), outline = IM_COL32(0, 0, 0, 230);
+    float o = size > 30 ? 2.0f : 1.5f;
+    for (int i = 0; i < n; i++) {
+        ImVec2 pos(cx - widths[i] / 2, y0 + i * lh);
+        for (int k = 0; k < 8; k++) {
+            static const float d[8][2] = { {-1,0},{1,0},{0,-1},{0,1},{-1,-1},{1,-1},{-1,1},{1,1} };
+            dl->AddText(font, size, ImVec2(pos.x + d[k][0] * o, pos.y + d[k][1] * o), outline, lines[i][0], lines[i][1]);
+        }
+        dl->AddText(font, size, pos, col, lines[i][0], lines[i][1]);
+    }
+}
+
 void overlay_render(void)
 {
     if (!ready) return;
@@ -724,7 +772,10 @@ void overlay_render(void)
     const char* hint = lobby_hint();
     bool tag = coop_on && tag_flags && !cs.trade_open && (g_coop.nametag || cs.busy_kind || cs.trade_hint[0]);   /* co-op: the partner is drawn in the frame shown */
     bool ping = g_config.show_ping && coop_on && cs.state == COOP_CONNECTED;   /* co-op: next to the frame rate */
-    if (!visible && !cheats_visible && !coop_visible && !g_config.show_fps && !ping && !crosshair && !hint && !tag) return;
+    char sub[1024];
+    int sub_is_id = 0;
+    bool subtitle = subtitles_current(sub, sizeof sub, &sub_is_id) != 0;
+    if (!visible && !cheats_visible && !coop_visible && !g_config.show_fps && !ping && !crosshair && !hint && !tag && !subtitle) return;
     {   /* readable on large displays: scale text with the window height (1080p = 1x) */
         int ww, wh;
         SDL_GetWindowSizeInPixels(win, &ww, &wh);
@@ -736,6 +787,7 @@ void overlay_render(void)
     if (visible) settings_window();
     if (cheats_visible) cheat_window();
     if (coop_visible) coop_window();
+    if (subtitle) draw_subtitle(sub, sub_is_id != 0);
     if (crosshair) {   /* third person: the screen centre is where the shot goes (tps_glue.c) */
         ImDrawList* dl = ImGui::GetForegroundDrawList();
         ImVec2 c(ImGui::GetIO().DisplaySize.x * 0.5f, ImGui::GetIO().DisplaySize.y * 0.5f);

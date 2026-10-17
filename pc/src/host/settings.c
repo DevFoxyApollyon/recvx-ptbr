@@ -2,6 +2,7 @@
    docs/ARCHITECTURE.md "Settings": to add a setting, add its variable's ini key in config.c and
    one entry here; both menus show it (F1 on the CO-OP and EXTRAS pages only with SET_F1). Rows
    are in menu order, .group starts a heading. */
+#include "subtitles.h"
 #include "../ps2_platform.h"
 #include "settings.h"
 #include "lang.h"
@@ -202,6 +203,11 @@ const Setting g_settings[] = {
 
     { SP_AUDIO, "Music and voice", V(g_config.music_volume), 0, 100, 5, .fmt = "%d%%", .apply = apply_volume },
     { SP_AUDIO, "Sound effects", V(g_config.sfx_volume), 0, 100, 5, .fmt = "%d%%", .apply = apply_volume },
+    { SP_AUDIO, "Subtitles", V(g_sub_on), 0, 1, 1, .group = "SUBTITLES",
+      .help = "Subtitles for voiced lines from mods/legendas.txt (docs/SUBTITLES.md). The file is read again when it changes." },
+    { SP_AUDIO, "Subtitle size", V(g_sub_size), 50, 250, 10, .fmt = "%d%%" },
+    { SP_AUDIO, "Show voice line codes", V(g_sub_ids), 0, 1, 1,
+      .help = "A voiced line without a subtitle shows its code ([VOICE1.AFS/12]) at the bottom: write that code in legendas.txt." },
 
     { SP_COOP, "You appear as", NULL, 0, 0, 1, .get = chr_get, .set = chr_set, .name = chr_name, .count = appear_count, .help = "Your model, also in single player and cutscenes; in co-op your partner sees it too.", .group = "YOU" },
     { SP_COOP, "Use gender-matched animations", V(g_appear_anim), 0, 1, 1, .flags = SET_F1, .help = "A man shown while you play Claire walks, aims and fights with Chris's motions; a woman shown while you play a man, with Claire's." },
