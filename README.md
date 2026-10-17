@@ -1,3 +1,27 @@
+# recvx-ptbr
+
+**Resident Evil Code: Veronica X - port de PC em portugues (PT-BR)**, mantido por
+[DevFoxyApollyon](https://github.com/DevFoxyApollyon).
+
+Este projeto e baseado no **[recvx-enhanced-port](https://github.com/aikatore/recvx-enhanced-port)**
+de **aikatore** (o port original, licenca MIT), que por sua vez usa a decompilacao
+**[recvx-decomp](https://github.com/AshfordFamily/recvx-decomp)** da **AshfordFamily**. A versao do decomp
+usada aqui fica em [DevFoxyApollyon/recvx-decomp-ptbr](https://github.com/DevFoxyApollyon/recvx-decomp-ptbr).
+Todo o credito do port e do decomp e dos autores originais; este repositorio acrescenta:
+
+- menus do port em portugues (F1/F2/F3, lobby, multijogador), com opcao PT/EN;
+- legendas nas falas (`mods/legendas.txt`, docs/SUBTITLES.md);
+- troca de texturas (`mods/textures`, upscale e menus traduzidos, docs/TEXTURES.md);
+- ferramentas de traducao dos textos do jogo e da fonte (docs/TRANSLATION.md);
+- mira livre e controles da camera fixa iguais aos da terceira pessoa; icone proprio.
+
+Nenhum dado do jogo esta incluido: voce precisa da sua propria ISO (PS2, NTSC-U, SLUS-20184).
+Os releases deste repositorio (`v0.5.1-ptbr.N`) sao os que o RE Hub instala.
+
+O README original do projeto segue abaixo.
+
+---
+
 > [!IMPORTANT]
 > **AI-assisted project.** Most of the code, tools and documentation in this repository were written by AI coding agents (Anthropic's Claude models, plus OpenAI Codex for parts of the map tooling), directed and reviewed by hand by the maintainer, who also tested the results in-game. Treat it like any other early-stage community project: expect bugs, read the code before relying on it, and report problems via issues.
 > The underlying decompilation ([AshfordFamily/recvx-decomp](https://github.com/AshfordFamily/recvx-decomp)) is a separate, human-led project. Our changes to it live in a fork and are disclosed as AI-assisted, as that project asks.
