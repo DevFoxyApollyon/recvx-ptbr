@@ -4,6 +4,7 @@
    are in menu order, .group starts a heading. */
 #include "../ps2_platform.h"
 #include "settings.h"
+#include "lang.h"
 #include "coop.h"
 #include "actors.h"
 #include "tps.h"
@@ -34,6 +35,7 @@ static void apply_vsync(void) { SDL_GL_SetSwapInterval(g_config.vsync ? 1 : 0); 
 static void apply_volume(void) { audio_apply_volumes(); }
 
 /* ---------------------------------------------------------------- special values */
+static const char* const lang_names[] = { "English", "Português" };   /* UTF-8 */
 static const struct { int w, h; } sizes[] = { { 1280, 960 }, { 1440, 1080 }, { 1920, 1080 }, { 2560, 1440 }, { 3440, 1440 }, { 3840, 2160 } };
 static int size_get(void)
 {
@@ -112,6 +114,7 @@ static const char* const varieties[] = { "Mild", "Wild" };
 
 #define V(x) ((int*)&(x))
 const Setting g_settings[] = {
+    { SP_DISPLAY, "Language", V(g_lang), 0, 1, 1, lang_names, .help = "Menus of the port (this window, F2, F3, ENHANCED SETTINGS, MULTIPLAYER) in English or Portuguese." },
     { SP_DISPLAY, "Fullscreen", V(g_config.fullscreen), 0, 1, 1, .help = "Also F11.", .apply = settings_apply_window, .group = "WINDOW" },
     { SP_DISPLAY, "Window size", NULL, 0, 5, 1, .get = size_get, .set = size_set, .name = size_name, .locked = fullscreen_on, .apply = settings_apply_window },
     { SP_DISPLAY, "VSync", V(g_config.vsync), 0, 1, 1, .apply = apply_vsync },

@@ -7,6 +7,7 @@
  * our own and posed, lit and drawn in a small scene of their own in front of the picture.
  * Networking stays in pc/glue/coop_glue.c: the lobby only sets g_coop and requests.
  */
+#include "../src/host/lang.h"
 #include "../../decomp/include/ps2/veronica/prog/types.h"
 #include "../../decomp/include/ps2/veronica/prog/main.h"
 #include "../../decomp/include/ps2/veronica/prog/adv.h"
@@ -56,7 +57,15 @@ enum { BTN_START = 0x800, BTN_UP = 0x1000, BTN_RIGHT = 0x2000, BTN_DOWN = 0x4000
 #define Z_DIM 0.012f                    /* behind the models */
 #define Z_FRONT 0.3f                    /* in front of them */
 
-static int code_of(char c) { return c > 32 && c < 127 ? c - 32 : 0; }
+/* PT-BR fork: the text is translated (lang.c L()) and read as UTF-8; accented letters use the extra
+   glyphs lang_patch_font draws into the font (codes 108..), whose widths FontSz knows */
+static int code_of_cp(unsigned cp)
+{
+    unsigned short g;
+    if (cp <= 32) return 0;
+    g = lang_glyph(cp);
+    return g == 0xFFFF ? '?' - 32 : g;
+}
 static float adv(int c) { return c ? FontSz[c] : 11.0f; }   /* the font's space is a full cell */
 
 #define TRACK 0.88f                     /* a little tighter than the game's messages */
@@ -64,7 +73,9 @@ static float adv(int c) { return c ? FontSz[c] : 11.0f; }   /* the font's space 
 static float text_w(const char* s, float sc)
 {
     float w = 0;
-    for (; *s; s++) w += adv(code_of(*s)) * sc * TRACK;
+    unsigned cp;
+    s = L(s);
+    while ((cp = lang_next_cp(&s)) != 0) w += adv(code_of_cp(cp)) * sc * TRACK;
     return w;
 }
 
@@ -76,12 +87,14 @@ static void text(float x, float y, const char* s, float sc, unsigned int argb)
 {
     float kx = FontScaleX, ky = FontScaleY, kc = FontScaleCR, x0 = x;
     const char* p;
+    unsigned cp;
     int pass;
     if (!font_ok) return;
+    s = L(s);
     bhFontScaleSet(sc, sc, sc);
     for (pass = 0; pass < 2; pass++)
-        for (p = s, x = x0; *p; p++) {
-            int c = code_of(*p);
+        for (p = s, x = x0; (cp = lang_next_cp(&p)) != 0;) {
+            int c = code_of_cp(cp);
             NJS_POINT2 pos = { x + (pass ? 0 : 2), y + (pass ? 0 : 2) };
             if (c) bhDispFontEx(&pos, c, pass ? argb : (argb & 0xFF000000) >> 1 & 0xFF000000, PRI_TEXT);
             x += adv(c) * sc * TRACK;
@@ -94,14 +107,17 @@ static void text_c(float cx, float y, const char* s, float sc, unsigned int argb
 /* at most `w` wide: the words that fit, then the next line (returns the lines drawn) */
 static int text_wrap(float x, float y, float w, const char* s, float sc, unsigned int argb, int max_lines)
 {
-    char line[160];
+    char line[320];
     int n = 0;
+    s = L(s);
     while (*s && n < max_lines) {
         int len = 0, fit = 0;
-        while (s[len] && len < (int)sizeof(line) - 1) {
-            memcpy(line, s, len + 1); line[len + 1] = 0;
+        while (s[len] && len < (int)sizeof(line) - 4) {
+            int step = 1;
+            while ((s[len + step] & 0xC0) == 0x80) step++;   /* whole UTF-8 characters */
+            memcpy(line, s, len + step); line[len + step] = 0;
             if (text_w(line, sc) > w) break;
-            len++;
+            len += step;
             if (!s[len] || s[len] == ' ') fit = len;
         }
         if (!s[len]) fit = len;

@@ -42,6 +42,17 @@ add_library(imgui STATIC
 target_include_directories(imgui PUBLIC ${imgui_SOURCE_DIR} ${imgui_SOURCE_DIR}/backends)
 target_link_libraries(imgui PUBLIC SDL3::SDL3)
 
+# PT-BR fork: the F1 overlay's font, Roboto Medium (Apache-2.0, shipped with Dear ImGui), embedded
+# so accented text renders (the default ProggyClean is ASCII only).
+set(ROBOTO_TTF ${imgui_SOURCE_DIR}/misc/fonts/Roboto-Medium.ttf)
+set(ROBOTO_C ${CMAKE_CURRENT_BINARY_DIR}/roboto_font.c)
+if(NOT EXISTS ${ROBOTO_C} OR ${ROBOTO_TTF} IS_NEWER_THAN ${ROBOTO_C})
+    file(READ ${ROBOTO_TTF} ROBOTO_HEX HEX)
+    string(REGEX REPLACE "([0-9a-f][0-9a-f])" "0x\\1," ROBOTO_ARRAY "${ROBOTO_HEX}")
+    file(WRITE ${ROBOTO_C} "/* generated from Roboto-Medium.ttf (Apache-2.0) */\nconst unsigned char g_roboto_ttf[] = { ${ROBOTO_ARRAY} };\nconst unsigned int g_roboto_ttf_size = sizeof g_roboto_ttf;\n")
+endif()
+target_sources(imgui PRIVATE ${ROBOTO_C})
+
 # Co-op host port mapping (src/net/portmap.c): miniupnpc (UPnP IGD) and libnatpmp (NAT-PMP),
 # both BSD, static, Winsock on Windows.
 set(UPNPC_BUILD_SHARED OFF CACHE BOOL "" FORCE)

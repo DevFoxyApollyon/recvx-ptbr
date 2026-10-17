@@ -27,3 +27,9 @@ or CRI Middleware.
 
 The built binaries link these libraries statically; ship their license texts
 with any binary release.
+
+## Roboto (PT-BR fork)
+
+The F1 overlay embeds Roboto Medium (`Roboto-Medium.ttf`, shipped with Dear ImGui in `misc/fonts`),
+Copyright 2011 Google Inc., licensed under the Apache License, Version 2.0
+(https://www.apache.org/licenses/LICENSE-2.0).

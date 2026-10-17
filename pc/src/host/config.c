@@ -1,4 +1,5 @@
 /* User settings: <save_dir>/recvx.ini, "key = value" lines. */
+#include "lang.h"
 #include "../ps2_platform.h"
 #include "coop.h"
 #include "actors.h"
@@ -57,6 +58,7 @@ static const struct { const char* key; int* val; int lo, hi; } keys[] = {
     { "coop_skip_sync", &g_coop.skip_sync, 0, 1 },        /* host: a cutscene is skipped when both press skip */
     { "coop_start", &g_coop.start, 0, 1000002 },
     { "menu_mouse", (int*)&g_menu_mouse.on, 0, 1 },
+    { "language", &g_lang, 0, 1 },                       /* menus: 0 English, 1 Portuguese (lang.c, PT-BR fork) */
     { "input_source", &g_input_source, 0, 2 },            /* INPUT_*: Auto, Keyboard/mouse only, Gamepad only */
     { "input_pad", &g_input_pad, 0, 4 },                  /* 0 any gamepad, n player n's (bindings.c) */
     { "fixed_cam_controls", &g_modern_on, 0, 1 },        /* fixed cameras: 0 classic (tank), 1 modern (camera-relative) */
