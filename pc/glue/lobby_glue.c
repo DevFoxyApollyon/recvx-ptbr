@@ -7,6 +7,7 @@
  * our own and posed, lit and drawn in a small scene of their own in front of the picture.
  * Networking stays in pc/glue/coop_glue.c: the lobby only sets g_coop and requests.
  */
+#include "../src/gs/texrep.h"
 #include "../src/host/lang.h"
 #include "../../decomp/include/ps2/veronica/prog/types.h"
 #include "../../decomp/include/ps2/veronica/prog/main.h"
@@ -162,11 +163,19 @@ static const struct { short u, v, w; } mp_letters[] = {
     { 67, 320, 23 },  /* R of NORMAL */
 };
 
+#define PLATES_HASH 0x64cae74c03148763ull   /* the title plates texture (US disc) */
+
 static void mp_word(float cx, float y, unsigned int col, unsigned int shadow, float scale)
 {
     float w = 0, x;
     int i;
     QUAD q;
+    if (texrep_in_use(PLATES_HASH)) {   /* mods/textures/pt (pc/tools/title_ptbr.py): MULTIJOGADOR in row 192 */
+        SetQuadPos(cx - 256.5f * scale, y, 513.0f * scale, 33.0f * scale, &q);
+        SetQuadUv2(0, 192, 513.0f, 33.0f, 1, &q);
+        AdvEasyDrawTextureS(1, col, &q, 0.5f, 1, shadow);
+        return;
+    }
     for (i = 0; i < (int)(sizeof(mp_letters) / sizeof(mp_letters[0])); i++) w += (mp_letters[i].w + 1) * scale;
     x = cx - w / 2;
     for (i = 0; i < (int)(sizeof(mp_letters) / sizeof(mp_letters[0])); i++) {

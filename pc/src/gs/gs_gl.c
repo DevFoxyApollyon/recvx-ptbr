@@ -11,6 +11,7 @@
  * target samples that render target directly (render-to-texture effects, the
  * frame-blend copy in PS2_swap, ...).
  */
+#include "texrep.h"
 #include "gs.h"
 #include "native.h"
 #include "textures.h"
@@ -695,8 +696,7 @@ static GLuint tex_get(uint64_t tex0, uint64_t texa, int* out_w, int* out_h, floa
             }
         }
         glBindTexture(GL_TEXTURE_2D, e->tex);
-        glPixelStorei(GL_UNPACK_ALIGNMENT, 4);
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, (GLsizei)w, (GLsizei)h, 0, GL_RGBA, GL_UNSIGNED_BYTE, px);
+        texrep_teximage(px, (int)w, (int)h);   /* PT-BR fork: mods/textures replacements */
         free(px);
     }
     e->used = 1; e->tex0_key = key; e->texa = texa; e->clut_hash = ch; e->page0 = page0; e->page1 = page1;

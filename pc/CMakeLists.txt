@@ -53,6 +53,11 @@ if(NOT EXISTS ${ROBOTO_C} OR ${ROBOTO_TTF} IS_NEWER_THAN ${ROBOTO_C})
 endif()
 target_sources(imgui PRIVATE ${ROBOTO_C})
 
+# PT-BR fork: stb_image / stb_image_write (public domain / MIT) to read and write the PNG files of
+# texture replacements (src/gs/texrep.c, mods/textures).
+FetchContent_Declare(stb GIT_REPOSITORY https://github.com/nothings/stb.git GIT_TAG 2c980bb59875b0d32144a71867fbdebb2f77cd20)
+FetchContent_MakeAvailable(stb)
+
 # Co-op host port mapping (src/net/portmap.c): miniupnpc (UPnP IGD) and libnatpmp (NAT-PMP),
 # both BSD, static, Winsock on Windows.
 set(UPNPC_BUILD_SHARED OFF CACHE BOOL "" FORCE)
@@ -152,6 +157,7 @@ file(GLOB_RECURSE PLATFORM_SOURCES CONFIGURE_DEPENDS
 add_library(recvx_platform OBJECT ${PLATFORM_SOURCES})
 set_property(SOURCE src/host/host.c src/host/overlay.cpp APPEND PROPERTY COMPILE_DEFINITIONS "RECVX_VERSION=\"${RECVX_VERSION}\"")
 target_include_directories(recvx_platform PRIVATE
+    ${stb_SOURCE_DIR}
     ${CMAKE_CURRENT_SOURCE_DIR}/include
     ${CMAKE_CURRENT_SOURCE_DIR}/include/sdk
     ${CMAKE_CURRENT_SOURCE_DIR}/src

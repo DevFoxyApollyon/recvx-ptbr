@@ -28,6 +28,7 @@
  * textures are capped in bytes. A definition that runs out of memory while recorded is dropped
  * (its slot is resolved through GS memory as without native textures).
  */
+#include "texrep.h"
 #include "gs.h"
 #include "textures.h"
 #include "../render/gl_loader.h"
@@ -343,8 +344,7 @@ static GLuint decode(const Def* d, uint64_t tex0, uint64_t texa, int* w, int* h)
     gs_mem_scratch_end();
     glGenTextures(1, &t);
     glBindTexture(GL_TEXTURE_2D, t);
-    glPixelStorei(GL_UNPACK_ALIGNMENT, 4);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, (GLsizei)W, (GLsizei)H, 0, GL_RGBA, GL_UNSIGNED_BYTE, px);
+    texrep_teximage(px, (int)W, (int)H);   /* PT-BR fork: mods/textures replacements */
     {   /* RECVX_DUMP_TEX=dir: also the native decodes */
         static const char* dd; static int chk, ndump;
         if (!chk++) dd = getenv("RECVX_DUMP_TEX");
