@@ -1,0 +1,17 @@
+# RM_9302.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 20
+
+A energia esta carregando.{FF02:0000}A trava abre quando
+a carga terminar.
+
+### 21
+A seguranca ja foi
+liberada.
+
+### 22
+
+Preciso derrotar este monstro!
+

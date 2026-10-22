@@ -1,0 +1,52 @@
+# RM_0000.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+
+Ha cabelos espalhados aqui.
+
+### 1
+Uma capsula hemostatica
+esta no chao.{FF02:0000}
+Esta vazia.
+
+### 2
+Uniformes velhos de
+prisioneiro empilhados.
+
+### 3
+
+Ele parece sentir muita dor.{FF02:0000}
+Melhor nao falar com ele.
+
+### 4
+Se eu tivesse um isqueiro,
+poderia ver la fora...
+
+### 33
+
+Os olhos dele estao fechados.{FF02:0000}Ele esta sangrando.
+Preciso de um hemostatico...
+
+### 37
+Uma pilha baguncada de
+varios documentos.
+
+### 46
+Aqui esta totalmente
+escuro.{FF02:0000}Acho que nao consigo
+tratar o ferimento dele.
+
+### 47
+Esta escuro demais
+para ver algo.
+
+### 48
+E uma lista de prisioneiros.
+Meu nome esta no fim.{FF02:0000}WKD4496
+Claire Redfield{FF02:0000}O nome do escolta esta
+no fim do documento.{FF02:0000}Umbrella Medical, Paris.
+Lider da 3a Unid. Seguranca{FF02:0000}
+Rodrigo Juan Raval
+

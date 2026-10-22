@@ -1,0 +1,38 @@
+# RM_2070.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+
+Nao sobrou nada util.
+
+### 1
+Com isto voce pode
+salvar o progresso.{FF02:0000}Usar uma fita de tinta?
+                {espaco}Sim  {espaco}Nao
+
+### 2
+
+Uma maquina de escrever velha.{FF02:0000}Eu poderia salvar se
+tivesse uma fita de tinta.
+
+### 3
+Descer a escada?
+                {espaco}Sim  {espaco}Nao
+
+### 4
+Varios aparelhos.
+Nada util.
+
+### 5
+Insetos empalhados
+bem arrumados.
+
+### 6
+Colecoes de literatura
+guardadas aqui.
+
+### 7
+Livros de quimica e
+enciclopedias.
+

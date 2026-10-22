@@ -1,0 +1,44 @@
+# RM_2030.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Uma boneca grande,
+talvez feita sob medida.
+
+### 1
+Parece nao haver
+ninguem dentro.
+
+### 2
+Um busto. Nao parece
+ter nada de estranho.
+
+### 3
+Muitos destes livros
+sao de historia.
+
+### 4
+Livros de quimica
+empilhados aqui.
+
+### 5
+
+Um quadro comum.
+
+### 6
+
+Nao ha nada util aqui.
+
+### 7
+Uma boneca grande,
+talvez feita sob medida.
+
+### 8
+Livros tecnicos de
+biologia empilhados.
+
+### 9
+Livros diversos
+empilhados aqui.
+

@@ -1,0 +1,45 @@
+# RM_9240.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Ha moveis luxuosos
+aqui...{FF02:0000}
+Nao ha nada util.
+
+### 1
+Bonecas antigas em
+exposicao.{FF02:0000}
+Podem ser de Alexia...
+
+### 20
+
+A caixa de musica esta trancada.
+
+### 21
+
+Ha {FF03:004E}.{FF02:0000}Pegar {FF03:004E}?
+                {espaco}Sim  {espaco}Nao
+
+### 22
+
+Voce destrancou a porta.
+
+### 23
+
+A caixa de musica esta tocando.{FF02:0000}Parar a caixa de musica?
+                {espaco}Sim  {espaco}Nao
+
+### 24
+A tampa da caixa de musica esta
+aberta...{FF02:0000}Usar {FF03:004E}?
+                {espaco}Sim  {espaco}Nao
+
+### 25
+A tampa da caixa de musica esta
+aberta...
+
+### 26
+
+O rubi vermelho foi retirado.
+

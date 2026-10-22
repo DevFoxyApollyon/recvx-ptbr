@@ -1,0 +1,44 @@
+# RM_4020.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+E o painel de controle da
+porta de aco.{FF02:0000}Acima da fechadura
+esta escrito "K-402".
+
+### 1
+E o painel de controle da
+porta de aco.{FF02:0000}Acima da fechadura
+esta escrito "K-402".{FF02:0000}Usar {FF03:004B}?
+                {espaco}Sim  {espaco}Nao
+
+### 2
+
+Ha uma alavanca.{FF02:0000}Mover a alavanca?
+                {espaco}Sim  {espaco}Nao
+
+### 3
+Nao preciso mais
+operar isto.
+
+### 4
+E o painel de controle do
+elevador de carga.{FF02:0000}
+Ha um aviso.{FF02:0000}O elevador pode nao
+funcionar com pouca energia.{FF02:0000}Mover a alavanca?
+                {espaco}Sim  {espaco}Nao
+
+### 5
+
+O aparelho nao funciona.
+
+### 6
+Voce nao precisa mais desta
+chave.{FF02:0000}Descartar {FF03:004B}?
+                {espaco}Sim  {espaco}Nao
+
+### 7
+Esta totalmente bloqueado
+pela carga.
+

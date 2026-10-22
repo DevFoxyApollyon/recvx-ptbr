@@ -1,0 +1,58 @@
+# RM_9080.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 9
+
+Nao ha nada util aqui.
+
+### 10
+
+Nao sobrou nada.
+
+### 14
+
+Esta bem fechado.
+
+### 18
+Parece ser um tipo
+de elevador...{FF02:0000}O elevador esta num andar
+de cima e nao da para usar.
+
+### 19
+Ha muitos quimicos
+aqui.{FF02:0000}Para que sera que
+eram usados?
+
+### 20
+Parece ser parte
+do separador.{FF02:0000}Parece que as cargas
+sao recolhidas aqui.
+
+### 21
+
+Misseis enfileirados aqui.{FF02:0000}Para que sera que
+iam usa-los?
+
+### 22
+
+Nada de especial aqui.
+
+### 25
+
+O explosivo e sensivel ao calor.
+
+### 26
+
+Esta trancado.{FF02:0000}Ha explosivos, mas
+falta o detonador.
+
+### 27
+
+Esta trancado.{FF02:0000}Ha um explosivo sensivel
+ao calor aqui.
+
+### 31
+
+Ha mais alguma coisa aqui.
+

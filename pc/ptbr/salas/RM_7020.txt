@@ -1,0 +1,65 @@
+# RM_7020.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Parece ser um quadro
+desta sala...
+
+### 1
+Um retrato de homem
+em exposicao.
+
+### 2
+Uma maquete desta
+instalacao.{FF02:0000}Tem um buraco para
+encaixar algo...
+
+### 3
+Parece haver um esqueleto
+humano desenhado...{FF02:0000}
+Me da arrepios...
+
+### 4
+Uma maquete desta
+instalacao.
+
+### 6
+
+Esta trancado.{FF02:0000}
+Nao consigo abrir.
+
+### 8
+Ha algo escrito ao
+lado do buraco.{FF02:0000}Traga tres exercitos
+aqui e o caminho se abre.
+
+### 9
+
+Ha algum tipo de alavanca...{FF02:0000}Baixar a alavanca?
+                {espaco}Sim  {espaco}Nao
+
+### 10
+Descer a escada?
+                {espaco}Sim  {espaco}Nao
+
+### 11
+Uma placa comemorativa.
+Ha algo escrito.{FF02:0000}Em homenagem a conclusao
+do centro de treinamento.{FF02:0000}8 de dezembro
+Alfred Ashford
+
+### 12
+Com isto voce pode
+salvar o progresso.{FF02:0000}Usar uma fita de tinta?
+                {espaco}Sim  {espaco}Nao
+
+### 13
+
+Uma maquina de escrever velha.{FF02:0000}Eu poderia salvar se
+tivesse uma fita de tinta.
+
+### 14
+
+Ha um arquivo.
+

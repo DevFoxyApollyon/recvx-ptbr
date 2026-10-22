@@ -64,3 +64,19 @@ realesrgan-ncnn-vulkan.exe -i fundo.png -o fundo_x4.png -n realesrgan-x4plus -s 
 ```
 
 (salve o PNG RGB do dump, rode, e devolva o canal alfa 128 antes de copiar para `mods/textures`).
+
+## Upscale de todas as texturas (IA)
+
+Jogue com `RECVX_TEX_DUMP=dump` (cada textura carregada e salva uma vez) e depois:
+
+```sh
+python pc/tools/upscale_all.py dump mods --esrgan realesrgan-ncnn-vulkan.exe
+```
+
+Cada textura do dump que ainda nao tem arquivo em `mods/textures` passa pelo Real-ESRGAN (4x). As
+que ja existem (suas ou traduzidas em `pt/`) ficam. Pode rodar de novo depois de cada sessao.
+
+## Abertura em portugues
+
+`pc/tools/prologue_ptbr.py mods` desenha o texto da abertura ("A cidade de Raccoon City...") em
+`mods/textures/pt` (nao precisa do dump: sao so letras).

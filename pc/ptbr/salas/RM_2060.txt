@@ -1,0 +1,40 @@
+# RM_2060.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Varios brinquedos e
+ferramentas aqui.{FF02:0000}
+Nao ha nada util aqui.
+
+### 1
+Descer a escada?
+                {espaco}Sim  {espaco}Nao
+
+### 2
+A parte acima da
+escada esta lacrada...
+
+### 3
+Subir a escada?
+                {espaco}Sim  {espaco}Nao
+
+### 4
+Talvez uma cena de
+conto de fadas...{FF02:0000}Nao parece ter nada
+de estranho.
+
+### 5
+Ha uma formiga desenhada
+na parede.{FF02:0000}Parece que a fechadura
+e a boca.
+
+### 6
+
+Nao ha nada util.
+
+### 7
+
+Ha um cavalo de madeira.{FF02:0000}
+E uma obra linda.
+

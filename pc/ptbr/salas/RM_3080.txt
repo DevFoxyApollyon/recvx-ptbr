@@ -1,0 +1,49 @@
+# RM_3080.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+
+Falta a macaneta.{FF02:0000}
+Nao consigo abrir.
+
+### 1
+
+O telefone nao funciona.{FF02:0000}
+A linha parece estar muda.
+
+### 2
+Um leitor de cartao
+prateado.{FF02:0000}
+Tem trava eletronica.
+
+### 3
+Um leitor de cartao
+prateado.
+
+### 4
+A porta de aco bloqueia o
+caminho.{FF02:0000}
+Nao abre deste lado.
+
+### 6
+Um leitor de cartao
+prateado.{FF02:0000}
+Tem trava eletronica.{FF02:0000}Usar {FF03:003E}?
+                {espaco}Sim  {espaco}Nao
+
+### 12
+Um leitor de cartao
+prateado.{FF02:0000}Ventilacao da sala de
+biologia incompleta...{FF02:0000}A trava abre quando a
+ventilacao terminar.
+
+### 13
+Voce nao precisa mais de
+{FF03:003E}.{FF02:0000}Descartar {FF03:003E}?
+                {espaco}Sim  {espaco}Nao
+
+### 14
+A porta de aco esta fechando.
+Preciso fugir rapido.
+

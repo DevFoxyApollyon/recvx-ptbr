@@ -1,0 +1,61 @@
+# RM_9110.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Parece ser algum tipo
+de painel de controle.
+
+### 1
+
+Nada de estranho.
+
+### 2
+Preciso esvaziar a agua
+do tanque.
+
+### 8
+Nao e usado faz
+muito tempo.
+
+### 9
+
+Nao ha nada util aqui.
+
+### 10
+
+Nada de especial aqui.
+
+### 19
+
+Ha um botao.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 20
+
+Voce apertou o botao.
+
+### 21
+
+E agente extintor.{FF02:0000}Deve ser usado num
+extintor de incendio.
+
+### 22
+
+Voce usou o agente extintor.
+
+### 23
+
+Ha um pequeno vao quadrado.{FF02:0000}
+Ha um aviso.{FF02:0000}A agua pode ser drenada
+nos seguintes casos:{FF02:0000}1. Para limpar o tanque.
+2. Para trocar a agua.
+
+### 24
+
+Ha um pequeno vao quadrado.{FF02:0000}
+Ha um aviso.{FF02:0000}A agua pode ser drenada
+nos seguintes casos:{FF02:0000}1. Para limpar o tanque.
+2. Para trocar a agua.{FF02:0000}Usar {FF03:0058}?
+                {espaco}Sim  {espaco}Nao
+

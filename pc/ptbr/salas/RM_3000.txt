@@ -1,0 +1,38 @@
+# RM_3000.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Esta em conserto.
+Nao da para dirigir.
+
+### 1
+
+Um grande relevo.{FF02:0000}As imagens parecem
+contar uma lenda...
+
+### 2
+Parece que nao consigo
+descer por aqui.
+
+### 3
+
+Voce destrancou a porta.
+
+### 20
+Melhor deixa-lo
+sozinho por enquanto...
+
+### 21
+O pai do Steve.
+Esta claramente morto...
+
+### 22
+Sucata de ferro bloqueia
+o encaixe da bateria.
+
+### 23
+
+Um elevador de carga.{FF02:0000}
+A bateria foi retirada.
+

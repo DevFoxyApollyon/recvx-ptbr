@@ -1,0 +1,39 @@
+# RM_3150.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Um leitor de cartao
+prateado.{FF02:0000}
+Tem trava eletronica.
+
+### 3
+Um leitor de cartao
+prateado.
+
+### 4
+Uma porta de aco bloqueia o
+caminho.{FF02:0000}Nao abre
+deste lado.
+
+### 5
+
+Tem trava eletronica.{FF02:0000}Usar {FF03:003E}?
+                {espaco}Sim  {espaco}Nao
+
+### 6
+Um leitor de cartao
+prateado.{FF02:0000}
+Tem trava eletronica.{FF02:0000}Usar {FF03:003E}?
+                {espaco}Sim  {espaco}Nao
+
+### 7
+
+A porta esta trancada.{FF02:0000}
+Nao consigo abrir.
+
+### 11
+Voce nao precisa mais de
+{FF03:003E}.{FF02:0000}Descartar {FF03:003E}?
+                {espaco}Sim  {espaco}Nao
+

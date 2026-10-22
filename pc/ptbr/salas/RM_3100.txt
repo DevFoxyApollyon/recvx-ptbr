@@ -1,0 +1,24 @@
+# RM_3100.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+
+A porta esta trancada.{FF02:0000}
+Nao consigo abrir.
+
+### 1
+
+A porta esta trancada.{FF02:0000}{FF02:0000}
+Nao consigo abrir.
+
+### 21
+Ha municao para
+{FF03:0022}.
+
+### 22
+
+Ha {FF03:0022}.{FF02:0000}
+Esta descarregada.{FF02:0000}Pegar {FF03:0022}?
+                {espaco}Sim  {espaco}Nao
+

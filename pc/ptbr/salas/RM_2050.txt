@@ -1,0 +1,57 @@
+# RM_2050.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Bonecas antigas em
+exposicao.{FF02:0000}
+Podem ser de Alexia...
+
+### 1
+A caixa de musica toca
+uma bela melodia.{FF02:0000}Ha algo escrito no
+verso da tampa.{FF02:0000}Rainha vermelha e rei azul
+voltam. O caminho se abre.{FF02:0000}Parar a caixa de musica?
+                {espaco}Sim  {espaco}Nao
+
+### 2
+Ha moveis luxuosos
+aqui.{FF02:0000}
+Nada util.
+
+### 3
+
+A caixa de musica esta trancada.{FF02:0000}Nao consigo tirar a
+placa de musica.
+
+### 4
+
+Ha {FF03:004E}.{FF02:0000}Pegar {FF03:004E}?
+                {espaco}Sim  {espaco}Nao
+
+### 5
+Um relevo. Parece
+uma deusa.
+
+### 6
+Ha moveis luxuosos
+aqui.{FF02:0000}
+Nao ha nada util aqui.
+
+### 7
+Subir a escada?
+                {espaco}Sim  {espaco}Nao
+
+### 8
+O buraco no teto
+foi lacrado...
+
+### 24
+Uma joia vermelha esta
+encaixada numa abertura.
+
+### 25
+Ha algo escrito no
+verso da tampa.{FF02:0000}Rainha vermelha e rei azul
+voltam. O caminho se abre.
+

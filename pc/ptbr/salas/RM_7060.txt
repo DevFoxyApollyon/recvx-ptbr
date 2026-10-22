@@ -1,0 +1,33 @@
+# RM_7060.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Um relevo de um
+rosto esquisito.
+
+### 5
+Subir a escada?
+                {espaco}Sim  {espaco}Nao
+
+### 6
+Um monstro desconhecido
+saiu por aqui.
+
+### 7
+Subir a escada?
+                {espaco}Sim  {espaco}Nao
+
+### 8
+Baixar a escada?
+                {espaco}Sim  {espaco}Nao
+
+### 10
+{FF03:0004}
+estava pendurado neste gancho.
+
+### 12
+{FF03:0004}
+estava pendurado neste gancho.{FF02:0000}Pendurar {FF03:0004}?
+                {espaco}Sim  {espaco}Nao
+

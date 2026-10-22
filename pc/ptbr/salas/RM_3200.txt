@@ -1,0 +1,61 @@
+# RM_3200.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Varias coisas
+empilhadas aqui.{FF02:0000}
+Nada util.
+
+### 1
+
+Ha memos pregados aqui.{FF02:0000}
+Nada de interessante.
+
+### 2
+Arquivos sem importancia
+guardados aqui.
+
+### 3
+
+Nao ha nada util.
+
+### 4
+Quimicos para
+manutencao de armas.
+
+### 5
+Ha uma peca de pistola
+na bancada.{FF02:0000}Nao serve na
+M93R.
+
+### 6
+
+Fechado com uma tranca simples.
+
+### 7
+
+Fechado com uma tranca simples.{FF02:0000}Usar {FF03:0032}?
+                {espaco}Sim  {espaco}Nao
+
+### 8
+
+Nao sobrou nada.
+
+### 9
+
+A trava foi liberada.
+
+### 10
+Isto nao serve na
+submetralhadora.
+
+### 11
+Isto nao serve na
+submetralhadora.
+
+### 12
+Ha uma peca de pistola
+na bancada.{FF02:0000}Nao serve na
+submetralhadora.
+

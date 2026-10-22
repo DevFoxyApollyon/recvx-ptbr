@@ -1,0 +1,101 @@
+# RM_9160.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+
+Esta rachado.
+
+### 1
+Parece ser uma roupa
+de protecao.
+
+### 2
+
+Nada de estranho.
+
+### 3
+
+Uma bela pintura a oleo.
+
+### 4
+
+"Mulher buscando agua".
+
+### 5
+Um quadro que passa
+uma impressao sombria.{FF02:0000}Nao ha nada de
+estranho nele.
+
+### 6
+E um quadro de uma
+bela paisagem.
+
+### 7
+E o quadro de uma
+mulher gordinha.
+
+### 13
+
+Esta trancado.{FF02:0000}Deve abrir se houver
+energia...
+
+### 16
+
+Esta trancado.{FF02:0000}Ha um simbolo biohazard
+gravado na fechadura.
+
+### 18
+
+E uma estatua de tigre.{FF02:0000}Parece que posso tirar
+as joias dos olhos.
+
+### 19
+Pegar a joia?
+                {espaco}Sim  {espaco}Nao
+
+### 20
+Qual joia?
+            {espaco}Esq.  {espaco}Dir.
+
+### 21
+
+E uma estatua de tigre.
+
+### 22
+
+E uma estatua de tigre.{FF02:0000}
+Falta uma joia.{FF02:0000}Devolver a joia?
+                {espaco}Sim  {espaco}Nao
+
+### 26
+
+Falta uma joia.
+
+### 31
+Parece funcionar com
+energia eletrica.
+
+### 33
+
+Esta trancado.{FF02:0000}Ha um simbolo biohazard
+gravado na fechadura.
+
+### 34
+Usar {FF03:005C}?
+                {espaco}Sim  {espaco}Nao
+
+### 35
+
+Voce usou {FF03:005C}.{FF02:0000}Voce nao precisa mais de
+{FF03:005C}.{FF02:0000}Descartar {FF03:005C}?
+                {espaco}Sim  {espaco}Nao
+
+### 36
+Pegar o mapa do laboratorio?
+                {espaco}Sim  {espaco}Nao
+
+### 37
+Voce pegou o mapa do
+laboratorio da Antartida.
+

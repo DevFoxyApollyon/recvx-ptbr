@@ -1,0 +1,511 @@
+# Nomes dos itens (SYSMES.ALD) em portugues: so as traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Nao pode usar
+
+### 1
+Lanca-Foguetes
+
+### 2
+Fuzil de Assalto
+
+### 3
+Rifle de Precisao
+
+### 4
+Escopeta
+
+### 5
+Pistola
+
+### 6
+Lanca-Granadas
+
+### 7
+Besta
+
+### 8
+Faca de Combate
+
+### 9
+Pistola
+
+### 10
+Pistola Custom
+
+### 11
+Lancador Linear
+
+### 12
+Balas de Pistola
+
+### 13
+Balas de Magnum
+
+### 14
+Cartuchos Escop.
+
+### 15
+Granadas
+
+### 16
+Granadas Acidas
+
+### 17
+Granadas de Fogo
+
+### 18
+Flechas de Besta
+
+### 19
+Peca da M93R
+
+### 20
+Spray Socorros
+
+### 21
+Erva Verde
+
+### 22
+Erva Vermelha
+
+### 23
+Erva Azul
+
+### 24
+Erva Misturada
+
+### 25
+Erva Misturada
+
+### 26
+Erva Misturada
+
+### 27
+Erva Misturada
+
+### 28
+Erva Misturada
+
+### 29
+Erva Misturada
+
+### 30
+Balas de Magnum
+
+### 31
+Fita de Tinta
+
+### 33
+Lugers Douradas
+
+### 34
+Submetralhadora
+
+### 35
+Polvora de Besta
+
+### 36
+Flecha Explosiva
+
+### 37
+Granadas de Gas
+
+### 38
+Balas Submetr.
+
+### 39
+Mascara de Gas
+
+### 40
+Balas de Rifle
+
+### 41
+Maleta Duralumin
+
+### 42
+Balas de Fuzil
+
+### 43
+Brinco Alexander
+
+### 44
+Joia de Alexander
+
+### 45
+Anel de Alfred
+
+### 46
+Joia de Alfred
+
+### 47
+Diario Prisioneiro
+
+### 48
+Memo do Diretor
+
+### 49
+Instrucoes
+
+### 50
+Gazua
+
+### 51
+Olho de Vidro
+
+### 52
+Rolo de Piano
+
+### 53
+Timao
+
+### 54
+Chave do Guindaste
+
+### 55
+Isqueiro
+
+### 56
+Placa da Aguia
+
+### 57
+Bolsa Lateral
+
+### 58
+Mapa
+
+### 59
+Emblema do Falcao
+
+### 60
+Formiga Rainha
+
+### 61
+Formiga Rei
+
+### 62
+Cartao Biohazard
+
+### 63
+Maleta Duralumin
+
+### 64
+Detonador
+
+### 65
+Alavanca
+
+### 66
+Libelula de Ouro
+
+### 67
+Chave de Prata
+
+### 68
+Chave de Ouro
+
+### 69
+Prova do Exercito
+
+### 70
+Prova da Marinha
+
+### 71
+Prova da Aeronaut.
+
+### 72
+Chave c/ Etiqueta
+
+### 73
+Cartao ID
+
+### 74
+Mapa
+
+### 75
+Chave do Aeroporto
+
+### 76
+Cartao Emblema
+
+### 77
+Quadro Esqueleto
+
+### 78
+Placa Caixa Musica
+
+### 79
+Libelula
+
+### 81
+Alabarda
+
+### 82
+Extintor
+
+### 83
+Pasta
+
+### 84
+Chave do Cadeado
+
+### 86
+Emblema de Liga
+
+### 87
+Registro
+
+### 88
+Registro Octogonal
+
+### 89
+Chave Sala Maquina
+
+### 90
+Chave da Mineracao
+
+### 91
+Codigo de Barras
+
+### 92
+Chave Sala Esteril
+
+### 93
+Macaneta
+
+### 94
+Bateria
+
+### 95
+Hemostatico
+
+### 96
+Chave Plataforma
+
+### 97
+Chave Dep. Quimico
+
+### 100
+Objeto do Tanque
+
+### 101
+Emblema de Liga
+
+### 102
+Memo de Alfred
+
+### 103
+Espada Enferrujada
+
+### 104
+Hemostatico
+
+### 105
+Cartao Seguranca
+
+### 106
+Arquivo Seguranca
+
+### 107
+Colar de Alexia
+
+### 108
+Joia de Alexia
+
+### 109
+Relevo da Rainha
+
+### 110
+Relevo do Rei
+
+### 111
+Joia Vermelha
+
+### 112
+Joia Azul
+
+### 113
+Encaixe
+
+### 114
+Registro Quadrado
+
+### 115
+Soro
+
+### 116
+Vaso de Barro
+
+### 117
+Peso de Papel
+
+### 118
+Libelula de Prata
+
+### 119
+Libelula de Prata
+
+### 120
+Objeto de Asa
+
+### 121
+Cristal
+
+### 122
+Libelula de Ouro
+
+### 123
+Libelula de Ouro
+
+### 124
+Libelula de Ouro
+
+### 125
+Arquivo
+
+### 126
+Vaso de Planta
+
+### 127
+Quadro B
+
+### 128
+Maleta Duralumin
+
+### 129
+Maleta Duralumin
+
+### 130
+Polvora de Besta
+
+### 131
+Pistola Melhorada
+
+### 133
+Prancheta
+
+### 134
+Cartao
+
+### 135
+Recorte de Jornal
+
+### 136
+Replica de Luger
+
+### 137
+Relevo da Rainha
+
+### 138
+Foto da Familia
+
+### 139
+Arquivo
+
+### 140
+Controle Remoto
+
+### 143
+Balas de Calico
+
+### 144
+Mistura Clement
+
+### 145
+Manual de Jogo
+
+### 149
+Extintor Vazio
+
+### 150
+Encaixe Quadrado
+
+### 152
+Chave Brasao S
+
+### 153
+Chave Brasao G
+
+### 154
+Usa/Examina itens.
+
+### 157
+Volta para o jogo.
+
+### 158
+Chave do Deposito
+
+### 159
+Manual de Jogo
+
+### 160
+Fax da Entrada
+
+### 161
+Descricao TG-01
+
+### 162
+Manual do Usuario
+
+### 163
+Memo da Senha
+
+### 164
+Memo Novo Mestre
+
+### 165
+Arquivo Seguranca
+
+### 166
+Relatorio da Liga
+
+### 167
+Diario Prisioneiro
+
+### 168
+Nota do Anatomista
+
+### 169
+Nota da Secretaria
+
+### 170
+Diario D.I.J.
+
+### 171
+Recorte de Jornal
+
+### 172
+Cartao Mensagem
+
+### 173
+Relatorio de Hunk
+
+### 174
+Diario do Operario
+
+### 175
+Memo de Alexander
+
+### 176
+Carta do Mordomo
+
+### 177
+Carta de Confissao
+
+### 178
+Memo da Passagem
+
+### 179
+Relatorio Veronica
+
+### 180
+Diario de Alfred
+
+### 181
+Relat. F. Rainha
+
+### 182
+Relatorio do Virus
+

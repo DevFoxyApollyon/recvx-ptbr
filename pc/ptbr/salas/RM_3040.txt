@@ -1,0 +1,64 @@
+# RM_3040.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Um retrato de homem
+em exposicao.
+
+### 1
+Parece ser um quadro
+desta sala...
+
+### 2
+Ha sinais de que um
+quadro ficava aqui.
+
+### 3
+Parece haver um esqueleto
+humano desenhado...{FF02:0000}
+Me da arrepios...
+
+### 4
+
+Fechado com uma tranca simples.
+
+### 5
+
+Nao sobrou nada.
+
+### 6
+
+Fechado com uma tranca simples.{FF02:0000}Usar {FF03:0032}?
+                {espaco}Sim  {espaco}Nao
+
+### 7
+Uma maquete desta
+instalacao.{FF02:0000}Tem um buraco para
+encaixar algo...
+
+### 8
+Com isto voce pode
+salvar o progresso.{FF02:0000}Usar uma fita de tinta?
+                {espaco}Sim  {espaco}Nao
+
+### 9
+
+Uma maquina de escrever velha.{FF02:0000}Eu poderia salvar se
+tivesse uma fita de tinta.
+
+### 12
+Uma placa comemorativa.
+Ha algo escrito.{FF02:0000}Em homenagem a conclusao
+do centro de treinamento.{FF02:0000}8 de dezembro
+Alfred Ashford
+
+### 13
+
+Ha uma placa da aguia pendurada.{FF02:0000}O quadro nao pode
+ficar assim.
+
+### 14
+
+A trava foi liberada.
+

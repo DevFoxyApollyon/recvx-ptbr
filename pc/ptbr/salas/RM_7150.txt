@@ -1,0 +1,31 @@
+# RM_7150.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+
+Desabou de um jeito horrivel...
+
+### 1
+
+Ha uma copiadora.{FF02:0000}
+Tambem serve como impressora.
+
+### 2
+Esta num estado
+terrivel de abandono...
+
+### 3
+
+Que bagunca.{FF02:0000}
+Nao ha nada util.
+
+### 6
+
+Esta trancado.{FF02:0000}
+Nao consigo abrir.
+
+### 7
+
+Nao sobrou nada.
+

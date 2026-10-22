@@ -1,0 +1,17 @@
+# RM_0120.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+E uma corrente forte e bem
+feita.{FF02:0000}Tem uma algema presa
+numa ponta.
+
+### 1
+Ha uma cadeira de
+formato estranho.
+
+### 5
+Aparelhos esquisitos
+enfileirados.
+

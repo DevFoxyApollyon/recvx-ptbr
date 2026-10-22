@@ -1,0 +1,32 @@
+# RM_5010.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+E o lancador da
+catapulta.{FF02:0000}O lancamento esta sendo
+preparado...
+
+### 1
+
+Preparacao concluida.{FF02:0000}Lancar a catapulta?
+                {espaco}Sim  {espaco}Nao
+
+### 2
+
+Esta bem lacrado.{FF02:0000}
+Nao consigo abrir.
+
+### 3
+Material preparado.
+Catapulta pronta.
+
+### 4
+
+Preciso derrotar aquele monstro!
+
+### 5
+Sao os materiais
+preparados para o lancamento.{FF02:0000}Esta cheio de algum
+tipo de explosivo.
+

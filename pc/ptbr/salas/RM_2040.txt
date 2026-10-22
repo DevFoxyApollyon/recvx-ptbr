@@ -1,0 +1,57 @@
+# RM_2040.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+
+Parece ser um relevo.{FF02:0000}Parecem as costas de uma
+mulher...
+
+### 1
+O buraco no teto
+foi lacrado...
+
+### 2
+Subir a escada?
+                {espaco}Sim  {espaco}Nao
+
+### 3
+Moveis finos decoram
+o lugar.{FF02:0000}
+Nao ha nada util aqui.
+
+### 4
+Talvez servisse para
+pendurar roupas.
+
+### 5
+
+A caixa de musica esta trancada.{FF02:0000}A placa de musica
+foi tirada.
+
+### 6
+A tampa da caixa de musica esta
+aberta...
+
+### 7
+A caixa de musica esta
+tocando...
+
+### 18
+
+O Steve parece inquieto...{FF02:0000}
+E melhor examinar esta sala.
+
+### 19
+Uma safira azul esta
+encaixada numa abertura.
+
+### 20
+
+Uma peruca loira.{FF02:0000}
+Esta suja de sangue...
+
+### 21
+O vestido de Alexia
+foi largado aqui.
+

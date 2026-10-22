@@ -1,0 +1,47 @@
+# RM_7050.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+
+Esta muito quebrado.{FF02:0000}O Virus-T pode ter
+vazado daqui...
+
+### 2
+O deposito quimico
+esta trancado.
+
+### 4
+Roupas de trabalho
+antibacterianas guardadas.
+
+### 5
+Nao sei qual destes
+e util...
+
+### 6
+O deposito quimico
+esta trancado.{FF02:0000}Usar {FF03:0061}?
+                {espaco}Sim  {espaco}Nao
+
+### 7
+Ajustar a temperatura?
+                {espaco}Sim  {espaco}Nao
+
+### 8
+Concluir o ajuste?
+                {espaco}Sim  {espaco}Nao
+
+### 10
+
+Nada aconteceu...
+
+### 11
+
+Nao ha nada util aqui.
+
+### 12
+Voce nao precisa mais desta
+chave.{FF02:0000}Descartar {FF03:0061}?
+                {espaco}Sim  {espaco}Nao
+

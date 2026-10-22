@@ -1,0 +1,57 @@
+# RM_0080.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Ha um encaixe na
+placa anil.
+
+### 1
+
+Parece estar trancado.{FF02:0000}
+Preciso destravar antes.
+
+### 2
+Este botao controla as
+portas de aco externas.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 3
+Uma guilhotina coberta de
+sangue.{FF02:0000}Parece ter sangue
+fresco nela.
+
+### 5
+
+Parece uma lixeira.
+
+### 6
+Parece que alguem foi
+amarrado aqui...{FF02:0000}Ha sangue fresco
+na parede...{FF02:0000}Alguem pode ter sido
+amarrado na coluna...
+
+### 7
+
+Esta todo pregado.{FF02:0000}
+Impossivel abrir.
+
+### 8
+
+A porta de aco externa esta{FF02:0000}trancada.{FF02:0000}
+Preciso liberar a trava.
+
+### 9
+A porta de aco externa
+ja esta aberta.
+
+### 10
+A trava ja foi
+liberada.{FF02:0000}Talvez eu abra com
+o botao da esquerda...
+
+### 11
+
+Uma porta de aco externa.{FF02:0000}Talvez eu abra com
+o botao da esquerda...
+

@@ -1,0 +1,36 @@
+# RM_9150.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+
+E a Claire!{FF02:0000}Ela desmaiou dentro
+do casulo.{FF02:0000}Preciso de alguma
+ferramenta para abrir.
+
+### 16
+
+Esta trancado.{FF02:0000}Ha um simbolo biohazard
+gravado na fechadura.
+
+### 18
+
+Esta trancado.
+
+### 20
+E um quadro dos gemeos
+com o pai.{FF02:0000}Ha tres buracos estranhos.
+No dedo do menino,{FF02:0000}na orelha do homem e
+no peito da menina.
+
+### 21
+
+E a Claire!{FF02:0000}Ela desmaiou dentro
+do casulo.{FF02:0000}Nao consigo salva-la com as
+maos.
+
+### 22
+
+A Claire esta envenenada.{FF02:0000}
+Preciso de soro.
+

@@ -1,0 +1,126 @@
+# RM_1050.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 1
+Material de referencia
+visual aqui.{FF02:0000}A guerra parece ser o
+tema principal...
+
+### 2
+Uma joia em forma de
+formiga em exposicao.
+
+### 3
+Uma joia em forma de
+formiga em exposicao.{FF02:0000}
+Ha um botao embaixo.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 4
+Itens militares antigos
+guardados aqui.
+
+### 5
+Um par de {FF03:0021}
+em exposicao.{FF02:0000}Pegar?
+                {espaco}Sim  {espaco}Nao
+
+### 6
+Ha um encaixe no formato
+de duas pistolas.
+
+### 8
+
+Ha um painel de controle.{FF02:0000}Usar?
+                {espaco}Sim  {espaco}Nao
+
+### 9
+
+Preciso salvar o Steve!
+
+### 10
+Ha um espaco onde ficavam
+{FF03:0021}.{FF02:0000}Devolver {FF03:0021}?
+                {espaco}Sim  {espaco}Nao
+
+### 21
+Armas de varios paises
+em exposicao aqui.
+
+### 22
+Condecoracoes em
+exposicao aqui.
+
+### 23
+
+E um tanque de brinquedo.
+
+### 24
+
+O Steve esta sofrendo.{FF02:0000}Ha uma mensagem no
+painel de controle.{FF02:0000}Quando dois pares se
+completam, minha ira passa.{FF02:0000}Operar?
+                {espaco}Sim  {espaco}Nao
+
+### 25
+
+Ha botoes.{FF02:0000}Apertar qual botao?
+ {FE09}{espaco}A{espaco}B{espaco}C{espaco}D{espaco}E{espaco}F {espaco}Ok
+
+### 26
+{FE00}Apertar qual botao?
+ {FE09}{espaco}A{espaco}B{espaco}C{espaco}D{espaco}E{espaco}F {espaco}Ok
+
+### 27
+{FE00}Apertar qual botao?
+ {espaco}A{FE09}{espaco}B{espaco}C{espaco}D{espaco}E{espaco}F {espaco}Ok
+
+### 29
+Um navio de guerra em
+miniatura em exposicao.
+
+### 30
+Um caca em miniatura
+em exposicao.
+
+### 31
+Duas magnums em
+exposicao.
+
+### 32
+Duas pistolas em
+exposicao.
+
+### 34
+Facas de combate
+em exposicao.
+
+### 35
+A saida esta
+totalmente bloqueada.
+
+### 36
+
+A tela de projecao esta baixada.
+
+### 37
+{FE00}Apertar qual botao?
+ {espaco}A{espaco}B{FE09}{espaco}C{espaco}D{espaco}E{espaco}F {espaco}Ok
+
+### 38
+{FE00}Apertar qual botao?
+ {espaco}A{espaco}B{espaco}C{FE09}{espaco}D{espaco}E{espaco}F {espaco}Ok
+
+### 39
+{FE00}Apertar qual botao?
+ {espaco}A{espaco}B{espaco}C{espaco}D{FE09}{espaco}E{espaco}F {espaco}Ok
+
+### 40
+{FE00}Apertar qual botao?
+ {espaco}A{espaco}B{espaco}C{espaco}D{espaco}E{FE09}{espaco}F {espaco}Ok
+
+### 43
+
+Nada acontece.
+

@@ -1,0 +1,40 @@
+# RM_9010.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+
+Ele esta morto.
+
+### 1
+
+Que bagunca.
+
+### 4
+
+So tem livros inuteis.
+
+### 5
+
+Nao ha nada no armario.
+
+### 11
+Nao ha nada de
+interessante aqui.
+
+### 19
+Uma cama. Parece ser o
+alojamento dos operarios.
+
+### 20
+
+Ha mais alguma coisa aqui.
+
+### 21
+Pegar o mapa da base?
+                {espaco}Sim  {espaco}Nao
+
+### 22
+Voce pegou o mapa da base
+de transporte da Antartida.
+

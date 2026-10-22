@@ -1,0 +1,7 @@
+# RM_7240.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 2
+{FE00}En{FF02:0003}{FE08}Enquan{FF02:0003}{FE08}Enquanto isso{FF02:001E}{FE08}Nu{FF02:0003}{FE08}Numa{FF02:0003}{FE08}Numa il{FF02:0003}{FE08}Numa ilha{FF02:0003}{FE08}Numa ilha iso{FF02:0003}{FE08}Numa ilha isola{FF02:0003}{FE08}Numa ilha isolada{FF02:0028}{FE08}Chr{FF02:0003}{FE08}Chris{FF02:0003}{FE08}Chris Redf{FF02:0003}{FE08}Chris Redfield...{FF02:0028}{FE08}
+

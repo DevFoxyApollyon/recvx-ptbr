@@ -1,0 +1,140 @@
+# RM_6050.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+
+Ha um aviso.{FF02:0000}Gas anti-B.O.W.
+Manuseie com cuidado.
+
+### 1
+Usar {FF03:0059}?
+                {espaco}Sim  {espaco}Nao
+
+### 2
+Usar {FF03:005A}?
+                {espaco}Sim  {espaco}Nao
+
+### 3
+
+Fechado com uma tranca simples.
+
+### 4
+Voce usou
+{FF03:0059}.{FF02:0000}Voce nao precisa mais de
+{FF03:0059}.{FF02:0000}Descartar {FF03:0059}?
+                {espaco}Sim  {espaco}Nao
+
+### 5
+Voce usou
+{FF03:005A}.{FF02:0000}Voce nao precisa mais de
+{FF03:005A}.{FF02:0000}Descartar {FF03:005A}?
+                {espaco}Sim  {espaco}Nao
+
+### 6
+Voce usou
+{FF03:0059}.
+
+### 7
+Voce usou
+{FF03:005A}.
+
+### 8
+Nao e usado faz
+muito tempo.
+
+### 10
+
+Nao sobrou nada.
+
+### 18
+Colar {FF03:005B}?
+                {espaco}Sim  {espaco}Nao
+
+### 19
+Voce colou
+{FF03:005B}.
+
+### 20
+Um conteiner com
+{FF03:005B}.{FF02:0000}"Destino: deposito
+de B.O.W.".
+
+### 21
+
+E um separador de cargas.{FF02:0000}Separa as cargas e as
+manda para os depositos.
+
+### 22
+Parece nao ser usado
+ha algum tempo.
+
+### 23
+E o botao de energia
+do separador.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 24
+E o botao de energia
+do separador.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 25
+Parece que nao esta
+recebendo energia.
+
+### 26
+O botao de energia
+ja esta ligado.
+
+### 27
+Painel de controle do
+separador.{FF02:0000}Esta sem energia.
+Nao consigo operar.
+
+### 28
+Painel de controle do
+separador.{FF02:0000}Baixar a alavanca?
+                {espaco}Sim  {espaco}Nao
+
+### 29
+
+O separador esta funcionando.
+
+### 30
+Nao preciso ligar
+o separador.
+
+### 31
+
+A trava foi liberada.
+
+### 32
+Esta sala esta cheia de
+gas venenoso.{FF02:0000}E perigoso demais
+entrar.
+
+### 38
+
+Esta trancado.{FF02:0000}A porta diz
+"Sala de Maquinas".
+
+### 39
+
+Esta trancado.{FF02:0000}A porta diz
+"Sala de Mineracao".
+
+### 40
+Esta sala esta cheia
+de gas venenoso.{FF02:0000}Equipar {FF03:0027} e entrar?
+                {espaco}Sim  {espaco}Nao
+
+### 41
+E perigoso demais
+entrar.
+
+### 42
+
+Fechado com uma tranca simples.{FF02:0000}Usar {FF03:0032}?
+                {espaco}Sim  {espaco}Nao
+

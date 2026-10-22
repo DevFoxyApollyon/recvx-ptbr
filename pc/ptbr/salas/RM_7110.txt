@@ -1,0 +1,31 @@
+# RM_7110.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Painel de controle da
+plataforma giratoria.{FF02:0000}
+Ha uma fechadura.
+
+### 1
+Mover a plataforma giratoria?
+                {espaco}Sim  {espaco}Nao
+
+### 2
+
+O botao esta quebrado.
+
+### 3
+
+Nada de especial aqui.
+
+### 4
+
+Um quadro de comando.{FF02:0000}Esta bem lacrado e
+nao pode ser operado.
+
+### 5
+Painel de controle da
+plataforma giratoria.{FF02:0000}Usar {FF03:0060}?
+                {espaco}Sim  {espaco}Nao
+

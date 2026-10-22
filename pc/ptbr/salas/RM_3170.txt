@@ -1,0 +1,78 @@
+# RM_3170.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 4
+E o disjuntor do
+ventilador.{FF02:0000}No momento esta
+na posicao LIGADO.
+
+### 5
+Um leitor de cartao
+de cor anil.
+
+### 6
+
+Nao ha nada util.
+
+### 7
+E uma maquina de
+ventilacao.{FF02:0000}
+Esta bem danificada.
+
+### 8
+"Perigo! Gas inflamavel.
+Nao use perto do fogo."
+
+### 9
+E uma maquina de
+ventilacao.{FF02:0000}Parece ser usada ha
+muito tempo.
+
+### 10
+
+Uma grade de ferro esta baixada.
+
+### 11
+Subir a escada?
+                {espaco}Sim  {espaco}Nao
+
+### 12
+Subir a escada?
+                {espaco}Sim  {espaco}Nao
+
+### 13
+Um leitor de cartao
+de cor anil.
+
+### 14
+Um leitor de cartao
+de cor anil.{FF02:0000}
+Tem trava eletronica.{FF02:0000}Usar {FF03:004C}?
+                {espaco}Sim  {espaco}Nao
+
+### 15
+Esta vazando gas do
+congelador.{FF02:0000}O ventilador
+esta funcionando.
+
+### 16
+Cuidado: o disjuntor pode
+cair por sobrecarga.{FF02:0000}Se cair, levante a
+alavanca como na figura.{FF02:0000}O ventilador volta
+a funcionar.
+
+### 17
+Voce nao precisa mais de
+{FF03:004C}.{FF02:0000}Descartar {FF03:004C}?
+                {espaco}Sim  {espaco}Nao
+
+### 18
+Do outro lado da grade
+ha um leitor anil.
+
+### 19
+Parece um aviso sobre
+o aparelho.{FF02:0000}
+Esta sujo demais para ler.
+

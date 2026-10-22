@@ -1,0 +1,37 @@
+# RM_7040.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 1
+
+Ha memos pregados aqui.{FF02:0000}
+Nada de interessante.
+
+### 3
+
+Nao ha nada util.
+
+### 4
+E uma bancada. Varias
+ferramentas em cima.{FF02:0000}Ha uma peca para
+a Glock 17.
+
+### 5
+E uma bancada. Varias
+ferramentas em cima.{FF02:0000}Posso modificar minha
+Glock 17 aqui. {FF02:0000}Modificar a Glock 17?
+                {espaco}Sim  {espaco}Nao
+
+### 6
+Ha quimicos
+aqui.
+
+### 7
+
+Esta trancado.{FF02:0000}
+Nao consigo abrir.
+
+### 8
+
+Nao sobrou nada.
+

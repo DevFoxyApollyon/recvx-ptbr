@@ -1,0 +1,55 @@
+# RM_9180.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 1
+
+Ele ja esta morto.
+
+### 19
+
+Ha um botao.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 20
+
+Voce apertou o botao.
+
+### 21
+
+E um painel de controle.{FF02:0000}Estes botoes tem o
+mesmo desenho de um item.
+
+### 22
+Apertar qual botao?
+{FE09}{espaco}# {espaco}$ {espaco}& {espaco}{005D} {espaco}* {espaco}>
+
+### 23
+Apertar qual botao?
+{FE09}{espaco}# {espaco}$ {espaco}& {espaco}{005D} {espaco}* {espaco}>
+
+### 24
+Apertar qual botao?
+{FE09}{espaco}# {espaco}$ {espaco}& {espaco}{005D} {espaco}* {espaco}>
+
+### 25
+Parece que devo colocar
+algo aqui.
+
+### 26
+
+Ha algo escrito.{FF02:0000}Como gemeos, Alexia e eu
+somos dois lados da moeda.{FF02:0000}Ha um desenho gravado
+sob o nome de Alexia.{FF02:0000}
+&*>${FF02:0000}
+Ha um botao com um desenho.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 27
+
+>$&* foi digitado.
+
+### 28
+
+Nada acontece.
+

@@ -1,0 +1,31 @@
+# RM_7140.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+
+Desabou de um jeito horrivel...
+
+### 1
+{FF03:0038}
+caiu no esgoto.{FF02:0000}Parece haver uma
+passagem embaixo.
+
+### 2
+Descer a escada?
+                {espaco}Sim  {espaco}Nao
+
+### 3
+A placa da aguia foi
+colocada aqui...
+
+### 4
+
+Ha um relevo gravado aqui.{FF02:0000}
+Parece muito antigo.
+
+### 6
+
+Ha um grande buraco.{FF02:0000}
+Nao da para descer daqui.
+

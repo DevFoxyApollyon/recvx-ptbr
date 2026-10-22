@@ -75,6 +75,14 @@ segunda linha
 Para outra letra, acrescente-a em `EXTRA_GLYPHS` (`pc/tools/text.py`) e regenere a fonte e a
 tabela de larguras (o script de `message.c` fica no histórico do Git).
 
+## Traducao incluida (pc/ptbr)
+
+`pc/ptbr/` guarda so o lado em portugues (itens, sistema e as mensagens das 188 salas, sem
+acentos). `python pc/tools/ptbr_mods.py --iso SLUS-20184.iso --mods <jogo>/mods --exe recvx.exe`
+aplica sobre o texto do seu disco: `SYSMES.ALD` e `textos/RM_xxxx.mes` (so a tabela de mensagens
+de cada sala; o port usa no lugar da tabela da sala quando o menu esta em portugues). `--rdx` no
+`text.py import` ainda grava as salas inteiras (lento, ~3 MB cada).
+
 ## Como funciona
 
 - Mensagens: tabelas de `u16` (códigos de glifo, `ASCII - 32` abaixo de 95, `0xFFxx` controle,

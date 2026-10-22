@@ -1,0 +1,56 @@
+# RM_4010.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 1
+Talvez um sistema de
+controle do aeroporto.
+
+### 2
+
+Ha uma alavanca.{FF02:0000}Levantar a alavanca?
+                {espaco}Sim  {espaco}Nao
+
+### 3
+
+Ha uma alavanca.{FF02:0000}Baixar a alavanca?
+                {espaco}Sim  {espaco}Nao
+
+### 5
+
+Preciso fugir rapido...
+
+### 6
+Este aparelho liga o
+elevador de embarque.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 8
+Parece um painel de
+controle do elevador.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 9
+
+Nao funciona.{FF02:0000}
+Parece faltar alguma coisa.
+
+### 11
+Painel de controle da
+ponte de ferro elevadica.{FF02:0000}
+Falta {FF03:0041}.
+
+### 12
+
+E um elevador de embarque.{FF02:0000}
+Parou no meio do caminho.
+
+### 14
+A ponte de ferro subiu.
+O aviao pode decolar.{FF02:0000}
+Melhor nao mexer nisto agora.
+
+### 15
+Levantar a alavanca?
+                {espaco}Sim  {espaco}Nao
+

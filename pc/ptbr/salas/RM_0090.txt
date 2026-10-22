@@ -1,0 +1,79 @@
+# RM_0090.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Materiais de construcao
+empilhados aqui.{FF02:0000}
+Nada parece util...
+
+### 1
+Varios aparelhos de
+fabricacao ficam aqui.
+
+### 2
+O botao que desliga o
+detector de metais.{FF02:0000}
+A luz de desligado esta acesa.
+
+### 3
+O botao que desliga o
+detector de metais.{FF02:0000}
+A luz de ligado esta acesa.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 4
+Painel de controle do
+scanner 3D.{FF02:0000}
+Ha um botao de ativacao.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 15
+Acho que nao vou usar
+esta maquina de novo.
+
+### 17
+Leve os itens de metal
+que colocou na caixa{FF02:0000}
+de seguranca.
+
+### 18
+A tampa do scanner 3D esta
+aberta.{FF02:0000}Coloque o material
+a ser escaneado.
+
+### 21
+A porta de seguranca esta
+fechada.{FF02:0000}Preciso desligar o detector de
+metais.
+
+### 22
+La fora tem monstros
+para todo lado.
+
+### 23
+Pode quebrar a
+qualquer momento.
+
+### 24
+
+Um duplicador automatico.{FF02:0000}Com os materiais no lugar,
+posso restaurar o objeto.
+
+### 25
+
+Um duplicador automatico.{FF02:0000}Precisa de dados 3D
+para comecar...
+
+### 26
+Os dados 3D ja
+estao prontos.
+
+### 27
+Precisa de dados 3D
+para comecar...
+
+### 28
+
+Dados 3D transmitidos.
+

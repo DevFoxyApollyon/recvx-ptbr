@@ -1,0 +1,35 @@
+# RM_1080.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Com isto voce pode
+salvar o progresso.{FF02:0000}Usar uma fita de tinta?
+                {espaco}Sim  {espaco}Nao
+
+### 1
+
+Esta trancado.{FF02:0000}Ha um encaixe no
+formato de duas armas.
+
+### 2
+Livros tecnicos
+enfileirados aqui.
+
+### 3
+
+Uma maquina de escrever velha.{FF02:0000}Eu poderia salvar se
+tivesse uma fita de tinta.
+
+### 4
+Preciso fugir daqui
+depressa...
+
+### 5
+
+A trava foi liberada.
+
+### 6
+Ha sinais de que a
+estante foi movida.
+

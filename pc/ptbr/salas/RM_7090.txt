@@ -1,0 +1,64 @@
+# RM_7090.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+A lava queima a mata, corre
+ao mar e forma a terra.
+
+### 3
+Abrir a gaveta?
+                {espaco}Sim  {espaco}Nao
+
+### 4
+Abrir qual gaveta?
+{FE09}{espaco}AZ {espaco}VM {espaco}VD {espaco}MR {espaco}Sair
+
+### 5
+Abrir qual gaveta?
+{espaco}AZ {FE09}{espaco}VM {espaco}VD {espaco}MR {espaco}Sair
+
+### 6
+Abrir qual gaveta?
+{espaco}AZ {espaco}VM {FE09}{espaco}VD {espaco}MR {espaco}Sair
+
+### 7
+Com isto voce pode
+salvar o progresso.{FF02:0000}Usar uma fita de tinta?
+                {espaco}Sim  {espaco}Nao
+
+### 8
+
+Uma maquina de escrever velha.{FF02:0000}Eu poderia salvar se
+tivesse uma fita de tinta.
+
+### 10
+Abrir qual gaveta?
+{espaco}AZ {espaco}VM {espaco}VD {FE09}{espaco}MR {espaco}Sair
+
+### 11
+
+Nao abre.
+
+### 12
+Parece que algo
+se soltou.
+
+### 13
+
+Nada de especial.
+
+### 14
+
+Tem erva azul crescendo aqui.{FF02:0000}Usar a erva azul?
+                {espaco}Sim  {espaco}Nao
+
+### 15
+E um canteiro com
+erva azul.{FF02:0000}Nao preciso usar
+isto agora.
+
+### 16
+
+Voce usou a erva azul.
+

@@ -1,0 +1,64 @@
+# RM_3140.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+{FF03:004D}
+esta em exposicao.{FF02:0000}Pegar {FF03:004D}?
+                {espaco}Sim  {espaco}Nao
+
+### 1
+Parece nao estar
+funcionando.{FF02:0000}
+Nao consigo abrir.
+
+### 2
+
+Nao ha nada util.
+
+### 3
+
+Esta rachado...{FF02:0000}Foi destruido por dentro
+com muita forca.
+
+### 5
+Talvez pusessem cobaias
+aqui dentro.
+
+### 7
+Para onde sera que a
+criatura fugiu?
+
+### 8
+
+Parece estar vivo.{FF02:0000}A capsula diz
+"Albinoide Bebe".
+
+### 9
+
+Ha um numero.{FF02:0000}Esta escrito o
+numero "1126".
+
+### 21
+
+Ele ja esta morto...
+
+### 22
+
+Esta rachado.{FF02:0000}Sera que algo fugiu
+pela rachadura?
+
+### 23
+
+Nada de especial.{FF02:0000}Voltar a usar a camera?
+                {espaco}Sim  {espaco}Nao
+
+### 24
+
+Ele parece estar morto.{FF02:0000}Voltar a usar a camera?
+                {espaco}Sim  {espaco}Nao
+
+### 25
+A ventilacao da sala de
+bioexperimentos terminou.
+

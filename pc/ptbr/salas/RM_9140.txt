@@ -1,0 +1,38 @@
+# RM_9140.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 18
+E um conector de energia
+eletrica.{FF02:0000}Ha um vao no formato
+de octogono.
+
+### 20
+E o quadro de energia
+deste andar.{FF02:0000}Mover a alavanca?
+                {espaco}Sim  {espaco}Nao
+
+### 21
+E o quadro de energia
+deste andar.
+
+### 22
+E um conector de energia
+eletrica.{FF02:0000}
+Falta o encaixe.
+
+### 23
+E um conector de energia
+eletrica.{FF02:0000}Posso trocar o fornecimento
+de energia.
+
+### 24
+Com isto voce pode
+salvar o progresso.{FF02:0000}Usar uma fita de tinta?
+                {espaco}Sim  {espaco}Nao
+
+### 25
+
+Uma maquina de escrever velha.{FF02:0000}Eu poderia salvar se
+tivesse uma fita de tinta.
+

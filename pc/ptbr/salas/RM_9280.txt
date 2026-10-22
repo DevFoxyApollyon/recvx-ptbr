@@ -1,0 +1,28 @@
+# RM_9280.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 21
+
+A grade de ferro esta baixada.{FF02:0000}Talvez abra com o
+leitor de cartao da direita.
+
+### 32
+
+Esta bem trancado.
+
+### 62
+
+Um leitor de cartao.{FF02:0000}
+A trava de seguranca esta ativa.
+
+### 63
+
+A grade de ferro ja esta aberta.
+
+### 64
+
+Um leitor de cartao.{FF02:0000}
+A trava de seguranca esta ativa.{FF02:0000}Usar {FF03:0069}?
+                {espaco}Sim  {espaco}Nao
+

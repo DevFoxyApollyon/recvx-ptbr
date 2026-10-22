@@ -1,9 +1,2946 @@
-# Mensagens do sistema (SYSMES.ALD) em português: só as traduzidas, sem o texto original.
+# Mensagens do sistema (SYSMES.ALD) em portugues: so as traduzidas, sem o texto original.
 # pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
 # Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
 
+### 1
+Outro nome para
+o Lanca-Foguetes
+e Bazuca.{FF02:0000}Derrota a maioria
+dos inimigos com
+um so tiro.
+
+### 2
+O Fuzil de Assalto
+AK47.{FF02:0000}Usa balas de
+7.62mm.
+
+### 3
+MR7{FF02:0000}Um rifle de
+ferrolho
+americano.{FF02:0000}Com a luneta voce
+acerta inimigos
+distantes.
+
+### 4
+SPAS 12{FF02:0000}Uma escopeta de
+combate feita para
+uso militar.{FF02:0000}Usa cartuchos
+calibre 12.
+
+### 5
+Glock 17{FF02:0000}Uma pistola grande
+que usa balas
+9mm \ 19.
+
+### 6
+M79 Lanca-Granadas{FF02:0000}Usa granadas
+de 40mm.
+
+### 7
+Besta de Mao{FF02:0000}Uma besta potente
+usada sobretudo
+para caca.
+
+### 8
+A primeira escolha
+de um sobrevivente
+veterano.
+
+### 9
+M93R{FF02:0000}Uma pistola
+italiana que usa
+balas 9mm \ 19.
+
+### 10
+M93R Rajada{FF02:0000}E uma M93R
+equipada com
+coronha.{FF02:0000}Pode ser ajustada
+para disparar 3
+balas seguidas.
+
+### 11
+Lancador Linear
+Anti-B.O.W.{FF02:0000}Uma arma avancada
+feita para
+enfrentar B.O.W.s.
+
+### 12
+Balas 9mm \ 19{FF02:0000}Servem na
+M93R e na
+Glock 17.
+
+### 13
+Cartucho Magnum{FF02:0000}Contem balas
+potentes para
+uma magnum.
+
+### 14
+Cartuchos cal. 12{FF02:0000}Servem na
+SPAS 12.
+
+### 15
+Servem no
+Lanca-Granadas
+M79.
+
+### 16
+Uma municao
+especial cheia de
+acido sulfurico.
+
+### 17
+Uma municao
+especial cheia de
+napalm.
+
+### 18
+Uma flecha de
+ferro para usar
+com a besta.
+
+### 19
+Com isto a M93R
+pode ser
+modificada.
+
+### 20
+Este spray
+restaura toda a
+sua saude.
+
+### 21
+Cultivada a partir
+da erva de
+Raccoon City.
+
+### 22
+Cultivada a partir
+da erva de
+Raccoon City.
+
+### 23
+Cultivada a partir
+da erva de
+Raccoon City.
+
+### 24
+Uma mistura de
+duas ervas
+verdes.
+
+### 25
+Uma mistura de
+uma erva verde e
+uma vermelha.
+
+### 26
+Uma mistura de
+uma erva verde e
+uma azul.
+
+### 27
+Mistura de duas
+ervas verdes e
+uma azul.
+
+### 28
+Uma mistura de
+tres ervas
+verdes.
+
+### 29
+Uma mistura de
+tres tipos de
+ervas.
+
+### 30
+Cartucho 357{FF02:0000}Contem balas
+para a magnum.
+
+### 31
+Use numa maquina
+de escrever para
+salvar o jogo.
+
+### 32
+Colt Python{FF02:0000}Arma americana.
+Usa balas
+357 magnum.
+
+### 33
+A coronha e bem
+decorada.{FF02:0000}Usa balas
+30 Luger.
+
+### 34
+Ingram{FF02:0000}Submetralhadora
+calibre 38. Usa
+municao DOT380.
+
+### 35
+Polvora para
+flechas de
+besta.
+
+### 36
+Flecha de ferro
+de besta com
+polvora.
+
+### 37
+Granadas de gas
+anti-B.O.W.
+cheias de gas.
+
+### 38
+Balas DOT 380.
+Servem na
+Ingram.
+
+### 39
+Protege voce
+de gas
+venenoso.
+
+### 40
+Balas de Rifle
+30-06{FF02:0000}Balas potentes
+para rifle de
+ferrolho.
+
+### 41
+Uma maleta de
+duralumin.
+Esta trancada.
+
+### 42
+Balas para
+uma AK47.
+
+### 43
+Um brinco que
+foi usado por
+Alexander.
+
+### 44
+Uma joia verde
+que ficava
+num brinco.
+
+### 45
+Um anel que
+foi usado por
+Alfred.
+
+### 46
+Uma joia azul
+que ficava no
+anel de Alfred.
+
+### 50
+Gazua.{FF02:0000}Abre uma
+fechadura
+simples.
+
+### 51
+Um modelo de
+olho feito de
+vidro.
+
+### 52
+Rolo de papel
+usado num piano
+automatico.{FF02:0000}Se colocado, a
+musica do papel
+sera tocada...
+
+### 53
+Usado para
+pilotar um
+navio.
+
+### 54
+Chave de ativacao
+usada para operar
+um guindaste.
+
+### 55
+Isqueiro a oleo.
+Serve para
+iluminar o escuro.
+
+### 56
+Brasao da familia
+Ashford.{FF02:0000}Uma aguia segura
+uma alabarda
+de ouro.{FF02:0000}A parte anil
+da placa parece
+feita de{FF02:0000}uma liga especial.
+
+### 57
+Equipamento do
+exercito.{FF02:0000}Equipado com ela,
+voce carrega
+mais itens.
+
+### 59
+Um emblema com
+o simbolo de
+um falcao.{FF02:0000}Parece ser de
+ouro puro.
+
+### 60
+Uma formiga rainha
+com um rubi
+vermelho.
+
+### 61
+Uma formiga rei
+com uma safira
+azul.
+
+### 62
+Um cartao que
+brilha em prata.{FF02:0000}Serve no centro
+de treinamento
+militar.
+
+### 63
+Esta trancado.
+Deve haver uma
+fechadura.
+
+### 64
+Um detonador
+sensivel ao
+calor.
+
+### 65
+Parece ter sido
+tirado de um
+painel de{FF02:0000}controle.
+
+### 66
+Uma libelula de
+joias e ouro.{FF02:0000}Todas as asas
+estao presas.
+
+### 67
+Uma chave de
+prata pura.{FF02:0000}Tem gravado o
+brasao da familia
+Ashford.
+
+### 68
+Uma chave dourada.{FF02:0000}Tem gravado o
+brasao da familia
+Ashford.
+
+### 69
+Uma pedra
+hexagonal.{FF02:0000}Tem a figura de
+um jipe
+gravada.
+
+### 70
+Uma pedra
+hexagonal.{FF02:0000}Tem a figura de
+um submarino
+gravada.
+
+### 71
+Uma pedra
+hexagonal.{FF02:0000}Tem a figura de
+um caca
+gravada.
+
+### 72
+Uma chave pequena
+de aco escrita
+"deposito".
+
+### 73
+Cartao ID de um
+funcionario da
+Umbrella.
+
+### 75
+Chave da porta
+de aco
+motorizada.{FF02:0000}A etiqueta diz
+"K-402".
+
+### 76
+Um cartao que
+brilha em anil.{FF02:0000}Serve no centro
+de treinamento
+militar.
+
+### 77
+Um esqueleto
+humano desenhado
+com sangue...
+
+### 78
+Esta placa faz
+uma caixa de
+musica tocar.
+
+### 79
+Uma libelula
+sem as
+asas.
+
+### 81
+Um objeto que
+ficava na{FF02:0000}placa da aguia.{FF02:0000}E de ouro e
+parece uma
+alabarda{FF02:0000}medieval.
+
+### 82
+Serve para
+apagar fogo.
+
+### 83
+Uma maleta de
+metal.{FF02:0000}Parece estar
+fechada.{FF02:0000}Talvez se voce
+examinar com
+atencao...
+
+### 84
+Uma chave simples.{FF02:0000}Talvez abra
+um cadeado.
+
+### 85
+Liga especial
+recem-criada.{FF02:0000}Nao e detectada
+por detector
+de metais.
+
+### 86
+Tem um falcao
+gravado.{FF02:0000}E feito da nova
+liga TG-01.
+
+### 87
+Ferramenta para
+abrir e fechar
+o registro.
+
+### 88
+Ferramenta para
+abrir e fechar
+o registro.
+
+### 89
+Chave que abre
+a porta da sala
+de maquinas.
+
+### 90
+Chave que abre
+a porta da sala
+de mineracao.
+
+### 91
+Etiqueta de
+identificacao para
+separar cargas.
+
+### 92
+Tem um simbolo
+biohazard gravado.
+
+### 93
+Deve ter sido
+tirada de alguma
+porta.{FF02:0000}Mas a macaneta
+nao esta quebrada.
+
+### 94
+Uma bateria de
+grande capacidade.{FF02:0000}Deve servir para
+ligar uma maquina
+grande...
+
+### 95
+Remedio para
+estancar
+sangramento.{FF02:0000}Deve ser usado
+em alguem
+ferido.
+
+### 96
+Chave para mover
+a plataforma
+giratoria.
+
+### 97
+Uma chave de
+metal.{FF02:0000}A etiqueta diz
+"Deposito
+Quimico".
+
+### 98
+Um quimico usado
+para dissolver
+liga reforcada.
+
+### 99
+Um quimico usado
+para dissolver
+liga reforcada.{FF02:0000}Brilha numa certa
+temperatura.
+
+### 100
+Um tanque antigo
+em miniatura sobre
+a base.
+
+### 101
+Tem um falcao
+gravado.{FF02:0000}E feito da nova
+liga TG-01.
+
+### 103
+Esta enferrujada
+e nao serve
+como arma.
+
+### 104
+Remedio para
+estancar
+sangramento.{FF02:0000}Deve ser usado
+em alguem
+ferido.
+
+### 105
+Um cartao para
+liberar a trava
+de seguranca.
+
+### 106
+Parece ter algo
+preso dentro...
+
+### 107
+Um colar que
+pertencia a
+Alexia.
+
+### 108
+Uma joia vermelha
+que ficava
+num colar.
+
+### 111
+Um grande rubi
+vermelho que
+parece enfeite.
+
+### 112
+Uma grande safira
+azul. Pode ser
+um enfeite.
+
+### 113
+Parece ser
+algum tipo de
+encaixe.
+
+### 114
+Um registro
+octogonal com um
+encaixe quadrado.
+
+### 115
+Remedio contra
+um veneno
+especial.
+
+### 116
+Um vaso de barro
+com um belo
+desenho de flor.
+
+### 117
+Ferramenta para
+prender papeis e
+nao espalharem.{FF02:0000}Nao entendo os
+desenhos em cima
+e embaixo,{FF02:0000}mas parece ter
+relacao com a
+Umbrella.
+
+### 118
+Uma libelula.
+Todas as asas
+foram tiradas.
+
+### 119
+Uma libelula.{FF02:0000}Foi feita para as
+asas poderem
+sair.{FF02:0000}Tirar as asas?
+        {espaco}Sim  {espaco}Nao
+
+### 120
+Parecem ser asas
+de libelula.
+{FF02:0000}Parecem ser
+parte de algo.
+
+### 121
+Um cristal bem
+polido.{FF02:0000}Tem um cartao
+dentro.{FF02:0000}Se eu quebrar,
+pego o cartao.
+
+### 122
+Uma libelula
+de ouro.{FF02:0000}Tem uma asa
+presa.
+
+### 123
+Uma libelula
+de ouro.{FF02:0000}Tem duas asas
+presas.
+
+### 124
+Uma libelula
+de ouro.{FF02:0000}Tem tres asas
+presas.
+
+### 126
+Um vaso de planta.
+Parece ser
+comum.
+
+### 128
+A maleta esta
+trancada.{FF02:0000}Deve haver uma
+fechadura em
+algum lugar.
+
+### 129
+A maleta esta
+trancada.{FF02:0000}Deve haver uma
+fechadura em
+algum lugar.
+
+### 130
+Polvora para
+prender nas
+flechas da besta.{FF02:0000}E usada como
+carga explosiva{FF02:0000}por ser potente
+e pouco sensivel.
+
+### 131
+Glock 17
+modificada.{FF02:0000}E uma Glock 17
+modificada.
+
+### 136
+Replica de arma
+inspirada na
+Luger.{FF02:0000}E bem
+decorada.{FF02:0000}Nao serve
+como arma.
+
+### 137
+Um enfeite em
+forma de formiga
+rainha.
+
+### 138
+Uma foto de
+Steve com
+seus pais.
+
+### 140
+Um extintor
+vazio.{FF02:0000}Preciso enche-lo
+de agente
+extintor{FF02:0000}antes de
+usar.
+
+### 141
+Uma chave de
+prata pura.{FF02:0000}Tem gravado o
+brasao da familia
+Ashford.
+
+### 142
+Pistola semi-
+automatica com
+um pente{FF02:0000}especial grande.{FF02:0000}Permite tiros
+rapidos e
+precisos{FF02:0000}com pouco
+coice.
+
+### 143
+Um pente grande
+para usar
+com a{FF02:0000}M-100P.
+
+### 144
+Mistura do tipo
+{005B} com o
+tipo |.{FF02:0000}Dissolve a liga
+reforcada
+Diploid.
+
+### 145
+Tem uma saliencia
+quadrada.
+
+### 146
+Tem um vao
+octogonal.
+
+### 150
+Este item e
+importante e
+deve ser guardado.
+
+### 151
+Nao preciso
+usar isto.{FF02:0000}Vou deixar
+para o Chris.
+
+### 152
+Voce arquivou
+{FF03}
+
+### 153
+Nao cabe mais
+nenhum item.{FF02:0000}Usar agora?
+        {espaco}Sim  {espaco}Nao
+
+### 154
+Nao cabe mais
+nenhum item.
+
+### 155
+Misturar as ervas?
+        {espaco}Sim  {espaco}Nao
+
+### 156
+Esta carregada.
+
+### 157
+Pegar
+{FF03}
+
+### 158
+Voce pegou
+{FF03}
+
+### 159
+Nao ha espaco
+para guardar
+o item.
+
+### 160
+A municao nao
+pode ser usada
+sozinha.
+
+### 161
+Nao preciso
+usar isto agora.
+
+### 162
+Uma peca para
+melhorar a M93R
+estava{FF02:0000}na maleta.
+
+### 163
+Havia balas de
+magnum dentro
+da maleta.
+
+### 164
+Havia polvora de
+besta dentro
+da maleta.
+
+### 165
+O TG-01 estava
+na pasta.{FF02:0000}Havia tambem um
+documento sobre{FF02:0000}a liga especial
+TG-01.
+
+### 166
+{FF03:0059}
+estava no fundo
+do vaso.
+
+### 167
+A formiga rainha
+estava no
+vaso.
+
+### 168
+A alabarda
+da placa da
+aguia{FF02:0000}foi retirada.
+
+### 169
+Havia um cartao
+de seguranca
+entre os arquivos.
+
+### 170
+As asas da
+libelula foram
+retiradas.
+
+### 171
+A parte de metal
+foi retirada e
+voce{FF02:0000}obteve a
+Joia de Alexander.
+
+### 172
+A parte de metal
+foi retirada e
+voce{FF02:0000}obteve a
+Joia de Alfred.
+
+### 173
+A parte de metal
+foi retirada e
+voce{FF02:0000}obteve a
+Joia de Alexia.
+
+### 174
+E grande
+demais.
+Nao encaixa.
+
+### 175
+E um material
+pronto para
+processar.{FF02:0000}Nao adianta
+usar aqui.
+
+### 176
+Nao e um material
+pronto para
+processar.{FF02:0000}Nao adianta
+usar aqui.
+
+### 177
+{FE00}Usa/Examina itens.
+
+### 178
+{FE00}Mostra as areas
+por onde passou.
+
+### 179
+{FE00}Mostra os arquivos
+que voce juntou.
+
+### 180
+{FE00}Volta para
+o jogo.
+
+### 181
+Fechado com uma
+tranca simples.{FF02:0000}Usar a gazua?
+        {espaco}Sim  {espaco}Nao
+
+### 182
+Tem um botao.{FF02:0000}Apertar?
+        {espaco}Sim  {espaco}Nao
+
+### 183
+Tem algo
+pregado aqui.{FF02:0000}Pegar?
+        {espaco}Sim  {espaco}Nao
+
+### 184
+Parece haver
+algo
+dentro.{FF02:0000}Pegar?
+        {espaco}Sim  {espaco}Nao
+
+### 185
+Parece que a
+alabarda pode
+ser retirada.{FF02:0000}Retirar?
+        {espaco}Sim  {espaco}Nao
+
+### 187
+Parece que a
+joia pode ser
+retirada.{FF02:0000}Pegar a joia?
+        {espaco}Sim  {espaco}Nao
+
+### 188
+Fechado com uma
+tranca simples.{FF02:0000}Eu abriria
+se tivesse
+uma gazua.
+
+### 189
+Um timao usado
+para pilotar
+navios.{FF02:0000}Tem uma
+saliencia
+octogonal.
+
+### 190
+Tem uma
+saliencia
+quadrada.
+
+### 191
+Tem um
+encaixe
+octogonal.
+
+### 192
+Tem um
+encaixe
+quadrado.
+
+### 193
+Uma chave de
+ouro.{FF02:0000}Tem gravado o
+brasao da familia
+Ashford.
+
+### 194
+Cartao ID de um
+funcionario da
+Umbrella.{FF02:0000}Esta escrito
+"NTC0394".
+
+### 195
+Esta vazio.{FF02:0000}So funciona
+cheio de agente
+extintor.
+
+### 196
+Havia um emblema
+de liga especial
+na maleta.
+
+### 197
+As flechas nao
+podem ser usadas
+sozinhas.
+
+### 198
+Parece nao fazer
+efeito contra
+este veneno.
+
+### 199
+{FE00}Nao disponivel
+no MODO
+BATALHA.
+
+### 200
+Nao precisa
+guardar, pois
+nao e de metal.
+
 ### 215
 SEM DADOS
+
+### 216
+Prisao: frente
+
+### 217
+Palacio: Sala S
+
+### 218
+Inst. T: RR
+
+### 219
+T.P.: Cabine
+
+### 220
+Base Ant.: CR
+
+### 221
+Inst. T: CR
+
+### 222
+Inst. T: Subsolo
+
+### 223
+Base Ant.: CR
+
+### 224
+Base Ant.: SR
+
+### 225
+Prisao: Obs.
+
+### 226
+Base Ant.: L
+
+### 227
+Inicio Parte 2
+
+### 228
+Historia do Chris
+
+### 229
+Aeroporto: Elev.
+
+### 230
+Aeroporto: Elev.
+
+### 231
+Inst. T: DR
+
+### 232
+Inst. T: DR
+
+### 233
+Residencia: SR
+
+### 237
+Escolha o cartao
+
+### 238
+Verificando o cartao de memoria.
+
+### 239
+Qual cartao de memoria?
+
+### 240
+Nao salvar.
+
+### 241
+Nao carregar.
+
+### 242
+Sobrescrever os
+dados existentes?
+        {espaco}Sim  {espaco}Nao
+
+### 243
+Insira um cartao de memoria
+com os dados do jogo.
+
+### 244
+ERRO: e preciso um cartao
+com 9 blocos livres
+para salvar.
+
+### 245
+ERRO: falha ao salvar.
+
+### 246
+ERRO: falha ao carregar.
+
+### 247
+ERRO: nenhum dado encontrado.
+
+### 248
+ERRO: dados de outra versao.
+
+### 249
+Nenhum cartao detectado.
+
+### 250
+Salvando no cartao de
+memoria. Nao desligue
+o aparelho.
+
+### 251
+Carregando do cartao de
+memoria. Nao desligue
+o aparelho.
+
+### 252
+ERRO: este arquivo
+esta corrompido.
+
+### 253
+Cancelar o salvamento?
+
+### 254
+E preciso um cartao com
+9 blocos livres para
+salvar.
+
+### 255
+Este cartao de memoria
+nao esta formatado.
+
+### 256
+Cartao de Memoria A1
+
+### 257
+Cartao de Memoria A2
+
+### 258
+Cartao de Memoria B1
+
+### 259
+Cartao de Memoria B2
+
+### 260
+Cartao de Memoria C1
+
+### 261
+Cartao de Memoria C2
+
+### 262
+Cartao de Memoria D1
+
+### 263
+Cartao de Memoria D2
+
+### 264
+MODO BATALHA CONCLUIDO!!
+
+### 265
+PARABENS!!
+
+### 266
+SEU RESULTADO
+
+### 267
+MELHOR RESULTADO
+
+### 268
+TEMPO
+
+### 269
+CLASSIFICACAO
+
+### 270
+TEMPO TOTAL
+
+### 271
+VEZES QUE SALVOU
+
+### 272
+TENTATIVAS
+
+### 273
+Lanca-Foguetes!!
+
+### 274
+Nenhum cartao detectado
+no encaixe 1 da
+porta A.
+
+Insira um cartao no
+encaixe 1 da porta A
+para salvar os dados.
+
+Aperte "Start"
+para cancelar.
+
+### 275
+Espaco insuficiente no
+cartao do encaixe 1
+da porta A.
+
+E preciso um cartao com
+2 blocos livres para
+salvar.
+
+Voce pode continuar
+assim, mas nao vai
+conseguir salvar
+os dados.
+
+Aperte "Start"
+para cancelar.
+
+### 276
+Modo Batalha!!
+
+### 277
+Nova roupa da Claire!!
+
+### 278
+Wesker liberado!!
+
+### 279
+Lancador Linear!!
+
+### 280
+
+
+
+
+
+     MANUAL DE JOGO
+
+### 281
+EXAMINE TODOS OS ITENS
+
+Quando pegar um item
+novo, lembre de olha-lo
+com o comando
+"EXAMINAR" na tela de
+status. Vale sempre a
+pena girar o item para
+ve-lo de varios
+angulos.
+
+### 282
+
+TENTE EMPURRAR OBJETOS
+
+Se ficar de frente para
+um objeto e segurar
+para cima no
+direcional, as vezes
+consegue empurra-lo.
+Assim pode achar salas
+e itens escondidos.
+
+### 283
+USE O GIRO RAPIDO
+
+Voce gira 180 graus na
+hora apertando o botao
+Cancelar enquanto
+segura o direcional
+para baixo. Otimo para
+atacar um inimigo e
+depois virar e
+correr.
+
+### 284
+
+USE A TELA DO MAPA
+
+Quando estiver perdido
+ou sem saber o que
+fazer, veja o mapa.
+Fica facil ver onde
+ainda nao foi e quais
+portas ja abriu.
+
+### 285
+
+
+SUBIR/DESCER
+
+Voce pode subir ou
+descer alguns objetos.
+Fique de frente para
+ele e aperte o botao
+de Acao.
+
+### 286
+
+CAIXAS DE SEGURANCA
+
+Os itens guardados numa
+Caixa de Seguranca da
+prisao nao aparecem
+na Caixa de Itens.
+Tire todos os itens
+importantes da Caixa
+de Seguranca antes
+de sair da sala.
+
+### 287
+NAO CONSIGO PEGAR AS
+LUGERS DOURADAS DA
+SALA DE PROJECAO.
+
+Voce nao consegue soltar
+a armadilha sozinho.
+Depois de certos
+eventos, sera possivel
+solta-la e pegar as
+Lugers Douradas.
+
+### 288
+NAO CONSIGO ENTRAR NA
+SALA DE BIOEXPERIMENTOS
+
+Quando a porta de aco
+perto da sala fecha,
+ela so abre depois
+que a ventilacao
+termina, por causa do
+ar contaminado
+na sala.
+
+### 289
+
+
+NAO CONSIGO SUBIR A
+ESCADA DO QUARTO.
+
+Voce precisa colocar
+um par de itens nas
+duas caixas de musica.
+Depois tera que...
+
+### 290
+NAO CONSIGO ENVIAR AS
+CARGAS PELO SEPARADOR
+
+O separador decide para
+qual sala cada carga
+vai por um item colado
+nela. Veja uma carga
+ja separada na sala
+para onde quer mandar
+a sua e entao...
+
+### 291
+
+
+TROCA DE PERSONAGEM
+
+Quando o personagem
+mudar, deixe armas e
+municao suficientes
+para os outros.
+
+### 292
+ITENS REUSADOS
+
+Jogando com o Chris,
+havera um momento em
+que voce precisa usar
+o mesmo item que usou
+com a Claire. Se
+travar, lembre do que
+fez na historia
+da Claire.
+
+### 293
+
+APROVEITE AS ARMADILHAS
+
+No jogo ha muitas
+armadilhas que podem
+tirar sua vida.
+Elas podem ate jogar
+a seu favor se voce
+souber usa-las...
+
+### 294
+
+
+
+
+   FAX DO PEDIDO DE
+   ACESSO A INSTALACAO
+
+### 295
+
+Confira o conteudo do pedido
+de acesso a instalacao abaixo
+e inclua o nome do solicitante
+na lista de visitantes
+esperados.
+
+        Chefe, Guarda da Prisao
+
+                    Paul Steiner
+
+### 296
+
+
+
+Venho solicitar permissao
+de acesso a Area D da Prisao.
+
+Detalhes a seguir.
+
+Visitante: Carl Grisham
+
+### 297
+        Motivo da entrada:
+
+Entrega dos seguintes
+materiais;
+
+1.Amostra de novo produto da
+  Metal Industries Co.:"TG-01".
+
+2.Varios itens de uso diario
+  pedidos pela prisao.
+
+### 298
+
+
+
+Obs.:
+1.Sera usado um caminhao.
+
+2.A amostra "TG-01" ficara
+  numa pasta designada.
+
+### 299
+
+
+
+
+           "TG-01"
+  DESCRICAO DO PRODUTO
+
+### 300
+
+Agradecemos por continuar
+nos apoiando e usando nossos
+produtos.
+
+Desta vez reunimos nossas
+tecnologias mais avancadas e
+conseguimos criar a liga
+unica anti-detector de metais
+"TG-01".
+
+### 301
+     - Recursos do TG-01 -
+
+1.Nao e detectada por nenhum
+  detector de metais.
+
+2.Nao aparece no raio-X
+  da imigracao.
+
+3.Leve, mas resistente.
+
+### 302
+
+
+Planejamos criar varias
+armas com esta nova liga
+inovadora. Enviamos uma
+amostra para sua analise.
+Aguardamos seu contato
+sobre possiveis
+oportunidades de negocio.
+
+### 303
+
+
+
+Metal Industries Co.
+
+Chefe,
+Planejamento e Desenvolvimento
+
+Carl Redhill
+
+### 304
+
+
+
+
+
+    MANUAL DO USUARIO
+
+### 305
+
+
+   Manual do Duplicador 3D
+
+
+Nosso novo produto,
+o "Duplicador 3D", tem
+duas partes.
+
+### 306
+
+
+   O Scanner 3D
+
+
+Esta parte escaneia um
+objeto em 3D.
+
+### 307
+
+
+Basta colocar o material
+que deseja escanear na
+bandeja do scanner. O
+objeto escaneado vira dados
+3D, que sao enviados para
+o duplicador.
+
+### 308
+
+     O Duplicador
+
+Se colocar na maquina o
+material que deseja
+converter, a conversao
+comeca com base nos dados
+3D criados pelo scanner.
+
+### 309
+
+
+
+
+A conversao e feita com
+total precisao dos dados.
+O resultado e um objeto
+identico ao original.
+
+### 310
+
+
+
+
+
+MEMO SOBRE A SENHA
+
+### 311
+
+
+
+A trava de emergencia da porta
+da sala de experimentos
+biologicos abre com a senha
+de 4 digitos. Espero que voce
+ainda nao tenha esquecido.
+
+### 312
+
+
+Acabo de receber uma ordem
+do administrador do sistema
+para trocarmos a senha de
+tempos em tempos. O que me
+preocupa e que voce vive
+perdendo memos importantes,
+senhas e ate quimicos...
+
+### 313
+
+
+
+Entao, para resolver isso,
+tive uma ideia. Sabe o
+quadro do esqueleto humano
+vermelho no fundo da sala
+de experimentos biologicos?
+
+### 314
+
+
+
+Decidi usar o numero
+assinado no quadro como
+senha. Se perder o memo,
+e so olhar o quadro.
+
+### 315
+
+
+
+Bom, acho que voce nunca
+vai precisar da senha de
+emergencia mesmo. Mas, so
+por garantia, agora voce
+sabe. Fica tranquilo,
+Sr. Distraido!
+
+### 316
+
+
+
+
+ MENSAGEM AO
+ NOVO MESTRE DA FAMILIA
+
+### 317
+
+Sir Alfred,
+
+Parabens por assumir como
+mestre da familia Ashford.
+
+Conforme a tradicao da
+familia Ashford, ofereco ao
+senhor um vaso de barro.
+
+### 318
+
+
+Como o senhor sabe, essa
+tradicao comecou quando um
+mordomo deu uma xicara de ouro
+em homenagem a Veronica.
+Fundadora da familia Ashford,
+sua inteligencia e beleza
+sao lendarias.
+
+### 319
+
+
+
+O segundo e o terceiro
+mestres, Stanley e seu filho
+Thomas, tambem ganharam
+xicaras assim. Eles queriam
+alcancar a gloria como
+Veronica antes deles.
+
+### 320
+
+
+O posto de mestre passou
+entao de Sir Thomas para seu
+irmao gemeo, Sir Arthur.
+Depois foi para Sir Edward, seu
+avo. Foi a era de ouro da
+familia Ashford.
+
+### 321
+
+
+
+
+Tambem foi obra de Sir Edward
+a fundacao da grande empresa
+quimica Umbrella Inc.
+
+### 322
+
+
+
+Porem, quando Sir Edward
+morreu e seu pai, Sir
+Alexander, assumiu o posto,
+a gloriosa familia Ashford
+comecou a afundar aos poucos...
+
+### 323
+
+
+Espero sinceramente que a
+familia Ashford recupere sua
+gloria sob seu comando, assim
+como este vaso brilha para
+sempre.
+
+                     Scott Harman
+
+           Mordomo, familia Ashford
+
+### 324
+
+
+
+
+
+      ARQUIVO DE SEGURANCA
+
+### 325
+
+O segredo mais importante da
+familia Ashford fica neste
+laboratorio.
+
+Por seguranca, instalei um
+dispositivo de autodestruicao
+na sala de controle e coloquei
+o codigo de ativacao no
+computador.
+
+### 326
+
+
+Depois de digitado, todas as
+portas sao destravadas para
+facilitar as rotas de fuga.
+
+Pelo elevador que liga direto
+ao hangar, da para escapar
+do laboratorio com
+facilidade.
+
+### 327
+
+
+Lembre que usei o nome da
+minha bela antepassada como
+codigo de ativacao.
+
+     Gloria aos Ashford,
+
+           Alexander Ashford
+
+### 328
+
+
+
+
+RELATORIO:
+LIGA REFORCADA
+ANTI-CORROSAO
+
+### 329
+
+Pretendiamos usar a liga
+reforcada anti-corrosao
+"Deploid" para fazer a
+capsula da nova B.O.W., mas
+cancelamos o plano. O motivo
+principal e que, apesar da
+excelente resistencia a
+todo tipo de liquido
+
+### 330
+
+
+
+inclusive acido forte, ela
+dissolve facilmente quando
+banhada na mistura de dois
+quimicos, "Clement {005B}"
+e "Clement |".
+
+### 331
+
+Como a nova B.O.W. e letal,
+todo cuidado e pouco na
+escolha do material da sua
+capsula.
+
+Decidimos entao usar o
+Deploid na parte da placa da
+"Placa da Aguia", que brilha
+em anil.
+
+### 332
+
+ SOBRE O CLEMENT
+
+
+O tipo {005B} e usado na
+manutencao de armas e nao
+tem nada de especial.
+Ja o tipo |
+fica azul numa certa
+temperatura.
+
+### 333
+
+
+
+(Curiosamente, a temperatura
+e igual a data em que este
+centro de treinamento foi
+concluido.)
+
+### 334
+
+
+
+Pela analise do tipo |,
+achamos que o Clement tem
+mais propriedades. Conforme
+descobrirmos mais, vamos
+atualizar este arquivo.
+
+### 335
+
+
+
+
+
+    DIARIO DO PRISIONEIRO
+
+### 336
+
+13 de maio
+Esta cela cheira a morte.
+Pelo que descobri, acho que
+estou bem ao sul do
+equador.
+
+Sorte minha que o Bob, no
+beliche de baixo, e um
+cara interessante...
+
+### 337
+
+16 de maio
+Hoje o Bob contou uma historia
+maluca de por que veio parar
+aqui comigo. Disse que era
+assistente do chefe deste
+lugar. Esse "chefe", chamado
+Alfred, o teria posto aqui
+por causa de um errinho
+minusculo.
+
+### 338
+
+
+
+
+
+O que isso quer dizer?
+O que vai acontecer comigo?
+
+### 339
+
+20 de maio
+Sem aviso, um grupo de
+militares levou o Bob para o
+predio atras da guilhotina.
+
+A meia-noite, vou sair
+escondido para ve-lo.
+
+### 340
+
+
+Dizem que quem e levado para
+aquele predio nunca volta.
+Alem disso, sempre tiram de la
+uns sacos de plastico ENORMES.
+E melhor eu rezar
+pelo Bob...
+
+### 341
+
+21 de maio
+Eu estava errado. Nao devia
+ter ido la. O que esta
+acontecendo la dentro?! So
+ouvi uma risada medonha e o
+Bob gritando! Nao sei o que
+fazer. Nao paro de pensar
+nisso...
+
+### 342
+
+
+
+
+Vai acontecer comigo tambem?!
+Nao posso deixar...
+Nao posso...
+
+### 343
+
+27 de maio
+Desde a ultima anotacao, todos
+os meus colegas de cela foram
+levados para aquele predio!
+Sei que sou o proximo... Esta
+claro que estamos todos aqui
+como cobaias do Alfred. Nao
+ha saida!
+O que eu vou fazer?!...
+
+### 344
+
+
+
+
+
+   NOTA DO ANATOMISTA
+
+### 345
+Ha um demonio na minha
+mente. Nao controlo os
+impulsos ferozes que ele
+as vezes me faz seguir.
+E uma cerimonia brutal.
+Com o demonio ao meu
+lado, adoro ver as
+pessoas agonizando de
+dor, gritando e se
+contorcendo ate
+morrer...
+
+### 346
+
+
+Mas Sir Alfred teve a
+bondade de me aceitar e
+me deu as instalacoes,
+os quimicos e os
+"equipamentos" para
+estudar tudo.
+
+### 347
+
+Jamais posso trair a
+bondade de Sir Alfred.
+E crucial que ninguem
+descubra o lugar sagrado
+que so ele e eu
+conhecemos.
+Juro que o porao deste
+predio medico ficara
+em segredo.
+
+### 348
+
+Claro que levo a chave
+do lugar sagrado comigo
+o tempo todo...
+Mesmo que alguem de fora
+a veja, nunca vai saber
+que e a chave. Preciso
+lembrar que minha vida
+acaba se eu perder a
+confianca de Sir Alfred.
+
+### 349
+
+
+
+
+
+   NOTA DA SECRETARIA
+
+### 350
+
+Quatro anos se passaram desde
+que comecei a servir Sir Alfred.
+
+Ele nao confia em ninguem!
+Mesmo sendo seu assistente,
+sou proibido de entrar na
+casa particular dele!
+Qual e o problema dele?!
+
+### 351
+
+Dizem que ele mora com a irma
+gemea, Alexia, na casa
+particular do morro.
+
+As vezes vejo alguem parado
+na janela da casa. Talvez
+fosse Alexia, cuja beleza
+extrema e muito comentada.
+
+### 352
+
+
+
+Uma vez perguntei a Sir
+Alfred sobre isso, mas ele
+ficou furioso. Mesmo eu sendo
+seu assistente, ele nao tem
+piedade. Se eu perguntar de
+novo, arrisco minha vida.
+
+### 353
+
+
+
+
+Afinal, e um misterio por que
+ele se esforca tanto para
+esconder sua vida com Alexia.
+
+                    Robert Dorson
+
+### 354
+
+
+
+
+
+      DIARIO D.I.J.
+
+### 355
+Numa forte tempestade, uma
+garota de roupa vermelha foi
+trazida para esta ilha de
+Rockfort, meu lar.
+O que sera que ela fez?
+
+Moro aqui faz um bom
+tempo,
+mas poucos dos que sao
+trazidos para esta ilha
+saem vivos.
+
+### 356
+Entre tiros e fogo,
+apareceram soldados.
+Algo estava acontecendo.
+Fui ate a prisao,
+mas a garota de vermelho
+tinha sumido.
+Corri para o centro de
+treinamento militar.
+O "homem" de Rockfort
+a atacava sem parar.
+Que burrice a minha.
+
+### 357
+
+
+Cheguei perto demais e quase
+fui esmagado pelas portas.
+Mas, gracas a minha agilidade
+natural, consegui sair da
+situacao e chegar la fora.
+Qualquer outro nao teria
+tido tanta sorte.
+
+### 358
+De novo, encontrei a
+garota de vermelho.
+La estava ela, em frente
+a residencia.
+Entao, atras dela, surgiu
+um homem loiro.
+Chamando por ela,
+ele se aproximou de um
+jeito amigavel e comecou
+a dizer algo...
+e aconteceu de repente.
+
+### 359
+
+O homem loiro comecou
+a machucar a garota
+de vermelho.
+"Preciso salva-la",
+pensei comigo.
+Mas o homem loiro
+foi embora.
+Quem era aquele loiro?
+O que ele queria com a
+garota de vermelho?
+
+### 360
+O aviso de autodestruicao e a
+sirene de emergencia anunciavam
+o fim da Ilha Rockfort.
+Corri para o hangar do
+transporte. O aviao em que
+estavamos decolou enquanto
+tudo explodia em chamas.
+Arriscando o pescoco, a garota
+de vermelho jogou o monstro
+para fora, no ceu aberto.
+Ela era mesmo uma Valquiria,
+deusa da destruicao.
+
+### 361
+
+Eu nao acreditava.
+O transporte pousou numa
+base na gelada Antartida.
+E, para piorar,
+o transporte que pousou
+antes de nos espalhou
+toneladas do Virus-T e tudo
+que era vivo ja tinha
+virado zumbi.
+
+### 362
+
+Se eu ficasse, nao teria
+como sobreviver.
+Precisava achar um jeito de
+sair dali, rapido.
+Me separei da garota
+de vermelho.
+Comecei a vasculhar
+a base atras de algo
+que eu pudesse usar.
+
+### 363
+Enquanto eu descansava no
+escuro, alguem vinha. Fosse o
+que fosse, estava ali.
+A porta fechou de repente e
+nao havia saida. Fiquei
+batendo nas portas. Entao a
+porta abriu. Sai disparado.
+Mas nao sou covarde.
+Parei e virei, e la estava
+ela, a garota de vermelho,
+parada olhando para
+mim.
+
+### 364
+
+Que lugar era aquele?
+Fiquei preso numa sala com
+um elevador e um canhao velho.
+Para onde eu deveria ir?
+Eu estava encalhado.
+Senti um desespero sem fim.
+Entao apareceu o loiro de
+oculos escuros.
+Ele segurava aquela garota
+numa chave de braco.
+
+### 365
+
+Entao um homem de colete
+preto veio correndo atras.
+O loiro sumiu dentro da
+cela da prisao com
+a garota.
+O homem de colete preto
+foi atras deles.
+Eu tambem corri para
+segui-los.
+
+### 366
+
+
+Foi uma luta dura, cara
+a cara. O homem que conhecia
+aquela garota tambem era um
+monstro? A luta parecia que
+ia durar para sempre.
+Entao, de repente, houve uma
+explosao que interrompeu
+a luta.
+
+### 367
+Era a ultima chance que
+eu tinha de sair dali.
+Entrei escondido pela
+escotilha do submarino
+quando ela ia fechar.
+Enfim, sai de um mundo
+de morte e pude voltar
+a um mundo governado
+pelo desejo e pelo
+poder.
+                           D.I.J.
+
+### 368
+
+
+
+
+
+    RECORTE DE JORNAL
+
+### 369
+
+
+Uma menina prodigio de 10 anos
+se formou em primeiro lugar numa
+universidade de prestigio.
+
+A empresa internacional
+Umbrella Chemical Inc. ofereceu
+a ela o cargo de chefe de
+pesquisa.
+
+### 370
+
+
+
+
+
+     CARTAO MENSAGEM
+
+### 371
+
+Meu querido irmao,
+
+Acredito firmemente que a
+gloria da familia Ashford
+sera revivida pela sua
+coragem e forca como um
+soldado honrado.
+
+                 Com carinho,
+                   Alexia Ashford
+
+### 372
+
+
+
+
+
+    RELATORIO DE HUNK
+
+### 373
+
+
+A: Sr. Alfred Ashford,
+chefe da instalacao.
+
+Hoje, as 16:32, cheguei
+com sucesso da base de
+transporte da Umbrella com a
+grande capsula de B.O.W.
+
+### 374
+
+
+O transporte foi feito com
+extremo cuidado, e os 108
+pontos de checagem foram
+confirmados "verde", conforme
+o procedimento padrao.
+
+Ela esta guardada num
+congelador.
+
+### 375
+
+
+
+Uma coisa nao entendo.
+Normalmente somos designados
+para missoes especiais.
+Por que mandaram a gente
+transportar uma capsula
+congelada desta vez?
+
+### 376
+
+
+Entendo que pode ser
+ultrassecreto, mas sem saber
+o conteudo, nossa seguranca
+pode correr risco no
+transporte. Isso e ainda
+mais importante se o
+conteudo for perigoso.
+
+### 377
+
+Pedimos que nos de mais
+informacoes caso recebamos
+missoes parecidas no
+futuro.
+
+Ainda lembro dos bons tempos
+que passei aqui no centro de
+treinamento militar. Nada
+mudou desde entao.
+
+### 378
+
+
+
+Vamos nos preparar para a
+proxima missao, hoje as 23:00.
+
+
+ Unidade de Forcas Especiais
+ da Umbrella
+                          HUNK
+
+### 379
+
+
+
+
+
+    DIARIO DO OPERARIO
+
+### 380
+
+
+30 de outubro
+Quando entrei na Umbrella
+Inc., achei que viveria
+tranquilo pelo resto da vida,
+trabalhando para esta
+enorme empresa.
+
+### 381
+
+
+E piada eu ter virado
+motorista num lugar assim.
+Pedi para mudar de cargo,
+mas me ignoraram totalmente.
+Parece mais uma prisao! O
+trabalho e pesadissimo e nao
+tem nada de divertido. Melhor
+estar morto!
+
+### 382
+
+3 de novembro
+Minhas ferias suadas foram
+canceladas de repente. Dizem
+que faltou gente por um erro
+do chefe da instalacao, o
+Alfred. Aquele idiota nao
+merece perdao. Ele nem trata
+a gente como ser humano!
+
+### 383
+
+
+
+5 de novembro
+Ouvi uma historia curiosa de
+um cara que trabalha aqui ha
+mais de 8 anos. Ele deve ter
+muita paciencia...
+
+### 384
+
+
+Ele diz que tem um homem
+preso ha mais de 10 anos
+numa cela bem la no fundo,
+embaixo daqui. Chamam ele de
+"Nosferatu" e morrem de medo
+dele. Que historia
+absurda!
+
+### 385
+
+
+10 de novembro
+A meia-noite acordei com um
+rosnado sinistro que parecia
+vir das profundezas da
+terra... Que patetico ter
+medo de uma historia tao
+boba.
+
+### 386
+
+
+
+Mas tambem, acho que qualquer
+um teria dificuldade de
+manter a sanidade preso num
+lugar como este!!
+
+### 387
+
+
+
+
+
+  MEMO DE ALEXANDER
+
+### 388
+
+
+
+Meu pai, Edward, descobriu o
+virus-mae junto com Lord
+Spencer, tambem um nobre.
+Eles o estudaram para uso
+militar.
+
+### 389
+
+
+Com o tempo, o estudo tomou
+forma. Batizaram uma variacao
+do virus-mae de "Virus-T".
+
+Para disfarcar a pesquisa,
+fundaram a Umbrella Chemical,
+Inc.
+
+### 390
+
+
+Me formei em biogenetica e
+participei de um projeto
+ultrassecreto, apoiando a
+pesquisa do meu pai.
+
+Mas minha pesquisa passou por
+uma fase dificil, e meu pai
+morreu no meio do projeto.
+
+### 391
+
+Agora estamos em grande
+desvantagem contra outros
+pesquisadores, pois a
+competicao na pesquisa do
+Virus-T e enorme. Manchei o
+nome honrado da familia
+Ashford, fundada por nossa
+grande ancestral
+Veronica.
+
+### 392
+
+
+
+Se nada for feito, a Umbrella
+sera tomada por Spencer.
+Preciso acelerar o projeto ao
+maximo, sem que Spencer
+perceba.
+
+### 393
+
+
+Depois de muito pensar, decidi
+criar uma grande instalacao de
+pesquisa avancada. Ela ficara
+no terminal de transporte que
+construi na mina abandonada
+da Antartida.
+
+### 394
+
+
+Dentro da instalacao, vou
+mandar construir uma sala
+parecida com a minha mansao,
+legado do falecido Trevor.
+
+La poderei guardar minhas
+doces lembrancas...
+
+### 395
+
+
+Por seguranca, este projeto
+confidencial tera um codinome.
+E o nome da bela antepassada
+da familia Ashford, "Veronica",
+que tanto desejo reviver.
+
+### 396
+
+
+
+Tenho certeza de que o
+resultado da minha pesquisa
+sera tao glorioso quanto o
+nome dela, e que a honra
+voltara a familia Ashford.
+
+### 397
+
+
+
+
+
+   CARTA DO MORDOMO
+
+### 398
+
+
+
+Sir Alfred,
+
+Perdoe-me por avisar da minha
+partida repentina deixando
+esta carta.
+
+### 399
+
+
+Servi primeiro ao seu pai,
+Lord Alexander, e por muito
+tempo dividi as alegrias e
+tristezas da familia Ashford.
+Lord Alexander sumiu de
+repente ha 15 anos, e depois
+um acidente num experimento
+tirou a vida da querida Alexia.
+
+### 400
+
+
+
+O senhor teve que se tornar
+mestre da familia muito
+jovem, e quase perdeu a
+sanidade com a dor de perder
+toda a familia de uma
+so vez.
+
+### 401
+
+
+Nao havia nada que eu pudesse
+fazer, e me senti impotente.
+
+Primeiro pensei em me matar
+para pedir perdao. Depois
+percebi que seria um insulto
+ao querido Lord Alexander e
+a Alexia, no outro mundo...
+
+### 402
+
+
+
+
+                 Scott Harman
+
+                      Mordomo,
+               familia Ashford
+
+### 403
+
+
+
+
+
+  CARTA DE CONFISSAO
+
+### 404
+
+Alexia, minha irma, e um genio
+de beleza incomparavel.
+Ela e tudo para mim. Eu venceria
+qualquer obstaculo e arriscaria
+minha vida por ela.
+Por Alexia, preciso reviver a
+gloriosa familia Ashford, que
+caiu na era do meu pai,
+Alexander.
+
+### 405
+
+Juntos, vamos restaurar o
+nome da familia. Feito isso,
+construirei um palacio onde
+so nobres poderao se reunir.
+Nao posso deixar a rale ver
+minha querida Alexia, a quem
+dedico minha vida.
+Ela reinara no mundo como
+rainha, e eu, como seu servo.
+
+### 406
+
+
+
+Esse e o meu sonho, e como
+sera doce. Essas conquistas
+serao a prova do meu amor
+por Alexia.
+E o motivo da minha existencia.
+
+### 407
+
+
+Todos os outros nao tem valor,
+e logo vao se curvar diante
+de Alexia e de mim.
+
+
+ Devotado a minha amada Alexia,
+
+                Alfred Ashford
+
+### 408
+
+
+
+
+
+ NOTA DA PASSAGEM SECRETA
+
+### 409
+
+
+A passagem subterranea que leva
+a mansao onde Alexia e eu
+moramos esta muito danificada.
+Nunca posso deixar a rale ver
+Alexia, mas tambem nao posso
+continuar usando o canal
+subterraneo que os moradores
+locais fizeram.
+
+### 410
+
+
+
+
+Ah, sim... Vou mandar aqueles
+prisioneiros construirem uma
+ponte. Tem que ser uma ponte
+linda, a altura da perfeicao
+que e Alexia.
+
+### 411
+
+
+Claro, depois de pronta, preciso
+matar todos que trabalharam na
+construcao da ponte, para que
+ninguem saiba que nossa mansao
+existe.
+Mas tudo bem, nao tenho problema
+nenhum em cuidar disso.
+
+### 412
+
+Quando a ponte ficar pronta,
+vou lacrar a porta da mansao
+no fim do canal subterraneo.
+A entrada do canal fica
+trancada pelo truque da
+maquete, garantindo o
+segredo da nossa mansao.
+
+                  Alfred Ashford
+
+### 413
+
+
+
+
+
+RELATORIO CODE: VERONICA
+
+### 414
+
+
+
+Depois de longos anos de pesquisa,
+finalmente identifiquei o
+elemento hereditario que rege
+a inteligencia humana.
+
+### 415
+
+
+
+Consegui ate manipular de forma
+artificial o valor absoluto da
+inteligencia, recompondo a
+sequencia de bases do elemento.
+
+### 416
+
+
+
+Entao coletei o gene da nossa
+grande ancestral, manipulei
+o elemento e o implantei no
+ovulo nao fecundado de uma
+mae de aluguel.
+
+### 417
+
+
+
+O que eu nao esperava era que
+nascessem gemeos, um menino e
+uma menina. O menino tinha
+inteligencia acima do normal,
+mas nao o bastante para ser
+considerado um genio.
+
+### 418
+
+
+
+Ja a menina tinha uma
+inteligencia incomparavel, que
+facilmente a classificava como
+genio. Era exatamente o que eu
+procurava: a volta da nossa
+grande ancestral.
+
+### 419
+
+Ja escolhi os nomes deles;
+a menina se chamara Alexia,
+e o menino, Alfred.
+
+Tenho certeza de que Alexia
+levara o nome da familia
+Ashford a maxima gloria.
+
+               Alexander Ashford
+
+### 420
+
+
+
+
+
+   DIARIO DE ALFRED
+
+### 421
+
+
+30 de janeiro
+Ha uma sala lacrada no
+corredor dentro da instalacao
+da Antartida. Nao sei o que
+esta escondido la, mas sei
+como entrar.
+
+### 422
+
+
+Posso usar as tres joias que
+cada um dos tres membros da
+familia usa como prova de ser
+descendente legitimo dos
+Ashford. O unico problema e
+que nao sei como pegar a
+prova do meu pai.
+
+### 423
+
+
+17 de fevereiro
+Enfim consegui entrar naquela
+sala lacrada. Jamais imaginei
+que existisse um segredo tao
+insano sobre o nascimento
+de Alexia e o meu...
+
+### 424
+
+
+Odeio meu pai. Aquele idiota,
+Alexander... Agora esta claro
+que so fomos criados para
+encobrir o fracasso dele.
+Nunca mais vou confiar nele.
+Preciso devolver a gloria da
+familia Ashford com minha
+irma.
+
+### 425
+
+
+
+
+
+Nao tenho nada a temer,
+enquanto Alexia estiver comigo.
+
+### 426
+
+
+3 de marco
+Alexia fez o experimento no
+corpo humano de que tanto
+falavamos. Nosso pai inutil
+deve estar feliz agora, pois
+finalmente pode contribuir
+com a familia Ashford.
+
+### 427
+
+
+
+So precisamos tomar cuidado
+para que o mordomo, Harman,
+nao descubra o que estamos
+fazendo.
+
+### 428
+
+
+22 de abril
+O experimento fracassou.
+Nosso pai era mesmo inutil.
+Pior ainda, ele virou um
+monstro perigoso e
+totalmente fora de controle.
+
+### 429
+
+
+Nos o amarramos e o trancamos
+numa cela subterranea.
+Mas Alexia parece perto de uma
+solucao. Contra todas as minhas
+expectativas, ela agora diz
+que quer fazer o experimento
+no proprio corpo.
+
+### 430
+
+
+Alem disso, ela acha que
+precisa ficar adormecida por
+15 anos para concluir o
+experimento. Gracas aquele
+idiota, nao poderei ver minha
+querida Alexia por 15 anos.
+
+### 431
+
+
+
+Alexia vai dormir, confiando
+tudo a mim.
+Agora so eu posso proteger
+Alexia.
+
+### 432
+
+
+
+
+   RELATORIO DE PESQUISA
+   SOBRE A FORMIGA RAINHA
+
+### 433
+
+
+
+Depois de achar restos de um
+virus antigo nos genes de uma
+formiga rainha, venho me
+dedicando a pesquisa das
+formigas.
+
+### 434
+
+
+O ecossistema das formigas me
+parece mesmo ideal. Ha uma
+formiga rainha em cada
+formigueiro, e as soldadas e
+operarias sao escravas dela.
+Elas dedicam a vida a rainha.
+
+### 435
+
+
+A morte da rainha significa o
+fim de todo o formigueiro.
+Mas soldadas e operarias sao
+facilmente substituidas
+enquanto a rainha vive.
+E exatamente a mesma relacao
+entre mim e o resto das
+massas ignorantes.
+
+### 436
+
+
+
+Consegui criar um virus ideal
+implantando o gene da formiga
+rainha no virus-mae que
+Spencer encontrou.
+
+### 437
+
+
+Usei meu pai, de resto inutil,
+como cobaia. Mas, como eu
+esperava, o virus mudou suas
+celulas rapidamente, causando
+a destruicao total das celulas
+do cerebro e da carne.
+
+### 438
+
+
+Alem disso, um gas venenoso
+especial surgiu no corpo dele,
+contra o qual a erva azul nao
+faz efeito. Por isso criei
+um antidoto para emergencias
+e o guardei no deposito de
+armas e quimicos do
+andar B2.
+
+### 439
+
+Decidi chamar este virus de
+potencial inimaginavel de
+virus "T-Veronica". Quando
+eu descobrir como usar o
+poder deste virus
+maravilhoso, minha grande
+pesquisa enfim estara
+completa.
+
+                   Alexia Ashford
+
+### 440
+
+
+
+
+
+RELATORIO DO VIRUS
+
+### 441
+
+
+O trabalho continua no virus
+"T-Veronica" que extrai da
+formiga rainha. Quanto mais
+pesquiso, mais me impressiono
+com o seu potencial.
+
+### 442
+
+
+Enfim implantei o virus no meu
+proprio corpo e descobri como
+usar seu poder. Nao vou repetir
+o erro que cometi com meu pai.
+Vou conter a atividade do virus
+a uma temperatura ultrabaixa,
+para que minhas celulas mudem
+devagar.
+
+### 443
+
+
+
+Meus calculos indicam que
+levara 15 anos ate meu corpo
+ganhar imunidade e conseguir
+conviver com o virus.
+
+### 444
+
+
+
+Ate la, nao tenho escolha
+senao confiar a capsula onde
+estarei aquela formiga soldado
+inepta, mas leal: meu irmao.
+Para obter poder ilimitado, e
+preciso correr alguns riscos.
+
+### 445
+
+
+Quando eu despertar, serei
+a rainha... E o virus
+"T-Veronica" sera espalhado
+pelo mundo inteiro pelos meus
+filhos. Toda criatura da terra
+existira para me servir.
+
+### 446
+
+
+
+Entao o mundo alcancara o
+ecossistema perfeito, como o
+formigueiro, mas numa escala
+muito maior.
+
+
+                 Alexia Ashford
 
 ### 447
 Carregar o save de
@@ -43,7 +2980,6 @@ Sem dados.
 
 ### 459
 Carregar estes dados? 
-
 
 ### 460
 Carregando do memory card (PS2). 

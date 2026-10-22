@@ -1,0 +1,34 @@
+# RM_0110.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Quimicos com nomes
+estranhos arrumados aqui.
+
+### 1
+Parece que ele foi
+dissecado.{FF02:0000}
+Ele nao esta respirando.
+
+### 2
+Bisturis sujos de sangue
+espalhados por aqui.
+
+### 3
+Deixaram um saco de cadaver
+aqui...
+
+### 4
+Sacos de cadaver empilhados
+aqui.
+
+### 6
+Um modelo detalhado
+do corpo humano.{FF02:0000}Parece faltar
+alguma coisa...
+
+### 7
+O cadaver
+sumiu...!
+

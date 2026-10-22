@@ -1,0 +1,88 @@
+# RM_6090.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+
+Que bagunca.
+
+### 1
+Ele teve uma morte
+horrivel.
+
+### 2
+Nao ha nada de
+interessante.
+
+### 3
+So tem livros
+inuteis.
+
+### 4
+Nao ha nada no
+armario.
+
+### 5
+Parece que nao e
+usado faz muito tempo.
+
+### 6
+
+Parece estar quebrado.{FF02:0000}
+Nao parece estar{FF02:0000}funcionando.
+
+### 7
+Nao ha nada de
+suspeito nisso.
+
+### 8
+Nao e usado faz
+muito tempo.
+
+### 9
+Nao ha nada
+util aqui.
+
+### 10
+Nao ha nada de
+interessante aqui.
+
+### 11
+
+Esta bem trancado.
+
+### 12
+Esta porta abre com
+um cartao.
+
+### 13
+
+Esta trancado.{FF02:0000}
+Deve abrir se houver{FF02:0000}energia...
+
+### 14
+
+Esta bem lacrado.
+
+### 18
+Parece ser parte
+do separador.{FF02:0000}A esteira esta
+quebrada. Ha um vao.
+
+### 19
+Parece ser uma
+capsula de cultivo.{FF02:0000}Que tipo de criatura
+estao criando aqui?
+
+### 20
+{FF03:0027} A trava abre
+se houver vazamento de gas.
+
+### 22
+
+Ha mais alguma coisa aqui.
+
+### 23
+Esta quebrado. Esta
+vazando gas anti-B.O.W.
+

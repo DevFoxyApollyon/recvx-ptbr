@@ -1,0 +1,17 @@
+# RM_9050.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Um homem grande com as
+maos amarradas esta pendurado.
+
+### 18
+Usar {FF03:0036}?
+                {espaco}Sim  {espaco}Nao
+
+### 19
+
+Painel de controle do guindaste.{FF02:0000}Para operar o guindaste,
+preciso de {FF03:0036}.
+

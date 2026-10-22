@@ -1,0 +1,43 @@
+# RM_1070.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+
+Um vaso de barro.{FF02:0000}Tem um desenho floral
+bem detalhado.
+
+### 1
+
+Esta trancado.{FF02:0000}
+Tem um brasao de prata gravado.
+
+### 2
+
+Esta trancado.{FF02:0000}
+Tem um brasao de ouro gravado.
+
+### 4
+
+Esta trancado.{FF02:0000}Usar {FF03:0043}?
+                {espaco}Sim  {espaco}Nao
+
+### 5
+
+Esta trancado.{FF02:0000}Usar {FF03:0044}?
+                {espaco}Sim  {espaco}Nao
+
+### 6
+Voce nao precisa mais
+desta chave.{FF02:0000}Descartar {FF03:0043}?
+                {espaco}Sim  {espaco}Nao
+
+### 7
+Voce nao precisa mais
+desta chave.{FF02:0000}Descartar {FF03:0044}?
+                {espaco}Sim  {espaco}Nao
+
+### 8
+
+A trava foi liberada.
+

@@ -1,0 +1,22 @@
+# RM_3180.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+E o painel de controle
+da plataforma giratoria.{FF02:0000}Esta sem energia.
+Nao consigo operar.
+
+### 1
+
+O botao esta quebrado.
+
+### 2
+
+Nada de especial aqui.
+
+### 3
+
+Um quadro de comando.{FF02:0000}Esta bem lacrado.
+Nao consigo operar.
+

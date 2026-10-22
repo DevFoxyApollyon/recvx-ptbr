@@ -1,0 +1,19 @@
+# RM_3220.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Voce esta no primeiro
+subsolo (B1F).{FF02:0000}Ir para qual andar?
+        {FE09}{espaco}B1F  {espaco}1F  {espaco}2F
+
+### 1
+Voce esta no primeiro
+andar (1F).{FF02:0000}Ir para qual andar?
+        {espaco}B1F  {FE09}{espaco}1F  {espaco}2F
+
+### 2
+Voce esta no segundo
+andar (2F).{FF02:0000}Ir para qual andar?
+        {espaco}B1F  {espaco}1F  {FE09}{espaco}2F
+

@@ -1,0 +1,41 @@
+# RM_4001.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 1
+Bagagens e coisas do
+tipo foram deixadas aqui.
+
+### 2
+
+Ele ja esta morto...
+
+### 3
+
+Preciso fugir rapido...
+
+### 4
+
+Esta trancado.{FF02:0000}
+Fechado com uma tranca simples.
+
+### 5
+
+Nao sobrou nada.
+
+### 6
+Usar {FF03:0032}?
+                {espaco}Sim  {espaco}Nao
+
+### 7
+
+A porta esta quebrada.
+
+### 8
+Este aparelho controla a
+pressao hidraulica da ponte.
+
+### 9
+
+A trava foi liberada.
+

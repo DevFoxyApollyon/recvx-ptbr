@@ -1,0 +1,79 @@
+# RM_7210.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+E o disjuntor do
+ventilador.{FF02:0000}Levantar a alavanca?
+                {espaco}Sim  {espaco}Nao
+
+### 1
+Um leitor de cartao
+de cor anil.
+
+### 2
+
+O cano esta quebrado.{FF02:0000}O gas deve ter
+vazado daqui.
+
+### 3
+"Perigo! Gas inflamavel.
+Nao use perto do fogo."
+
+### 4
+
+Uma grade de ferro esta baixada.
+
+### 5
+Subir a escada?
+                {espaco}Sim  {espaco}Nao
+
+### 6
+A passagem esta cheia
+de gas venenoso.{FF02:0000}O gas parece ser
+mais pesado que o ar...
+
+### 7
+A passagem esta cheia
+de gas venenoso.{FF02:0000}Nao da para descer
+assim.
+
+### 8
+E uma maquina de
+ventilacao.{FF02:0000}Parece ter sido
+muito usada.
+
+### 9
+Um leitor de cartao
+de cor anil.
+
+### 10
+Um leitor de cartao
+de cor anil.{FF02:0000}
+Tem trava eletronica.{FF02:0000}Usar {FF03:004C}?
+                {espaco}Sim  {espaco}Nao
+
+### 11
+Cuidado: o disjuntor pode
+cair por sobrecarga.{FF02:0000}Se cair, levante a
+alavanca como na figura.{FF02:0000}O ventilador volta
+a funcionar.
+
+### 12
+
+O ventilador parou.
+
+### 14
+Voce nao precisa mais de
+{FF03:004C}.{FF02:0000}Descartar {FF03:004C}?
+                {espaco}Sim  {espaco}Nao
+
+### 15
+Do outro lado da grade
+ha um leitor anil.
+
+### 16
+Parece um aviso sobre
+o aparelho.{FF02:0000}
+Esta sujo demais para ler.
+

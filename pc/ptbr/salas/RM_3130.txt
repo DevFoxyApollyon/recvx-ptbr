@@ -1,0 +1,92 @@
+# RM_3130.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 1
+Emergencia... Ativando a
+trava das portas...{FF02:0000}A porta diz
+"Sala de Bioexperimentos".
+
+### 2
+
+A trava da porta foi liberada.
+
+### 3
+
+A porta de aco esta fechando.{FF02:0000}
+Preciso correr!
+
+### 4
+
+A trava da porta foi liberada.
+
+### 5
+
+Erro: senha incorreta.
+
+### 6
+
+E uma mancha de sangue...{FF02:0000}Faziam experimentos
+com animais aqui?
+
+### 7
+
+Nao ha nada util aqui.
+
+### 8
+
+Material de escritorio.{FF02:0000}
+Nao ha nada util aqui.
+
+### 9
+A porta diz
+"Sala de Bioexperimentos".{FF02:0000}O sistema trancou
+a porta.{FF02:0000}
+Nao consigo digitar a senha.
+
+### 10
+Esta escuro demais para ver
+dentro.
+
+### 11
+Da para ver um quadro
+vermelho la dentro...
+
+### 12
+Parece nao haver
+ninguem...{FF02:0000}Ha um quadro vermelho
+no fundo.{FF02:0000}Nao vejo o numero
+daqui.
+
+### 13
+
+Ha um arquivo.
+
+### 14
+Trava por senha ativa.
+Digite a senha.{FF02:0000}Digite o numero
+do primeiro digito.
+
+### 15
+Digite o numero
+do segundo digito.{FF02:0000}
+{FE09}{espaco}1{espaco}2{espaco}3{espaco}4{espaco}5{espaco}6{espaco}7{espaco}8{espaco}9
+
+### 16
+Digite o numero
+do terceiro digito.{FF02:0000}
+{FE09}{espaco}1{espaco}2{espaco}3{espaco}4{espaco}5{espaco}6{espaco}7{espaco}8{espaco}9
+
+### 17
+Digite o numero
+do quarto digito.{FF02:0000}
+{FE09}{espaco}1{espaco}2{espaco}3{espaco}4{espaco}5{espaco}6{espaco}7{espaco}8{espaco}9
+
+### 18
+Ventilacao concluida.
+A luz de alerta apagou.
+
+### 19
+Ar contaminado... Nao da
+para digitar a senha.
+

@@ -1,0 +1,26 @@
+# RM_5001.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 29
+O Steve esta tentando
+controlar o aviao.
+
+### 30
+Nao abre com o aviao
+em voo.
+
+### 31
+Com isto voce pode
+salvar o progresso.{FF02:0000}Usar uma fita de tinta?
+                {espaco}Sim  {espaco}Nao
+
+### 32
+
+Uma maquina de escrever velha.{FF02:0000}Eu poderia salvar se
+tivesse uma fita de tinta.
+
+### 33
+Salvar o fim da 1a parte?
+                {espaco}Sim  {espaco}Nao
+

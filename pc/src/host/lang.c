@@ -4,6 +4,10 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
+#include <SDL3/SDL.h>
+void host_log(const char* fmt, ...);
+FILE* pc_fopen(const char* path, const char* mode);
 
 int g_lang = LANG_PT;
 
@@ -220,4 +224,52 @@ void lang_patch_font(unsigned char* d, unsigned size)
         for (int i = 0; i < EXTRA_N; i++) draw_extra(&p, &extras[i]);
         return;
     }
+}
+
+/* The game over screen's "Retry? Yes No" (gameover.c cnt_mes, glyph codes in the code, not on
+   the disc): the same layout in Portuguese. Yes and No keep their places (the cursor is drawn at
+   fixed x), so Sim and Nao start where Yes and No did. */
+const unsigned short* pc_continue_mes(const unsigned short* en)
+{
+    static unsigned short pt[32];
+    if (g_lang != LANG_PT) return en;
+    if (!pt[0]) {
+        static const char* parts[] = { "\x01" "Continuar?", "\x00", "\x01" "Sim", "\x01\x01" "Nao", NULL };
+        int n = 0;
+        for (int i = 0; parts[i]; i++) {
+            const char* c = parts[i];
+            if (*c == 1) { pt[n++] = 0xFF01; c++; if (*c == 1) { pt[n++] = 0xFF01; c++; } }
+            else if (*c == 0 && !c[1]) { pt[n++] = 0xFF00; continue; }
+            for (; *c; c++) pt[n++] = (unsigned short)(*c - 32);
+        }
+        pt[n] = 0xFFFF;
+    }
+    return pt;
+}
+
+/* Room messages in Portuguese (pc/tools/text.py import --tables): <mods>/textos/RM_xxxx.mes is
+   the room's message table (u32 entry 0, u32 offsets, u16 strings) built from pc/ptbr/salas, used
+   in place of the one inside the room file. Rooms without one keep the disc text. */
+unsigned int* pc_room_mes(unsigned int* mesp, int stg, int rno, int rcase)
+{
+    static unsigned int* buf;
+    char path[512];
+    const char* mods = SDL_getenv("RECVX_MODS");
+    FILE* f;
+    long n;
+    if (buf) { SDL_free(buf); buf = NULL; }
+    if (g_lang != LANG_PT || !mesp) return mesp;
+    SDL_snprintf(path, sizeof path, "%s/textos/RM_%d%02d%d.mes", mods && *mods ? mods : "mods", stg, rno, rcase);
+    if (!(f = pc_fopen(path, "rb"))) return mesp;
+    fseek(f, 0, SEEK_END);
+    n = ftell(f);
+    fseek(f, 0, SEEK_SET);
+    if (n >= 8 && (buf = SDL_malloc((size_t)n)) && fread(buf, 1, (size_t)n, f) == (size_t)n) {
+        fclose(f);
+        host_log("lang: %s\n", path);
+        return buf;
+    }
+    fclose(f);
+    if (buf) { SDL_free(buf); buf = NULL; }
+    return mesp;
 }

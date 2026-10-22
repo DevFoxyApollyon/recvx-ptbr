@@ -1,0 +1,53 @@
+# RM_1020.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 4
+A trava de seguranca
+ja foi liberada.
+
+### 5
+{FF03:0049}
+nao serve mais.{FF02:0000}Descartar {FF03:0049}?
+                {espaco}Sim  {espaco}Nao
+
+### 6
+O Steve ainda deve
+estar dentro da mansao...
+
+### 7
+Um retrato enorme
+em exposicao aqui.
+
+### 8
+
+Esta trancado.{FF02:0000}Usar {FF03:0043}?
+                {espaco}Sim  {espaco}Nao
+
+### 9
+
+Nada util.
+
+### 10
+
+Esta trancado.{FF02:0000}
+Ha um brasao de prata gravado.
+
+### 17
+
+A trava foi liberada.{FF02:0000}Voce nao precisa mais
+desta chave.{FF02:0000}Descartar {FF03:0043}?
+                {espaco}Sim  {espaco}Nao
+
+### 27
+
+Tem trava eletronica.
+
+### 51
+
+Preciso fugir rapido...
+
+### 52
+
+A trava foi liberada.
+

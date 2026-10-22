@@ -1,0 +1,21 @@
+# RM_9020.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Nao e usado ha muito
+tempo. Esta enferrujado.
+
+### 1
+
+Um aparelho de processar metal.{FF02:0000}
+Esta quebrado e nao funciona.
+
+### 12
+
+Nao ha nada util aqui.
+
+### 21
+
+Ha mais alguma coisa aqui.
+

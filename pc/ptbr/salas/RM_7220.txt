@@ -1,0 +1,55 @@
+# RM_7220.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Tumulos... Alguns sao
+muito antigos.{FF02:0000}Podem ser dos primeiros
+moradores da ilha.
+
+### 1
+
+Um tumulo.{FF02:0000}
+"Aqui jaz Robert Raval."
+
+### 2
+
+Ele parece estar dormindo...
+
+### 3
+
+Ele esta morto...
+
+### 4
+"Ofereca uma luz a minha
+direita."{FF02:0000}Parece que posso baixar
+a tampa de pedra.{FF02:0000}Baixar a tampa de pedra?
+                {espaco}Sim  {espaco}Nao
+
+### 5
+
+Um tumulo.{FF02:0000}
+"Aqui jaz Maria Raval."
+
+### 16
+Com isto voce pode
+salvar o progresso.{FF02:0000}Usar uma fita de tinta?
+                {espaco}Sim  {espaco}Nao
+
+### 17
+
+Uma maquina de escrever velha.{FF02:0000}Eu poderia salvar se
+tivesse uma fita de tinta.
+
+### 18
+
+Nao sobrou nada.
+
+### 19
+Ha 2 submetralhadoras
+aqui.
+
+### 20
+
+Preciso salva-lo!
+

@@ -1,0 +1,40 @@
+# RM_8010.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+
+Ha uma alavanca.{FF02:0000}Levantar a alavanca?
+                {espaco}Sim  {espaco}Nao
+
+### 1
+
+Ha uma alavanca.{FF02:0000}Baixar a alavanca?
+                {espaco}Sim  {espaco}Nao
+
+### 2
+Este aparelho fornece
+energia ao elevador.{FF02:0000}Cortar a energia?
+                {espaco}Sim  {espaco}Nao
+
+### 4
+
+A tela nao mostra nada.
+
+### 5
+
+Esta vazio...
+
+### 6
+
+Nao sobrou nada.
+
+### 7
+A pressao hidraulica da
+ponte caiu.{FF02:0000}
+Nao consigo operar agora.
+
+### 8
+A ponte de ferro elevadica
+parou em cima.
+

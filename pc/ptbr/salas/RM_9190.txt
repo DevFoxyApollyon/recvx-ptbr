@@ -1,0 +1,24 @@
+# RM_9190.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 18
+E o retrato de uma
+bela mulher.{FF02:0000}A mestra da familia
+Ashford, Veronica.
+
+### 20
+
+Um terminal de computador.{FF02:0000}Devia estar ligado a
+um supercomputador.
+
+### 21
+
+Uma lamparina a alcool antiga.{FF02:0000}Ainda tem um pouco
+de alcool dentro...
+
+### 22
+
+A formiga rainha esta morta.{FF02:0000}O formigueiro parece
+ter morrido.
+

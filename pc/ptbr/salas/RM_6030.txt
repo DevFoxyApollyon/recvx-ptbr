@@ -1,0 +1,28 @@
+# RM_6030.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 1
+Talvez o assassino
+fosse um monstro...
+
+### 20
+Parece ser algum
+tipo de ninho.{FF02:0000}
+E bem grande...{FF02:0000}Acho que este ninho
+nao pode ser tirado...
+
+### 21
+
+Tem erva azul crescendo aqui.{FF02:0000}Usar a erva azul?
+                {espaco}Sim  {espaco}Nao
+
+### 22
+E um canteiro com
+erva azul.{FF02:0000}Nao preciso usar
+isto agora.
+
+### 23
+
+Voce usou a erva azul.
+

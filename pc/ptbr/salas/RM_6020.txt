@@ -1,0 +1,17 @@
+# RM_6020.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 1
+Uma maquina de oficina com
+lamina de diamante.{FF02:0000}Com ela processo materiais
+de metal facilmente.
+
+### 12
+
+Nao ha nada util aqui.
+
+### 21
+Primeiro preciso definir
+o formato certo.
+

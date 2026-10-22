@@ -1,0 +1,34 @@
+# RM_0150.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+A estatua de pedra
+segura um elmo.
+
+### 1
+A estatua de pedra
+segura uma armadura.
+
+### 2
+A estatua de pedra
+segura um escudo.
+
+### 3
+A estatua de pedra
+segura {FF03:0067}.{FF02:0000}Pegar {FF03:0067}?
+                {espaco}Sim  {espaco}Nao
+
+### 4
+Devolver {FF03:0067}?
+                {espaco}Sim  {espaco}Nao
+
+### 5
+
+A estatua e de ferro.{FF02:0000}
+Ha um buraco no peito dela.
+
+### 8
+
+A porta nao abre!
+

@@ -1,0 +1,48 @@
+# RM_1090.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+
+Uma caixa de musica antiga.
+
+### 1
+
+Esta sem energia.{FF02:0000}Ligar o computador?
+                {espaco}Sim  {espaco}Nao
+
+### 2
+
+Ha uma lareira.{FF02:0000}Nao parece ter sido
+usada ha pouco tempo.
+
+### 3
+Um porta-retrato
+antigo esta aqui.
+
+### 4
+Livros grossos enfileirados
+aqui.
+
+### 5
+
+Nada acontece.
+
+### 7
+Ha algo escrito
+no memo.{FF02:0000}
+(1o digito: Esq., Dir.) {FF02:0000}
+(2o digito: Esq.) {FF02:0000}
+(3o digito: Dir.) {FF02:0000}(4o digito:
+ Dir., Dir., Dir.) {FF02:0000}Nao zere durante
+a operacao.
+
+### 8
+Apertar qual botao?
+    {espaco}Esq.  {espaco}Dir.  {espaco}Zerar
+
+### 9
+
+Ha um botao.{FF02:0000}Apertar qual botao?
+    {espaco}Esq.  {espaco}Dir.  {espaco}Zerar
+

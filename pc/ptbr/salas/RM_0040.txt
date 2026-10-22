@@ -1,0 +1,45 @@
+# RM_0040.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+A porta esta presa
+por algo.{FF02:0000}Nao abre
+deste lado.
+
+### 1
+
+Um destravador.{FF02:0000}Levantar a alavanca?
+                {espaco}Sim  {espaco}Nao
+
+### 2
+A trava da porta de aco
+foi liberada.
+
+### 3
+
+Nao sobrou nada.
+
+### 4
+Monitores de seguranca
+enfileirados.{FF02:0000}Talvez servissem para
+vigiar os prisioneiros.
+
+### 23
+Documentos da administracao
+guardados aqui.
+
+### 24
+Com isto voce pode
+salvar o progresso.{FF02:0000}Usar uma fita de tinta?
+                {espaco}Sim  {espaco}Nao
+
+### 25
+
+Uma maquina de escrever velha.{FF02:0000}Eu poderia salvar se
+tivesse uma fita de tinta.
+
+### 26
+O e-mail para o Leon
+ja foi enviado.
+

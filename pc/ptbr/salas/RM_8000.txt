@@ -1,0 +1,48 @@
+# RM_8000.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 1
+Bagagens e outros itens
+foram deixados aqui.
+
+### 2
+
+Ele ja esta morto...
+
+### 4
+
+Esta trancado.{FF02:0000}
+Nao consigo abrir.
+
+### 5
+
+Nao sobrou nada.
+
+### 6
+Usar {FF03:0032}?
+                {espaco}Sim  {espaco}Nao
+
+### 7
+
+A porta foi arrombada.
+
+### 9
+Este aparelho controla a
+pressao hidraulica da ponte.{FF02:0000}O controle automatico
+esta com defeito.{FF02:0000}
+Tem que ser operado na mao.{FF02:0000}Ha um aviso.
+{espaco}Operar  {espaco}Ler aviso
+
+### 10
+
+Operacao Manual{FF02:0000}1.Encha o tanque de 10
+litros usando 3 cilindros.{FF02:0000}2.Mantenha a quantidade
+padrao de oleo.{FF02:0000}Se o oleo nao estiver nos
+7 litros padrao,{FF02:0000}o aparelho nao liga.
+Cuidado.
+
+### 11
+Este aparelho controla a
+pressao hidraulica da ponte.
+

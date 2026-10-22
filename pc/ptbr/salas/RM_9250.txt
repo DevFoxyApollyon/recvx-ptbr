@@ -1,0 +1,26 @@
+# RM_9250.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+
+Nao ha nada util aqui.
+
+### 1
+Um retrato de homem
+em exposicao.
+
+### 2
+Um retrato de homem
+em exposicao.{FF02:0000}Ha um grande arranhao
+na tela...
+
+### 3
+
+Parece um formigueiro.{FF02:0000}
+Nao sobrou nada.
+
+### 18
+Descer a escada?
+                {espaco}Sim  {espaco}Nao
+

@@ -3,7 +3,8 @@
 The repository keeps only the Portuguese side (pc/ptbr/): this script applies it to the text and
 textures of your disc (PS2 NTSC-U, SLUS-20184) and writes the results to <mods>:
 
-  1. SYSMES.ALD: the messages in pc/ptbr/sistema.txt (text.py import; the others stay as on the disc)
+  1. SYSMES.ALD (pc/ptbr/sistema.txt, itens.txt) and textos/RM_xxxx.mes, the rooms' messages
+     (pc/ptbr/salas, text.py import; the messages not translated stay as on the disc)
   2. textures/pt: the title and OPCOES menus (title_ptbr.py, options_ptbr.py). Needs the game's
      textures: --exe runs the port once to dump them (title menu, then OPCOES), or --dump points
      at a RECVX_TEX_DUMP folder that already has them.
@@ -26,7 +27,8 @@ TOOLS = os.path.dirname(os.path.abspath(__file__))
 PTBR = os.path.join(os.path.dirname(TOOLS), "ptbr")
 TITLE = "64cae74c03148763"
 OPTIONS = ["cb5060d84e96c50b", "271a7590c63b69f4", "cee1149cc7bbb07f"]
-SCRIPTS = {"ptbr_mods.py", "text.py", "rdx.py", "rooms.txt", "title_ptbr.py", "options_ptbr.py"}
+SCRIPTS = {"ptbr_mods.py", "text.py", "rdx.py", "rooms.txt", "title_ptbr.py", "options_ptbr.py", "prologue_ptbr.py"}
+PROLOGUE = ["7c49072c74e82d93", "72147cd75fcc3613"]
 # title menu, then OPCOES (fourth row: Down x3 from CARREGAR JOGO); RECVX_KEYS holds a key until "-"
 KEYS = "%d:Down,%d:-,%d:Down,%d:-,%d:Down,%d:-,%d:Return,%d:-"
 
@@ -109,6 +111,8 @@ def build(a, iso, mods):
     py("text.py", "--iso", iso, "import", "--in", PTBR, "--mods", mods)
 
     pt = os.path.join(mods, "textures", "pt")
+    if a.force or not have(pt, PROLOGUE):   # the opening text: drawn from nothing, no dump needed
+        py("prologue_ptbr.py", mods)
     if not a.force and have(pt, [TITLE] + OPTIONS):
         return
     with tempfile.TemporaryDirectory() as tmp:

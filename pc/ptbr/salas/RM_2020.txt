@@ -1,0 +1,31 @@
+# RM_2020.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 1
+Esta escuro demais para
+ver algo la fora.
+
+### 2
+
+Que bagunca...
+
+### 3
+
+Nao ha nada util aqui.
+
+### 4
+
+Armaduras em exposicao.{FF02:0000}Parecem muito antigas.
+Nada de estranho.
+
+### 6
+Este quadro mostra uma
+paisagem calma.{FF02:0000}Nao ha nada de
+estranho nele.
+
+### 9
+
+Uma lareira.{FF02:0000}Ha bastante lenha
+aqui.
+

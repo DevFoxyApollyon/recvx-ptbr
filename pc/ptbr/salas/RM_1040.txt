@@ -1,0 +1,106 @@
+# RM_1040.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Uma bela mulher
+segura um jogo de cha.{FF02:0000}
+Ha um botao embaixo.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 1
+Um homem ruivo
+segura um jogo de cha.{FF02:0000}
+Ha um botao embaixo.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 2
+Um homem de meia-idade
+com gemeos ruivos.{FF02:0000}Ha um jogo de cha
+na mesa.{FF02:0000}
+Ha um botao embaixo.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 3
+
+E o retrato de um homem.{FF02:0000}Tambem ha um vaso
+de barro pintado.{FF02:0000}
+Ha um botao embaixo.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 4
+E o quadro de um
+homem ruivo.{FF02:0000}Tambem ha um prato
+de barro pintado.{FF02:0000}
+Ha um botao embaixo.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 5
+
+E o quadro de um homem.{FF02:0000}Tambem ha um castical
+branco pintado.{FF02:0000}
+Ha um botao embaixo.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 6
+Uma bela mulher
+segura um jogo de cha.
+
+### 7
+Um homem ruivo
+segura um jogo de cha.
+
+### 8
+Um homem de meia-idade
+com gemeos ruivos.{FF02:0000}
+Ha um jogo de cha na mesa.
+
+### 9
+
+E o retrato de um homem.{FF02:0000}Tambem ha um vaso
+de barro pintado.
+
+### 10
+E o quadro de um
+homem ruivo.{FF02:0000}Tambem ha um prato
+de barro pintado.
+
+### 11
+
+E o quadro de um homem.{FF02:0000}Tambem ha um castical
+branco pintado.
+
+### 12
+E a mesma crianca do
+filme do projetor...{FF02:0000}Ha uma mensagem
+escrita no quadro.{FF02:0000}Siga o legado Ashford,
+revele o verdadeiro mestre.{FF02:0000}
+Ha um botao embaixo.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 14
+
+E um retrato de Alexia.{FF02:0000}Tambem ha um vaso
+florido pintado.
+
+### 15
+
+Um castical branco.{FF02:0000}Ha algo escrito
+na base.{FF02:0000}Em memoria da posse de
+Alexander Ashford.
+
+### 18
+
+E o retrato de uma jovem.{FF02:0000}Tambem ha um vaso florido
+pintado.
+
+### 19
+
+Esta todo quebrado.
+
+### 20
+
+O botao esta piscando.{FF02:0000}Ele reinicia todos os
+botoes da sala.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+

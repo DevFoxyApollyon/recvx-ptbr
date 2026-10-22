@@ -1,0 +1,24 @@
+# RM_7081.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 3
+
+Um bueiro.{FF02:0000}
+Esta bem fechado.{FF02:0000}
+Nao consigo abrir daqui.
+
+### 5
+
+Uma estacao de elevador.{FF02:0000}O elevador parou num
+andar de cima.
+
+### 7
+Descer a escada?
+                {espaco}Sim  {espaco}Nao
+
+### 8
+Um relevo no formato
+da placa da aguia.{FF02:0000}Ha um buraco onde
+ficava a alabarda.
+

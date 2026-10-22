@@ -1,0 +1,37 @@
+# RM_6070.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Cuidados com o
+quadro de comando.{FF02:0000}Confira o botao do
+gerador antes de operar.
+
+### 19
+O quadro de comando esta sem
+energia.{FF02:0000}Preciso ligar o
+gerador primeiro.
+
+### 20
+
+A energia foi restaurada.{FF02:0000}Religar a energia eletrica?
+                {espaco}Sim  {espaco}Nao
+
+### 22
+A energia eletrica
+ja esta ligada.
+
+### 23
+Ha uma alavanca do
+gerador.{FF02:0000}Mover a alavanca?
+                {espaco}Sim  {espaco}Nao
+
+### 25
+O gerador ja esta
+funcionando.
+
+### 26
+Esta sala esta cheia
+de gas venenoso.{FF02:0000}Equipar {FF03:0027} e entrar?
+                {espaco}Sim  {espaco}Nao
+

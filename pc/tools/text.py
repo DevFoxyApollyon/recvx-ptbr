@@ -262,11 +262,15 @@ def cmd_import(args):
     for name, d, room in rooms:
         msgs = read_table(d, room.ptr['mesp'], room.cnt['mes'])
         new = edited(os.path.join(args.inp, 'salas', name[:-4] + '.txt'), msgs)
-        dst = os.path.join(args.mods, name)
         if new is None:
             continue
-        with open(dst, 'wb') as f:
-            f.write(rdx.compress(rebuild_room(d, room, new)))
+        if args.rdx:   # the whole room, recompressed (slow: ~25 s and ~3 MB per room)
+            with open(os.path.join(args.mods, name), 'wb') as f:
+                f.write(rdx.compress(rebuild_room(d, room, new)))
+        else:          # only the message table, read by the port in place of the room's (lang.c pc_room_mes)
+            os.makedirs(os.path.join(args.mods, 'textos'), exist_ok=True)
+            with open(os.path.join(args.mods, 'textos', name[:-4] + '.mes'), 'wb') as f:
+                f.write(build_table(rdx.u32(d, room.ptr['mesp']), new))
         changed += 1
     d = sysmes_file(iso)
     items, sysm = sysmes_tables(d)
@@ -320,6 +324,7 @@ def main():
     i = sub.add_parser('import')
     i.add_argument('--in', dest='inp', default='translation')
     i.add_argument('--mods', default='mods')
+    i.add_argument('--rdx', action='store_true', help='write whole RM_xxxx.RDX rooms instead of textos/RM_xxxx.mes')
     sub.add_parser('check')
     args = p.parse_args()
     {'export': cmd_export, 'import': cmd_import, 'check': cmd_check}[args.cmd](args)

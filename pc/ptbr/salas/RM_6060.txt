@@ -1,0 +1,31 @@
+# RM_6060.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 22
+
+Nao ha nada util aqui.
+
+### 23
+Ha um buraco em forma
+de octogono.{FF02:0000}
+Ha um aviso.{FF02:0000}Gas venenoso. Em caso de
+emergencia, lacre.
+
+### 24
+Fugir com o veiculo?
+                {espaco}Sim  {espaco}Nao
+
+### 25
+A luz de deteccao de gas
+venenoso esta acesa.
+
+### 26
+
+Nao posso abandonar o Steve.{FF02:0000}
+Preciso parar o gas venenoso.
+
+### 27
+
+O Steve esta esperando a Claire.
+

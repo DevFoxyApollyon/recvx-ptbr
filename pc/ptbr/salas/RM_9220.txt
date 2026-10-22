@@ -1,0 +1,37 @@
+# RM_9220.RDX em portugues: so as mensagens traduzidas, sem o texto original.
+# pc/tools/ptbr_mods.py aplica sobre o texto do seu disco; as que faltam ficam como no disco.
+# Formato: docs/TRANSLATION.md. Sem acentos (menus com a fonte do jogo).
+
+### 0
+Parece ser algum tipo
+de painel de controle.
+
+### 1
+
+Ha um botao no painel.{FF02:0000}Apertar o botao?
+                {espaco}Sim  {espaco}Nao
+
+### 2
+
+Nao consigo abrir com as maos...
+
+### 3
+
+Nao sobrou nada.
+
+### 4
+
+Ha uma capsula grande.
+
+### 7
+Nao ha nada de
+suspeito nisso.
+
+### 18
+Um microscopio eletronico.
+Parece ser antigo.
+
+### 19
+
+Voce destrancou a porta.
+
