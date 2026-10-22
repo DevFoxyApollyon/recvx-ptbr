@@ -46,7 +46,7 @@ while [ $# -gt 0 ]; do
         copy_docs "$d" $docs
         # PT-BR: what the RE Hub runs before the game to build mods/ from the player's disc
         mkdir -p "$d/tools"
-        for t in ptbr_mods.py text.py rdx.py rooms.txt title_ptbr.py options_ptbr.py; do cp "$root/pc/tools/$t" "$d/tools/"; done
+        for t in ptbr_mods.py text.py rdx.py rooms.txt title_ptbr.py options_ptbr.py prologue_ptbr.py upscale_all.py; do cp "$root/pc/tools/$t" "$d/tools/"; done
         cp -r "$root/pc/ptbr" "$d/ptbr"
         (cd "$stage" && rm -f "$out/$n.zip" && zip -qrX "$out/$n.zip" "$n")
         mkdir -p "$stage/$n-debug"; cp "$b" "$stage/$n-debug/recvx.exe"
